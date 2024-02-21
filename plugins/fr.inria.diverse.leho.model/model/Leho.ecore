@@ -5,8 +5,8 @@
     <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Policy">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" lowerBound="1"
-        eType="#//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" eType="#//Configuration"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="#//Filter"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentTime" lowerBound="1"
@@ -17,57 +17,41 @@
         eType="#//Packet" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="#//Packet"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="drop" eType="#//Drop" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reject" eType="#//Reject"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Drop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Reject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="#//Action #//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="#//Action #//Configuration"/>
   <eClassifiers xsi:type="ecore:EClass" name="Filter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rule" upperBound="-1" eType="#//Rule"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="firstRule" lowerBound="1"
+        eType="#//Rule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="currentRule" eType="#//Rule"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Action">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allow" eType="#//Allow"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="discard" eType="#//Discard"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="limitrateto" eType="#//Bandwidth"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reject" eType="#//Reject"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="drop" upperBound="-1" eType="#//Drop"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Allow"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Discard"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Allow" eSuperTypes="#//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="PacketSpec">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inbound" eType="#//Inbound"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outbound" eType="#//Outbound"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="#//Port" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" upperBound="-1"
         eType="#//ExtensionHeader" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="option" upperBound="-1"
         eType="#//Option" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specificfield" upperBound="-1"
+        eType="#//SpecificField" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Inbound"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Outbound"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Bandwidth">
+  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="#//Port"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="#//Port"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Bandwidth" eSuperTypes="#//Action">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="datasize" lowerBound="1"
-        eType="#//DataSize" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" lowerBound="1" eType="#//Unit"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="#//Time"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DataSize" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Unit" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Time" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BitSize" eSuperTypes="#//DataSize"/>
-  <eClassifiers xsi:type="ecore:EClass" name="OctetSize" eSuperTypes="#//DataSize"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PacketSize" eSuperTypes="#//DataSize"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BitUnit" eSuperTypes="#//Unit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OctetUnit" eSuperTypes="#//Unit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PacketUnit" eSuperTypes="#//Unit"/>
   <eClassifiers xsi:type="ecore:EClass" name="Second" eSuperTypes="#//Time"/>
   <eClassifiers xsi:type="ecore:EClass" name="Minute" eSuperTypes="#//Time"/>
   <eClassifiers xsi:type="ecore:EClass" name="Hour" eSuperTypes="#//Time"/>
@@ -103,29 +87,41 @@
   <eClassifiers xsi:type="ecore:EClass" name="IPDff" eSuperTypes="#//Option"/>
   <eClassifiers xsi:type="ecore:EClass" name="RfcExperiment" eSuperTypes="#//Option"/>
   <eClassifiers xsi:type="ecore:EClass" name="UnkownOption" eSuperTypes="#//Option"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ipAddSpec">
+  <eClassifiers xsi:type="ecore:EClass" name="IpAddSpec">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Port">
+  <eClassifiers xsi:type="ecore:EClass" name="Port" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Packet">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="port" lowerBound="1" eType="#//Port"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inPort" lowerBound="1"
+        eType="#//Port"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Rule">
     <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1"
         eType="#//Action" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="packetspec" lowerBound="1"
         eType="#//PacketSpec" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ipaddspec" upperBound="2"
-        eType="#//ipAddSpec" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" upperBound="-1" eType="#//Rule"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//IpAddSpec"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Rule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//IpAddSpec"
         containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SpecificField" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Type" eSuperTypes="#//SpecificField">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Protocol" abstract="true" eSuperTypes="#//SpecificField"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Environment" abstract="true" eSuperTypes="#//SpecificField"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RSVP" eSuperTypes="#//Protocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MLD" eSuperTypes="#//Protocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MLS" eSuperTypes="#//Environment"/>
 </ecore:EPackage>

@@ -18,43 +18,34 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/packet"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/currentPacket"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Configuration">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Configuration/drop"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Configuration/reject"/>
-    </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//Configuration"/>
     <genClasses ecoreClass="Leho.ecore#//Drop"/>
     <genClasses ecoreClass="Leho.ecore#//Reject"/>
     <genClasses ecoreClass="Leho.ecore#//Filter">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Filter/rule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Filter/firstRule"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Leho.ecore#//Filter/currentRule"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Action">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Action/allow"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Action/discard"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Action/limitrateto"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Action/reject"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Action/drop"/>
-    </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//Action"/>
     <genClasses ecoreClass="Leho.ecore#//Allow"/>
     <genClasses ecoreClass="Leho.ecore#//Discard"/>
     <genClasses ecoreClass="Leho.ecore#//PacketSpec">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/inbound"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/outbound"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/port"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/extensionheader"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/option"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/specificfield"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Inbound"/>
     <genClasses ecoreClass="Leho.ecore#//Outbound"/>
     <genClasses ecoreClass="Leho.ecore#//Bandwidth">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Bandwidth/number"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Bandwidth/datasize"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Bandwidth/unit"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Bandwidth/time"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//DataSize"/>
+    <genClasses ecoreClass="Leho.ecore#//Unit"/>
     <genClasses ecoreClass="Leho.ecore#//Time"/>
-    <genClasses ecoreClass="Leho.ecore#//BitSize"/>
-    <genClasses ecoreClass="Leho.ecore#//OctetSize"/>
-    <genClasses ecoreClass="Leho.ecore#//PacketSize"/>
+    <genClasses ecoreClass="Leho.ecore#//BitUnit"/>
+    <genClasses ecoreClass="Leho.ecore#//OctetUnit"/>
+    <genClasses ecoreClass="Leho.ecore#//PacketUnit"/>
     <genClasses ecoreClass="Leho.ecore#//Second"/>
     <genClasses ecoreClass="Leho.ecore#//Minute"/>
     <genClasses ecoreClass="Leho.ecore#//Hour"/>
@@ -90,10 +81,10 @@
     <genClasses ecoreClass="Leho.ecore#//IPDff"/>
     <genClasses ecoreClass="Leho.ecore#//RfcExperiment"/>
     <genClasses ecoreClass="Leho.ecore#//UnkownOption"/>
-    <genClasses ecoreClass="Leho.ecore#//ipAddSpec">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//ipAddSpec/adress"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//ipAddSpec/port"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//ipAddSpec/mask"/>
+    <genClasses ecoreClass="Leho.ecore#//IpAddSpec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/adress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/mask"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Port">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Port/name"/>
@@ -101,13 +92,23 @@
     <genClasses ecoreClass="Leho.ecore#//Packet">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Packet/time"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Packet/content"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Leho.ecore#//Packet/port"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Leho.ecore#//Packet/inPort"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Rule">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/action"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/packetspec"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/ipaddspec"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/to"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/next"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/from"/>
     </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//SpecificField"/>
+    <genClasses ecoreClass="Leho.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Type/number"/>
+    </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//Protocol"/>
+    <genClasses ecoreClass="Leho.ecore#//Environment"/>
+    <genClasses ecoreClass="Leho.ecore#//RSVP"/>
+    <genClasses ecoreClass="Leho.ecore#//MLD"/>
+    <genClasses ecoreClass="Leho.ecore#//MLS"/>
   </genPackages>
 </genmodel:GenModel>
