@@ -31,8 +31,6 @@
     <genClasses ecoreClass="Leho.ecore#//PacketSpec">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/port"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/extensionheader"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/option"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/specificfield"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Inbound"/>
     <genClasses ecoreClass="Leho.ecore#//Outbound"/>
@@ -51,13 +49,19 @@
     <genClasses ecoreClass="Leho.ecore#//Hour"/>
     <genClasses ecoreClass="Leho.ecore#//Day"/>
     <genClasses ecoreClass="Leho.ecore#//ExtensionHeader"/>
-    <genClasses ecoreClass="Leho.ecore#//Option"/>
-    <genClasses ecoreClass="Leho.ecore#//HopByHop"/>
-    <genClasses ecoreClass="Leho.ecore#//IPv6Route"/>
-    <genClasses ecoreClass="Leho.ecore#//IPv6Frag"/>
+    <genClasses ecoreClass="Leho.ecore#//OptionHopByHop"/>
+    <genClasses ecoreClass="Leho.ecore#//HopByHopOpts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//HopByHopOpts/options"/>
+    </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//Routing">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Routing/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Leho.ecore#//Fragment"/>
     <genClasses ecoreClass="Leho.ecore#//EncapsulingSecurityPayload"/>
     <genClasses ecoreClass="Leho.ecore#//AuthentificationHeader"/>
-    <genClasses ecoreClass="Leho.ecore#//IPv6Opts"/>
+    <genClasses ecoreClass="Leho.ecore#//DestinationOpts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//DestinationOpts/options"/>
+    </genClasses>
     <genClasses ecoreClass="Leho.ecore#//MobilityHeader"/>
     <genClasses ecoreClass="Leho.ecore#//UnknownEH"/>
     <genClasses ecoreClass="Leho.ecore#//ExperimentationAndTesting"/>
@@ -68,7 +72,9 @@
     <genClasses ecoreClass="Leho.ecore#//JumboPayload"/>
     <genClasses ecoreClass="Leho.ecore#//RPLOption"/>
     <genClasses ecoreClass="Leho.ecore#//TunnelEncapsulationLimit"/>
-    <genClasses ecoreClass="Leho.ecore#//RouterAlert"/>
+    <genClasses ecoreClass="Leho.ecore#//RouterAlert">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//RouterAlert/protocol"/>
+    </genClasses>
     <genClasses ecoreClass="Leho.ecore#//QuickStart"/>
     <genClasses ecoreClass="Leho.ecore#//Calipso"/>
     <genClasses ecoreClass="Leho.ecore#//SmfDpd"/>
@@ -78,9 +84,7 @@
     <genClasses ecoreClass="Leho.ecore#//ILNPNonce"/>
     <genClasses ecoreClass="Leho.ecore#//LineIdOption"/>
     <genClasses ecoreClass="Leho.ecore#//MPLOption"/>
-    <genClasses ecoreClass="Leho.ecore#//IPDff"/>
-    <genClasses ecoreClass="Leho.ecore#//RfcExperiment"/>
-    <genClasses ecoreClass="Leho.ecore#//UnkownOption"/>
+    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment"/>
     <genClasses ecoreClass="Leho.ecore#//IpAddSpec">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/adress"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/port"/>
@@ -101,14 +105,20 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/next"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/from"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//SpecificField"/>
-    <genClasses ecoreClass="Leho.ecore#//Type">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Type/number"/>
-    </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Protocol"/>
-    <genClasses ecoreClass="Leho.ecore#//Environment"/>
     <genClasses ecoreClass="Leho.ecore#//RSVP"/>
     <genClasses ecoreClass="Leho.ecore#//MLD"/>
-    <genClasses ecoreClass="Leho.ecore#//MLS"/>
+    <genClasses ecoreClass="Leho.ecore#//OptionDestination"/>
+    <genClasses ecoreClass="Leho.ecore#//IPv6PerformanceDiagnostic"/>
+    <genClasses ecoreClass="Leho.ecore#//TypeRouting"/>
+    <genClasses ecoreClass="Leho.ecore#//SourceRoute"/>
+    <genClasses ecoreClass="Leho.ecore#//Nimrod"/>
+    <genClasses ecoreClass="Leho.ecore#//Type2"/>
+    <genClasses ecoreClass="Leho.ecore#//RPLSource"/>
+    <genClasses ecoreClass="Leho.ecore#//Segment"/>
+    <genClasses ecoreClass="Leho.ecore#//Unassigned"/>
+    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment1"/>
+    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment2"/>
+    <genClasses ecoreClass="Leho.ecore#//Reserved"/>
   </genPackages>
 </genmodel:GenModel>

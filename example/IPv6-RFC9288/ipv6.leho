@@ -1,0 +1,41 @@
+// Filtering policy based on the recommendation of [RFC9288](https://datatracker.ietf.org/doc/rfc9288/)
+
+Discard = reject
+ 
+// --------------- By Extension Header --------------- //
+limit rate to 5p/h Hop-by-Hop 
+	where Pad1 
+	and PadN 
+	and Quick-Start
+	and Router-Alert
+		where protocol=RSVP 
+		and protocol=MLD
+
+drop Routing-Header where type=Source-Route and type=Nimrod
+allow Routing-Header
+
+allow Fragment-Header 
+	Encapsuling-Security-Payload 
+	Autentification-Header 
+	Destination-Options 
+		where Pad1 
+		and PadN 
+		and Tunnel-Encapsulation-Limit 
+		and Home-Adress and ILNP-Nonce
+	Mobility-Header 
+	Host-Identity-Protocol 
+	Shim6-Protocol
+
+discard Experimentation-Testing 
+	Destination-Options 
+		where Endpoint-Identification 
+		and Line-Identification-Option 
+		and RFC3962-Experiment
+	Hop-by-Hop 
+		where Jumbo-Payload 
+		and RPL-Option 
+		and Endpoint-Identification 
+		and Line-Identification-Option 
+		and Deprecated and RFC3962-Experiment
+
+drop Unkown-EH

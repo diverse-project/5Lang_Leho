@@ -41,7 +41,7 @@ Time:
 ;
 
 PacketSpec:
-	port=Port? (extensionheader+=ExtensionHeader | option+=Option)+ ("where" specificfield+=SpecificField ("and" specificfield+=SpecificField)*)?
+	port=Port? extensionheader+=ExtensionHeader+
 ;
 
 Port:
@@ -49,12 +49,12 @@ Port:
 ;
 
 ExtensionHeader:
-	{HopByHop} "Hop-by-Hop"
-	| {IPv6Route} "Routing-Header"
-	| {IPv6Frag} "Fragment-Header"
+	{HopByHopOpts} "Hop-by-Hop" ("where" options+=OptionHopByHop ("and" options+=OptionHopByHop)*)?
+	| {Routing} "Routing-Header" ("where" "type" "=" type+=TypeRouting ("and" "type" "=" type+=TypeRouting)*)?
+	| {Fragment} "Fragment-Header"
 	| {EncapsulingSecurityPayload} "Encapsuling-Security-Payload"
 	| {AuthentificationHeader} "Autentification-Header"
-	| {IPv6Opts} "Destination-Options"
+	| {DestinationOpts} "Destination-Options"  ("where" options+=OptionDestination ("and" options+=OptionDestination)*)?
 	| {MobilityHeader} "Mobility-Header"
 	| {HostIdentityProtocol} "Host-Identity-Protocol"
 	| {Shim6Protocol} "Shim6-Protocol"
@@ -62,40 +62,50 @@ ExtensionHeader:
 	| {UnknownEH} "Unkown-EH"
 ;
 
-Option:
+OptionHopByHop:
 	{Pad1} "Pad1"
 	| {PadN} "PadN"
 	| {JumboPayload} "Jumbo-Payload"
 	| {RPLOption} "RPL-Option"
-	| {TunnelEncapsulationLimit} "Tunnel-Encapsulation-Limit"
-	| {RouterAlert} "Router-Alert"
+	| {RouterAlert} "Router-Alert" ("where" "protocol" "=" protocol+=Protocol ("and" "protocol" "=" protocol+=Protocol)*)
 	| {QuickStart} "Quick-Start"
 	| {Calipso} "CALIPSO"
 	| {SmfDpd} "SMF_DPD"
-	| {HomeAdress} "Home-Adress"
 	| {EndPointIdentification} "Endpoint-Identification"
-	| {ILNPNonce} "ILNP-Nonce"
 	| {LineIdOption} "Line-Identification-Option"
 	| {Deprecated} "Deprecated"
 	| {MPLOption} "MPL-Option"
-	| {IPDff} "IP_DFF"
-	| {RfcExperiment} "RFC3962-Experiment"
-	| {UnkownOption} "Unkown-Options"
+	| {RFC3692Experiment} "RFC3962-Experiment"
 ;
 
-SpecificField:
-	{Type} "type" "=" number=IPNUMBER
-	| "protocol" "=" Protocol
-	| "environment" "=" Environment 
+OptionDestination:
+	{Pad1} "Pad1"
+	| {PadN} "PadN"
+	| {EndPointIdentification} "Endpoint-Identification"
+	| {LineIdOption} "Line-Identification-Option"
+	| {Deprecated} "Deprecated"
+	| {RFC3692Experiment} "RFC3962-Experiment"
+	| {ILNPNonce} "ILNP-Nonce"
+	| {TunnelEncapsulationLimit} "Tunnel-Encapsulation-Limit"
+	| {IPv6PerformanceDiagnostic} "IPv6-Performance-Diagnostic"
+	| {HomeAdress} "Home-Adress"
+;
+
+TypeRouting:
+	{SourceRoute} "Source-Route"
+	| {Nimrod} "Nimrod"
+	| {Type2} "Type-2-Routing-Header"
+	| {RPLSource} "RPL-Source-Route-Header"
+	| {Segment} "Segment-Routing-Header"
+	| {Unassigned} "Unassigned"
+	| {RFC3692Experiment1} "RFC3692-style-Experiment-1"
+	| {RFC3692Experiment2} "RFC3692-style-Experiment-2"
+	| {Reserved} "Reserved"
 ;
 
 Protocol:
 	{RSVP} "RSVP"
-	| {MLD} "MLD"
-;
-
-Environment :
-	{MLS} "MLS"
+	| {MLD} ("MLD" | "Multicast")
 ;
 
 IpAddSpec:

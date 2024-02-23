@@ -3,13 +3,7 @@
  */
 package fr.inria.diverse.leho.xtext.validation
 
-import fr.inria.diverse.leho.model.Leho.HopByHop
-import fr.inria.diverse.leho.model.Leho.LehoPackage
-import fr.inria.diverse.leho.model.Leho.PacketSpec
-import fr.inria.diverse.leho.model.Leho.Type
 import org.eclipse.xtext.validation.Check
-import java.util.stream.IntStream
-import fr.inria.diverse.leho.model.Leho.IPv6Opts
 
 /**
  * This class contains custom validation rules. 
@@ -18,30 +12,34 @@ import fr.inria.diverse.leho.model.Leho.IPv6Opts
  */
 class LehoValidator extends AbstractLehoValidator {
 
-	public static val INEXISTING_TYPE = "inexistingtype"
-	
-	@Check
-	def checkExistingType(Type type) {
-		val eh = (type.eContainer as PacketSpec).extensionheader
-		if (eh !== null) {
-			if(eh.get(0) instanceof HopByHop) {
-				val int[] possibleTypes = #[0, 1, 5, 7, 8, 35, 38, 77, 99, 109, 138, 194, 238, 30, 62, 94, 126, 158, 190, 222, 254]
-				if (!IntStream.of(possibleTypes).anyMatch(x | x == type.number)) {
-					warning("This type does not exist for hop by hop headers",
-						LehoPackage.Literals.TYPE__NUMBER,
-						INEXISTING_TYPE
-					)
-				}
-			}
-			if(eh.get(0) instanceof IPv6Opts) {
-				val int[] possibleTypes = #[0, 1, 4, 16, 77, 201, 138, 139, 140, 30, 62, 94, 126, 158, 190, 222, 254]
-				if (!IntStream.of(possibleTypes).anyMatch(x | x == type.number)) {
-					warning("This type does not exist for hop by hop headers",
-						LehoPackage.Literals.TYPE__NUMBER,
-						INEXISTING_TYPE
-					)
-				}
-			}
-		}
-	}
+//	public static val INEXISTING_TYPE = "inexistingtype"
+//	
+//	@Check
+//	def checkExistingType(Type type) {
+//		val eh = (type.eContainer as PacketSpec).extensionheader
+//		if (eh !== null) {
+//			if(eh.get(0) instanceof HopByHop) {
+//				val int[] possibleTypes = #[0, 1, 5, 7, 8, 35, 38, 77, 99, 109, 138, 194, 238, 30, 62, 94, 126, 158, 190, 222, 254]
+//				if (!IntStream.of(possibleTypes).anyMatch(x | x == type.number)) {
+//					warning("This type does not exist for hop by hop headers",
+//						LehoPackage.Literals.TYPE__NUMBER,
+//						INEXISTING_TYPE
+//					)
+//				}
+//			}else if(eh.get(0) instanceof IPv6Opts) {
+//				val int[] possibleTypes = #[0, 1, 4, 16, 77, 201, 138, 139, 140, 30, 62, 94, 126, 158, 190, 222, 254]
+//				if (!IntStream.of(possibleTypes).anyMatch(x | x == type.number)) {
+//					warning("This type does not exist for hop by hop headers",
+//						LehoPackage.Literals.TYPE__NUMBER,
+//						INEXISTING_TYPE
+//					)
+//				}
+//			} else if (!(eh.get(0) instanceof IPv6Route)) {
+//				error("This extension header does not have any type",
+//					LehoPackage.Literals.TYPE__NUMBER,
+//					INEXISTING_TYPE
+//				)
+//			}
+//		}
+//	}
 }
