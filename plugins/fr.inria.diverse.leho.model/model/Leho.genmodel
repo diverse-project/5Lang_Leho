@@ -15,7 +15,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/filter"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Policy/currentTime"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/inPorts"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/packet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/packets"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Leho.ecore#//Policy/currentPacket"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Configuration"/>
@@ -120,5 +120,7 @@
     <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment1"/>
     <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment2"/>
     <genClasses ecoreClass="Leho.ecore#//Reserved"/>
+    <genClasses ecoreClass="Leho.ecore#//DiscardDrop"/>
+    <genClasses ecoreClass="Leho.ecore#//DiscardReject"/>
   </genPackages>
 </genmodel:GenModel>

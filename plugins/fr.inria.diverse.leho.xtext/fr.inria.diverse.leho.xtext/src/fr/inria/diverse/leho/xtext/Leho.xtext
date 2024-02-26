@@ -9,7 +9,7 @@ Policy:
 ;
 
 Configuration:
-	"Discard" "=" ({Drop} "drop"|{Reject} "reject")
+	"Discard" "=" ({DiscardDrop} "drop"|{DiscardReject} "reject")
 ;
  
 Filter:
@@ -117,7 +117,7 @@ IpAddRange:
 ;
 
 PortRange:
-	"any" | INT
+	"any" | IPNUMBER
 ;
 
 terminal IPADRESS returns ecore::EString: IPNUMBER "." IPNUMBER "." IPNUMBER "." IPNUMBER;

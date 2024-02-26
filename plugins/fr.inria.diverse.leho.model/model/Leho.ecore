@@ -13,13 +13,13 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="inPorts" upperBound="-1"
         eType="#//Port" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="packet" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="packets" upperBound="-1"
         eType="#//Packet" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="#//Packet"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Configuration" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="#//Action #//Configuration"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="#//Action #//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="#//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="Filter">
     <eStructuralFeatures xsi:type="ecore:EReference" name="firstRule" lowerBound="1"
         eType="#//Rule" containment="true"/>
@@ -99,7 +99,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Port" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="Port">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Packet">
@@ -135,4 +135,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment1" eSuperTypes="#//TypeRouting"/>
   <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment2" eSuperTypes="#//TypeRouting"/>
   <eClassifiers xsi:type="ecore:EClass" name="Reserved" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DiscardDrop" eSuperTypes="#//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DiscardReject" eSuperTypes="#//Configuration"/>
 </ecore:EPackage>
