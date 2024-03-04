@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ASCII"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
     modelDirectory="/fr.inria.diverse.leho.model/src-gen" creationIcons="false"
@@ -54,7 +54,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//HopByHopOpts/options"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Routing">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Routing/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Routing/types"/>
     </genClasses>
     <genClasses ecoreClass="Leho.ecore#//Fragment"/>
     <genClasses ecoreClass="Leho.ecore#//EncapsulingSecurityPayload"/>
@@ -122,5 +122,7 @@
     <genClasses ecoreClass="Leho.ecore#//Reserved"/>
     <genClasses ecoreClass="Leho.ecore#//DiscardDrop"/>
     <genClasses ecoreClass="Leho.ecore#//DiscardReject"/>
+    <genClasses ecoreClass="Leho.ecore#//DFF"/>
+    <genClasses ecoreClass="Leho.ecore#//Options"/>
   </genPackages>
 </genmodel:GenModel>

@@ -50,7 +50,7 @@ Port:
 
 ExtensionHeader:
 	{HopByHopOpts} "Hop-by-Hop" ("where" options+=OptionHopByHop ("and" options+=OptionHopByHop)*)?
-	| {Routing} "Routing-Header" ("where" "type" "=" type+=TypeRouting ("and" "type" "=" type+=TypeRouting)*)?
+	| {Routing} "Routing-Header" ("where" "type" "=" types+=TypeRouting ("and" "type" "=" types+=TypeRouting)*)?
 	| {Fragment} "Fragment-Header"
 	| {EncapsulingSecurityPayload} "Encapsuling-Security-Payload"
 	| {AuthentificationHeader} "Autentification-Header"
@@ -63,32 +63,31 @@ ExtensionHeader:
 ;
 
 OptionHopByHop:
-	{Pad1} "Pad1"
-	| {PadN} "PadN"
-	| {JumboPayload} "Jumbo-Payload"
+	{JumboPayload} "Jumbo-Payload"
 	| {RPLOption} "RPL-Option"
 	| {RouterAlert} "Router-Alert" ("where" "protocol" "=" protocol+=Protocol ("and" "protocol" "=" protocol+=Protocol)*)
 	| {QuickStart} "Quick-Start"
 	| {Calipso} "CALIPSO"
 	| {SmfDpd} "SMF_DPD"
-	| {EndPointIdentification} "Endpoint-Identification"
-	| {LineIdOption} "Line-Identification-Option"
-	| {Deprecated} "Deprecated"
 	| {MPLOption} "MPL-Option"
-	| {RFC3692Experiment} "RFC3962-Experiment"
+	| Options
 ;
 
 OptionDestination:
-	{Pad1} "Pad1"
-	| {PadN} "PadN"
-	| {EndPointIdentification} "Endpoint-Identification"
-	| {LineIdOption} "Line-Identification-Option"
-	| {Deprecated} "Deprecated"
-	| {RFC3692Experiment} "RFC3962-Experiment"
+	{LineIdOption} "Line-Identification-Option"
 	| {ILNPNonce} "ILNP-Nonce"
 	| {TunnelEncapsulationLimit} "Tunnel-Encapsulation-Limit"
 	| {IPv6PerformanceDiagnostic} "IPv6-Performance-Diagnostic"
 	| {HomeAdress} "Home-Adress"
+	| Options
+;
+
+Options:
+	{Pad1} "Pad1"
+	| {PadN} "PadN"
+	| {EndPointIdentification} "Endpoint-Identification"
+	| {Deprecated} "Deprecated"
+	| {RFC3692Experiment} "RFC3962-Experiment"
 ;
 
 TypeRouting:

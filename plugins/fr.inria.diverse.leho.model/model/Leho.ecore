@@ -30,8 +30,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="PacketSpec">
     <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="#//Port" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" upperBound="-1"
-        eType="#//ExtensionHeader" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1"
+        upperBound="-1" eType="#//ExtensionHeader" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="#//Port"/>
   <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="#//Port"/>
@@ -59,8 +59,8 @@
         eType="#//OptionHopByHop" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Routing" eSuperTypes="#//ExtensionHeader">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" upperBound="-1" eType="#//TypeRouting"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="types" upperBound="-1"
+        eType="#//TypeRouting" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Fragment" eSuperTypes="#//ExtensionHeader"/>
   <eClassifiers xsi:type="ecore:EClass" name="EncapsulingSecurityPayload" eSuperTypes="#//ExtensionHeader"/>
@@ -74,8 +74,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ExperimentationAndTesting" eSuperTypes="#//ExtensionHeader"/>
   <eClassifiers xsi:type="ecore:EClass" name="HostIdentityProtocol" eSuperTypes="#//ExtensionHeader"/>
   <eClassifiers xsi:type="ecore:EClass" name="Shim6Protocol" eSuperTypes="#//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Pad1" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PadN" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pad1" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PadN" eSuperTypes="#//Options"/>
   <eClassifiers xsi:type="ecore:EClass" name="JumboPayload" eSuperTypes="#//OptionHopByHop"/>
   <eClassifiers xsi:type="ecore:EClass" name="RPLOption" eSuperTypes="#//OptionHopByHop"/>
   <eClassifiers xsi:type="ecore:EClass" name="TunnelEncapsulationLimit" eSuperTypes="#//OptionDestination"/>
@@ -87,12 +87,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="Calipso" eSuperTypes="#//OptionHopByHop"/>
   <eClassifiers xsi:type="ecore:EClass" name="SmfDpd" eSuperTypes="#//OptionHopByHop"/>
   <eClassifiers xsi:type="ecore:EClass" name="HomeAdress" eSuperTypes="#//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Deprecated" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EndPointIdentification" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Deprecated" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EndPointIdentification" eSuperTypes="#//Options"/>
   <eClassifiers xsi:type="ecore:EClass" name="ILNPNonce" eSuperTypes="#//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LineIdOption" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LineIdOption" eSuperTypes="#//OptionDestination"/>
   <eClassifiers xsi:type="ecore:EClass" name="MPLOption" eSuperTypes="#//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment" eSuperTypes="#//Options"/>
   <eClassifiers xsi:type="ecore:EClass" name="IpAddSpec">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -137,4 +137,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="Reserved" eSuperTypes="#//TypeRouting"/>
   <eClassifiers xsi:type="ecore:EClass" name="DiscardDrop" eSuperTypes="#//Configuration"/>
   <eClassifiers xsi:type="ecore:EClass" name="DiscardReject" eSuperTypes="#//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DFF" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Options" abstract="true" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
 </ecore:EPackage>
