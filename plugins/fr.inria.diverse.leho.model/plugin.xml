@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Leho -->
       <package
-            uri="http://www.example.org/Leho"
+            uri="http://www.inria.fr/diverse/leho"
             class="fr.inria.diverse.leho.model.Leho.LehoPackage"
             genModel="model/Leho.genmodel"/>
    </extension>

@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Leho" nsURI="http://www.example.org/Leho" nsPrefix="Leho">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Leho" nsURI="http://www.inria.fr/diverse/leho" nsPrefix="Leho">
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
     <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="Policy">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" eType="#//Configuration"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="#//Filter"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentTime" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inPorts" upperBound="-1"
-        eType="#//Port" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="packets" upperBound="-1"
-        eType="#//Packet" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="#//Packet"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Configuration" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="#//Action"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Filter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="firstRule" lowerBound="1"
-        eType="#//Rule" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="currentRule" eType="#//Rule"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Action" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Allow" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="#//Action"/>
@@ -99,16 +81,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Port">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Packet">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inPort" lowerBound="1"
-        eType="#//Port"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Rule">
     <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1"
         eType="#//Action" containment="true"/>

@@ -16,10 +16,8 @@ Require-Bundle: org.eclipse.xtend.lib;bundle-version="2.7.0";visibility:=private
  fr.inria.diverse.melange.resource;bundle-version="0.1.0";visibility:=reexport,
  fr.inria.diverse.melange.adapters;bundle-version="0.1.0";visibility:=reexport,
  fr.inria.diverse.k3.al.annotationprocessor.plugin;bundle-version="0.0.0";visibility:=reexport,
+ fr.inria.diverse.gpfl.model;bundle-version="0.0.0";visibility:=private,
  fr.inria.diverse.leho.k3dsa;bundle-version="1.0.0",
  fr.inria.diverse.leho.model;bundle-version="0.1.0",
- fr.inria.diverse.gpfl.k3dsa;bundle-version="1.0.0",
- fr.inria.diverse.gpfl.model;bundle-version="0.1.0",
- fr.inria.diverse.leho.xdsml;bundle-version="1.0.0",
- fr.inria.diverse.gpfl.xdsml;bundle-version="1.0.0"
+ fr.inria.diverse.gpfl.k3dsa;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
