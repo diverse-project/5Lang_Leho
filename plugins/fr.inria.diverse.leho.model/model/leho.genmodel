@@ -1,109 +1,269 @@
 <?xml version="1.0" encoding="ASCII"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/fr.inria.diverse.leho.model/src-gen" creationIcons="false"
-    editDirectory="/fr.inria.diverse.leho.model.edit/src-gen" editorDirectory="/fr.inria.diverse.leho.model.editor/src-gen"
-    modelPluginID="fr.inria.diverse.leho.model" modelName="Leho" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
-    copyrightFields="false" operationReflection="true" importOrganizing="true">
-  <foreignModel>Leho.ecore</foreignModel>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.leho.model/src-gen" creationIcons="false" editDirectory="/fr.inria.diverse.leho.model.edit/src-gen" editorDirectory="/fr.inria.diverse.leho.model.editor/src-gen" modelPluginID="fr.inria.diverse.leho.model" modelName="Leho" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>leho.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="Leho" basePackage="fr.inria.diverse.leho.model" disposableProviderFactory="true"
-      ecorePackage="Leho.ecore#/">
-    <genClasses ecoreClass="Leho.ecore#//Configuration"/>
-    <genClasses ecoreClass="Leho.ecore#//Drop"/>
-    <genClasses ecoreClass="Leho.ecore#//Reject"/>
-    <genClasses ecoreClass="Leho.ecore#//Action"/>
-    <genClasses ecoreClass="Leho.ecore#//Allow"/>
-    <genClasses ecoreClass="Leho.ecore#//Discard"/>
-    <genClasses ecoreClass="Leho.ecore#//PacketSpec">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/port"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//PacketSpec/extensionheader"/>
+  <genPackages prefix="Leho" basePackage="fr.inria.diverse.leho.model" disposableProviderFactory="true">
+    <ecorePackage href="leho.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Configuration"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Inbound"/>
-    <genClasses ecoreClass="Leho.ecore#//Outbound"/>
-    <genClasses ecoreClass="Leho.ecore#//Bandwidth">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//Bandwidth/number"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Bandwidth/unit"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Bandwidth/time"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Drop"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Unit"/>
-    <genClasses ecoreClass="Leho.ecore#//Time"/>
-    <genClasses ecoreClass="Leho.ecore#//BitUnit"/>
-    <genClasses ecoreClass="Leho.ecore#//OctetUnit"/>
-    <genClasses ecoreClass="Leho.ecore#//PacketUnit"/>
-    <genClasses ecoreClass="Leho.ecore#//Second"/>
-    <genClasses ecoreClass="Leho.ecore#//Minute"/>
-    <genClasses ecoreClass="Leho.ecore#//Hour"/>
-    <genClasses ecoreClass="Leho.ecore#//Day"/>
-    <genClasses ecoreClass="Leho.ecore#//ExtensionHeader"/>
-    <genClasses ecoreClass="Leho.ecore#//OptionHopByHop"/>
-    <genClasses ecoreClass="Leho.ecore#//HopByHopOpts">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//HopByHopOpts/options"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Reject"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Routing">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Routing/types"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Action"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Fragment"/>
-    <genClasses ecoreClass="Leho.ecore#//EncapsulingSecurityPayload"/>
-    <genClasses ecoreClass="Leho.ecore#//AuthentificationHeader"/>
-    <genClasses ecoreClass="Leho.ecore#//DestinationOpts">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//DestinationOpts/options"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Accept"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//MobilityHeader"/>
-    <genClasses ecoreClass="Leho.ecore#//UnknownEH"/>
-    <genClasses ecoreClass="Leho.ecore#//ExperimentationAndTesting"/>
-    <genClasses ecoreClass="Leho.ecore#//HostIdentityProtocol"/>
-    <genClasses ecoreClass="Leho.ecore#//Shim6Protocol"/>
-    <genClasses ecoreClass="Leho.ecore#//Pad1"/>
-    <genClasses ecoreClass="Leho.ecore#//PadN"/>
-    <genClasses ecoreClass="Leho.ecore#//JumboPayload"/>
-    <genClasses ecoreClass="Leho.ecore#//RPLOption"/>
-    <genClasses ecoreClass="Leho.ecore#//TunnelEncapsulationLimit"/>
-    <genClasses ecoreClass="Leho.ecore#//RouterAlert">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//RouterAlert/protocol"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Discard"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//QuickStart"/>
-    <genClasses ecoreClass="Leho.ecore#//Calipso"/>
-    <genClasses ecoreClass="Leho.ecore#//SmfDpd"/>
-    <genClasses ecoreClass="Leho.ecore#//HomeAdress"/>
-    <genClasses ecoreClass="Leho.ecore#//Deprecated"/>
-    <genClasses ecoreClass="Leho.ecore#//EndPointIdentification"/>
-    <genClasses ecoreClass="Leho.ecore#//ILNPNonce"/>
-    <genClasses ecoreClass="Leho.ecore#//LineIdOption"/>
-    <genClasses ecoreClass="Leho.ecore#//MPLOption"/>
-    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment"/>
-    <genClasses ecoreClass="Leho.ecore#//IpAddSpec">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/adress"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/port"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Leho.ecore#//IpAddSpec/mask"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//PacketSpec"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//PacketSpec/port"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//PacketSpec/extensionheader"/>
+      </genFeatures>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Port"/>
-    <genClasses ecoreClass="Leho.ecore#//Rule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/action"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/packetspec"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/to"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/next"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Leho.ecore#//Rule/from"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Inbound"/>
     </genClasses>
-    <genClasses ecoreClass="Leho.ecore#//Protocol"/>
-    <genClasses ecoreClass="Leho.ecore#//RSVP"/>
-    <genClasses ecoreClass="Leho.ecore#//MLD"/>
-    <genClasses ecoreClass="Leho.ecore#//OptionDestination"/>
-    <genClasses ecoreClass="Leho.ecore#//IPv6PerformanceDiagnostic"/>
-    <genClasses ecoreClass="Leho.ecore#//TypeRouting"/>
-    <genClasses ecoreClass="Leho.ecore#//SourceRoute"/>
-    <genClasses ecoreClass="Leho.ecore#//Nimrod"/>
-    <genClasses ecoreClass="Leho.ecore#//Type2"/>
-    <genClasses ecoreClass="Leho.ecore#//RPLSource"/>
-    <genClasses ecoreClass="Leho.ecore#//Segment"/>
-    <genClasses ecoreClass="Leho.ecore#//Unassigned"/>
-    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment1"/>
-    <genClasses ecoreClass="Leho.ecore#//RFC3692Experiment2"/>
-    <genClasses ecoreClass="Leho.ecore#//Reserved"/>
-    <genClasses ecoreClass="Leho.ecore#//DiscardDrop"/>
-    <genClasses ecoreClass="Leho.ecore#//DiscardReject"/>
-    <genClasses ecoreClass="Leho.ecore#//DFF"/>
-    <genClasses ecoreClass="Leho.ecore#//Options"/>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Outbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Bandwidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="leho.ecore#//Bandwidth/number"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Bandwidth/unit"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Bandwidth/time"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Unit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Time"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//BitUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//OctetUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//PacketUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Second"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Minute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Hour"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Day"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//ExtensionHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//OptionHopByHop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//HopByHopOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//HopByHopOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Routing"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Routing/types"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Fragment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//EncapsulingSecurityPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//AuthentificationHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//DestinationOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//DestinationOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//MobilityHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//UnknownEH"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//ExperimentationAndTesting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//HostIdentityProtocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Shim6Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Pad1"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//PadN"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//JumboPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RPLOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//TunnelEncapsulationLimit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RouterAlert"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//RouterAlert/protocol"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//QuickStart"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Calipso"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//SmfDpd"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//HomeAdress"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Deprecated"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//EndPointIdentification"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//ILNPNonce"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//LineIdOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//MPLOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RFC3692Experiment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//IpAddSpec"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/adress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/port"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/mask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//TypeInterface"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Rule"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Rule/action"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Rule/packetspec"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Rule/to"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Rule/next"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="leho.ecore#//Rule/from"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RSVP"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//MLD"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//OptionDestination"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//IPv6PerformanceDiagnostic"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//TypeRouting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//SourceRoute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Nimrod"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Type2"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RPLSource"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Segment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Unassigned"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RFC3692Experiment1"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//RFC3692Experiment2"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Reserved"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//DiscardDrop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//DiscardReject"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//DFF"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="leho.ecore#//Options"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -1,0 +1,285 @@
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.ReservedAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Reserved){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.ReservedAspect.eval((fr.inria.diverse.leho.model.leho.Reserved)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.ReservedAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.EndPointIdentification){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.leho.model.leho.EndPointIdentification)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.QuickStartAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.QuickStart){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.QuickStartAspect.eval((fr.inria.diverse.leho.model.leho.QuickStart)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.QuickStartAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.FragmentAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Fragment){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.FragmentAspect.eval((fr.inria.diverse.leho.model.leho.Fragment)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.FragmentAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Deprecated){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect.eval((fr.inria.diverse.leho.model.leho.Deprecated)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.AuthentificationHeaderAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.AuthentificationHeader){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.AuthentificationHeaderAspect.eval((fr.inria.diverse.leho.model.leho.AuthentificationHeader)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.AuthentificationHeaderAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.UnknownEHAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.UnknownEH){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.UnknownEHAspect.eval((fr.inria.diverse.leho.model.leho.UnknownEH)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.UnknownEHAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.PadN){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect.eval((fr.inria.diverse.leho.model.leho.PadN)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.ILNPNonceAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.ILNPNonce){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.ILNPNonceAspect.eval((fr.inria.diverse.leho.model.leho.ILNPNonce)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.ILNPNonceAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DFFAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DFF){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.DFFAspect.eval((fr.inria.diverse.leho.model.leho.DFF)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DFFAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RPLSourceAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RPLSource){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RPLSourceAspect.eval((fr.inria.diverse.leho.model.leho.RPLSource)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RPLSourceAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardRejectAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardReject){
+			fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardRejectAspect.run((fr.inria.diverse.leho.model.leho.DiscardReject)_self);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardRejectAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.DestinationOptsAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DestinationOpts){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.DestinationOptsAspect.eval((fr.inria.diverse.leho.model.leho.DestinationOpts)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.DestinationOptsAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.TunnelEncapsulationLimitAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.TunnelEncapsulationLimit){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.TunnelEncapsulationLimitAspect.eval((fr.inria.diverse.leho.model.leho.TunnelEncapsulationLimit)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.TunnelEncapsulationLimitAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.Shim6ProtocolAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Shim6Protocol){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.Shim6ProtocolAspect.eval((fr.inria.diverse.leho.model.leho.Shim6Protocol)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.Shim6ProtocolAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Discard){
+			fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardAspect.run((fr.inria.diverse.leho.model.leho.Discard)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Pad1){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect.eval((fr.inria.diverse.leho.model.leho.Pad1)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.RejectAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Reject){
+			fr.inria.diverse.leho.k3dsa.leho.aspects.RejectAspect.run((fr.inria.diverse.leho.model.leho.Reject)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.RejectAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SourceRouteAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.SourceRoute){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.SourceRouteAspect.eval((fr.inria.diverse.leho.model.leho.SourceRoute)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SourceRouteAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RFC3692Experiment){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.leho.model.leho.RFC3692Experiment)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Pad1){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect.eval((fr.inria.diverse.leho.model.leho.Pad1)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Pad1){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect.eval((fr.inria.diverse.leho.model.leho.Pad1)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Pad1Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.LineIdOptionAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.LineIdOption){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.LineIdOptionAspect.eval((fr.inria.diverse.leho.model.leho.LineIdOption)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.LineIdOptionAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.PadN){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect.eval((fr.inria.diverse.leho.model.leho.PadN)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SmfDpdAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.SmfDpd){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.SmfDpdAspect.eval((fr.inria.diverse.leho.model.leho.SmfDpd)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SmfDpdAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RouterAlertAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RouterAlert){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RouterAlertAspect.eval((fr.inria.diverse.leho.model.leho.RouterAlert)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RouterAlertAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.RoutingAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Routing){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RoutingAspect.eval((fr.inria.diverse.leho.model.leho.Routing)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.RoutingAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.EncapsulingSecurityPayloadAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.EncapsulingSecurityPayload){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.EncapsulingSecurityPayloadAspect.eval((fr.inria.diverse.leho.model.leho.EncapsulingSecurityPayload)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.EncapsulingSecurityPayloadAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.ExperimentationAndTestingAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.ExperimentationAndTesting){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.ExperimentationAndTestingAspect.eval((fr.inria.diverse.leho.model.leho.ExperimentationAndTesting)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.ExperimentationAndTestingAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Deprecated){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect.eval((fr.inria.diverse.leho.model.leho.Deprecated)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RPLOptionAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RPLOption){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RPLOptionAspect.eval((fr.inria.diverse.leho.model.leho.RPLOption)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RPLOptionAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment2Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RFC3692Experiment2){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment2Aspect.eval((fr.inria.diverse.leho.model.leho.RFC3692Experiment2)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment2Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RFC3692Experiment){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.leho.model.leho.RFC3692Experiment)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.HopByHopOptsAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.HopByHopOpts){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.HopByHopOptsAspect.eval((fr.inria.diverse.leho.model.leho.HopByHopOpts)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.HopByHopOptsAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.EndPointIdentification){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.leho.model.leho.EndPointIdentification)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.CalipsoAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Calipso){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.CalipsoAspect.eval((fr.inria.diverse.leho.model.leho.Calipso)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.CalipsoAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RFC3692Experiment){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.leho.model.leho.RFC3692Experiment)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692ExperimentAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardDropAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardDrop){
+			fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardDropAspect.run((fr.inria.diverse.leho.model.leho.DiscardDrop)_self);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.leho.aspects.DiscardDropAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.NimrodAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Nimrod){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.NimrodAspect.eval((fr.inria.diverse.leho.model.leho.Nimrod)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.NimrodAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Options){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect.eval((fr.inria.diverse.leho.model.leho.Options)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Deprecated){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect.eval((fr.inria.diverse.leho.model.leho.Deprecated)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.DeprecatedAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ProtocolAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.MLDAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.MLD){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.MLDAspect.eval((fr.inria.diverse.leho.model.leho.MLD)_self,protocol);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ProtocolAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.MLDAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Type2Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Type2){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.Type2Aspect.eval((fr.inria.diverse.leho.model.leho.Type2)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.Type2Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Options){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect.eval((fr.inria.diverse.leho.model.leho.Options)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.OptionsAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.HomeAdressAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.HomeAdress){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.HomeAdressAspect.eval((fr.inria.diverse.leho.model.leho.HomeAdress)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.HomeAdressAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.EndPointIdentification){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.leho.model.leho.EndPointIdentification)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.EndPointIdentificationAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.IPv6PerformanceDiagnosticAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.IPv6PerformanceDiagnostic){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.IPv6PerformanceDiagnosticAspect.eval((fr.inria.diverse.leho.model.leho.IPv6PerformanceDiagnostic)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.IPv6PerformanceDiagnosticAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.MPLOptionAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.MPLOption){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.MPLOptionAspect.eval((fr.inria.diverse.leho.model.leho.MPLOption)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.MPLOptionAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.BandwidthAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Bandwidth){
+			fr.inria.diverse.leho.k3dsa.leho.aspects.BandwidthAspect.run((fr.inria.diverse.leho.model.leho.Bandwidth)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.BandwidthAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ProtocolAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RSVPAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RSVP){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RSVPAspect.eval((fr.inria.diverse.leho.model.leho.RSVP)_self,protocol);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ProtocolAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RSVPAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.MobilityHeaderAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.MobilityHeader){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.MobilityHeaderAspect.eval((fr.inria.diverse.leho.model.leho.MobilityHeader)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.MobilityHeaderAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SegmentAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Segment){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.SegmentAspect.eval((fr.inria.diverse.leho.model.leho.Segment)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.SegmentAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.HostIdentityProtocolAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.HostIdentityProtocol){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.HostIdentityProtocolAspect.eval((fr.inria.diverse.leho.model.leho.HostIdentityProtocol)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.leho.k3dsa.leho.aspects.HostIdentityProtocolAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment1Aspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.RFC3692Experiment1){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment1Aspect.eval((fr.inria.diverse.leho.model.leho.RFC3692Experiment1)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.RFC3692Experiment1Aspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.PadN){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect.eval((fr.inria.diverse.leho.model.leho.PadN)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.PadNAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.UnassignedAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Unassigned){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.UnassignedAspect.eval((fr.inria.diverse.leho.model.leho.Unassigned)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.UnassignedAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.JumboPayloadAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.JumboPayload){
+			result = fr.inria.diverse.leho.k3dsa.leho.aspects.JumboPayloadAspect.eval((fr.inria.diverse.leho.model.leho.JumboPayload)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.leho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.leho.k3dsa.leho.aspects.JumboPayloadAspect

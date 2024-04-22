@@ -7,10 +7,10 @@ Bundle-Version: 0.1.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: fr.inria.diverse.leho.model.Leho,
- fr.inria.diverse.leho.model.Leho.impl,
- fr.inria.diverse.leho.model.Leho.util
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: fr.inria.diverse.leho.model.leho,
+ fr.inria.diverse.leho.model.leho.impl,
+ fr.inria.diverse.leho.model.leho.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy

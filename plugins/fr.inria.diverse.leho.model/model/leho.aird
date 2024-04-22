@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_QXgiUMaLEe69D-H-e__5XQ" selectedViews="_QYW24MaLEe69D-H-e__5XQ" version="15.0.0.202201261500">
-    <semanticResources>Leho.ecore</semanticResources>
-    <semanticResources>Leho.genmodel</semanticResources>
+    <semanticResources>leho.ecore</semanticResources>
+    <semanticResources>leho.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_QYW24MaLEe69D-H-e__5XQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="Leho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="4b68bfed-dbaf-4e4b-97ce-1ac24cd4f2a1">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="Leho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="45d5e608-3d59-445d-98d4-d081f51f376f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
-        <target xmi:type="ecore:EPackage" href="Leho.ecore#/"/>
+        <target xmi:type="ecore:EPackage" href="leho.ecore#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -1894,8 +1894,8 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM01QMdEEe6D48_IYF6Wsg" name="Configuration" tooltipText="" incomingEdges="_CkGvA9SQEe65RI-g4e1q3w _F-UzetSQEe65RI-g4e1q3w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Configuration"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Configuration"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Configuration"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Configuration"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1906,8 +1906,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM01Q8dEEe6D48_IYF6Wsg" name="Drop" tooltipText="" outgoingEdges="_8tphYMwdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Drop"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Drop"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Drop"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Drop"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1918,8 +1918,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM01RsdEEe6D48_IYF6Wsg" name="Reject" tooltipText="" outgoingEdges="_8JzNsswdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Reject"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Reject"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Reject"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Reject"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1930,8 +1930,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM1cU8dEEe6D48_IYF6Wsg" name="Action" tooltipText="" incomingEdges="_XNXAxsdEEe6D48_IYF6Wsg _8JzNsswdEe6VscAWPgrMjA _8tphYMwdEe6VscAWPgrMjA _-CAFPMwdEe6VscAWPgrMjA _-mhHwswdEe6VscAWPgrMjA __Xss1swdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Action"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Action"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Action"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Action"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1941,9 +1941,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM1cVsdEEe6D48_IYF6Wsg" name="Allow" tooltipText="" outgoingEdges="_-mhHwswdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Allow"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Allow"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM1cVsdEEe6D48_IYF6Wsg" name="Accept" tooltipText="" outgoingEdges="_-mhHwswdEe6VscAWPgrMjA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Accept"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Accept"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1953,8 +1953,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM1cWcdEEe6D48_IYF6Wsg" name="Discard" tooltipText="" outgoingEdges="_-CAFPMwdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Discard"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Discard"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Discard"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Discard"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1964,8 +1964,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2DYsdEEe6D48_IYF6Wsg" name="PacketSpec" tooltipText="" outgoingEdges="_XNYO4MdEEe6D48_IYF6Wsg _XNYO7sdEEe6D48_IYF6Wsg" incomingEdges="_XNXAzcdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//PacketSpec"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//PacketSpec"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//PacketSpec"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//PacketSpec"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1975,8 +1975,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2DZcdEEe6D48_IYF6Wsg" name="Inbound" tooltipText="" outgoingEdges="_q1EEs8wfEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Inbound"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Inbound"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Inbound"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Inbound"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1986,8 +1986,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2DaMdEEe6D48_IYF6Wsg" name="Outbound" tooltipText="" outgoingEdges="_r1TZ7MwfEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Outbound"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Outbound"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Outbound"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Outbound"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1997,8 +1997,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2Da8dEEe6D48_IYF6Wsg" name="Bandwidth" tooltipText="" outgoingEdges="_XNY188dEEe6D48_IYF6Wsg _XNY1-sdEEe6D48_IYF6Wsg __Xss1swdEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Bandwidth"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Bandwidth"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Bandwidth"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Bandwidth"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2007,8 +2007,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_XNPsAMdEEe6D48_IYF6Wsg" name="number : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="Leho.ecore#//Bandwidth/number"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="Leho.ecore#//Bandwidth/number"/>
+        <target xmi:type="ecore:EAttribute" href="leho.ecore#//Bandwidth/number"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="leho.ecore#//Bandwidth/number"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_XNQTEMdEEe6D48_IYF6Wsg" labelAlignment="LEFT" description="_XNPFCMdEEe6D48_IYF6Wsg">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
@@ -2016,8 +2016,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2qcsdEEe6D48_IYF6Wsg" name="Unit" tooltipText="" incomingEdges="_XNY188dEEe6D48_IYF6Wsg _XNb5QMdEEe6D48_IYF6Wsg _XNcgVsdEEe6D48_IYF6Wsg _XNcgXcdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Unit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Unit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Unit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Unit"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2028,8 +2028,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2qdcdEEe6D48_IYF6Wsg" name="Time" tooltipText="" incomingEdges="_XNY1-sdEEe6D48_IYF6Wsg _XNcgZMdEEe6D48_IYF6Wsg _XNcga8dEEe6D48_IYF6Wsg _XNdHYMdEEe6D48_IYF6Wsg _XNdHZ8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Time"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Time"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Time"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Time"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2040,8 +2040,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM2qeMdEEe6D48_IYF6Wsg" name="BitUnit" tooltipText="" outgoingEdges="_XNb5QMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//BitUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//BitUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//BitUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//BitUnit"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2051,8 +2051,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM3RgMdEEe6D48_IYF6Wsg" name="OctetUnit" tooltipText="" outgoingEdges="_XNcgVsdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//OctetUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//OctetUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//OctetUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//OctetUnit"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2062,8 +2062,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM3Rg8dEEe6D48_IYF6Wsg" name="PacketUnit" tooltipText="" outgoingEdges="_XNcgXcdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//PacketUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//PacketUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//PacketUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//PacketUnit"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2073,8 +2073,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM34kMdEEe6D48_IYF6Wsg" name="Second" tooltipText="" outgoingEdges="_XNcgZMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Second"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Second"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Second"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Second"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2084,8 +2084,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM34k8dEEe6D48_IYF6Wsg" name="Minute" tooltipText="" outgoingEdges="_XNcga8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Minute"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Minute"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Minute"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Minute"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2095,8 +2095,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM34lsdEEe6D48_IYF6Wsg" name="Hour" tooltipText="" outgoingEdges="_XNdHYMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Hour"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Hour"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Hour"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Hour"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2106,8 +2106,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM34mcdEEe6D48_IYF6Wsg" name="Day" tooltipText="" outgoingEdges="_XNdHZ8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Day"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Day"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Day"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Day"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2117,8 +2117,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM4fosdEEe6D48_IYF6Wsg" name="ExtensionHeader" tooltipText="" incomingEdges="_XNYO7sdEEe6D48_IYF6Wsg _XNdHbsdEEe6D48_IYF6Wsg _XNdHdcdEEe6D48_IYF6Wsg _XNdHfMdEEe6D48_IYF6Wsg _XNdHg8dEEe6D48_IYF6Wsg _XNducMdEEe6D48_IYF6Wsg _XNdud8dEEe6D48_IYF6Wsg _XNdufsdEEe6D48_IYF6Wsg _XNduhcdEEe6D48_IYF6Wsg _XNdujMdEEe6D48_IYF6Wsg _XNduk8dEEe6D48_IYF6Wsg _XNeVhsdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//ExtensionHeader"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//ExtensionHeader"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//ExtensionHeader"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//ExtensionHeader"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2129,8 +2129,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM4fpcdEEe6D48_IYF6Wsg" name="OptionHopByHop" tooltipText="" incomingEdges="_XNYO9cdEEe6D48_IYF6Wsg _XNeVm8dEEe6D48_IYF6Wsg _XNeVosdEEe6D48_IYF6Wsg _XNe8msdEEe6D48_IYF6Wsg _XNe8ocdEEe6D48_IYF6Wsg _XNe8qMdEEe6D48_IYF6Wsg _XNe8r8dEEe6D48_IYF6Wsg _XNfjw8dEEe6D48_IYF6Wsg _vdEEhtbpEe6tTIwe30bXmA _8qWI-NcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//OptionHopByHop"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//OptionHopByHop"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//OptionHopByHop"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//OptionHopByHop"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2141,8 +2141,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM4fqMdEEe6D48_IYF6Wsg" name="HopByHopOpts" tooltipText="" outgoingEdges="_XNdHbsdEEe6D48_IYF6Wsg _XNYO9cdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HopByHopOpts"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HopByHopOpts"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HopByHopOpts"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HopByHopOpts"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2152,8 +2152,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM4fq8dEEe6D48_IYF6Wsg" name="Routing" tooltipText="" outgoingEdges="_XNdHdcdEEe6D48_IYF6Wsg _Wlz1N9JnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Routing"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Routing"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Routing"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Routing"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2163,8 +2163,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5GssdEEe6D48_IYF6Wsg" name="Fragment" tooltipText="" outgoingEdges="_XNdHfMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Fragment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Fragment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Fragment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Fragment"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2174,8 +2174,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5GtcdEEe6D48_IYF6Wsg" name="EncapsulingSecurityPayload" tooltipText="" outgoingEdges="_XNdHg8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//EncapsulingSecurityPayload"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//EncapsulingSecurityPayload"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//EncapsulingSecurityPayload"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//EncapsulingSecurityPayload"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2185,8 +2185,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5GuMdEEe6D48_IYF6Wsg" name="AuthentificationHeader" tooltipText="" outgoingEdges="_XNducMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//AuthentificationHeader"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//AuthentificationHeader"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//AuthentificationHeader"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//AuthentificationHeader"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2196,8 +2196,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5twMdEEe6D48_IYF6Wsg" name="DestinationOpts" tooltipText="" outgoingEdges="_XNdud8dEEe6D48_IYF6Wsg _ocJW2NJiEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DestinationOpts"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DestinationOpts"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DestinationOpts"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DestinationOpts"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2207,8 +2207,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5tw8dEEe6D48_IYF6Wsg" name="MobilityHeader" tooltipText="" outgoingEdges="_XNdufsdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MobilityHeader"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MobilityHeader"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MobilityHeader"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MobilityHeader"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2218,8 +2218,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5txsdEEe6D48_IYF6Wsg" name="UnknownEH" tooltipText="" outgoingEdges="_XNduhcdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//UnknownEH"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//UnknownEH"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//UnknownEH"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//UnknownEH"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2229,8 +2229,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM5tycdEEe6D48_IYF6Wsg" name="ExperimentationAndTesting" tooltipText="" outgoingEdges="_XNdujMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//ExperimentationAndTesting"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//ExperimentationAndTesting"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//ExperimentationAndTesting"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//ExperimentationAndTesting"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2240,8 +2240,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM6U0cdEEe6D48_IYF6Wsg" name="HostIdentityProtocol" tooltipText="" outgoingEdges="_XNduk8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HostIdentityProtocol"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HostIdentityProtocol"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HostIdentityProtocol"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HostIdentityProtocol"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2251,8 +2251,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM6U1MdEEe6D48_IYF6Wsg" name="Shim6Protocol" tooltipText="" outgoingEdges="_XNeVhsdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Shim6Protocol"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Shim6Protocol"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Shim6Protocol"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Shim6Protocol"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2262,8 +2262,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM6U18dEEe6D48_IYF6Wsg" name="Pad1" tooltipText="" outgoingEdges="_rNcM2NcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Pad1"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Pad1"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Pad1"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Pad1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2273,8 +2273,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM674MdEEe6D48_IYF6Wsg" name="PadN" tooltipText="" outgoingEdges="_tQMH0NcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//PadN"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//PadN"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//PadN"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//PadN"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2284,8 +2284,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM6748dEEe6D48_IYF6Wsg" name="JumboPayload" tooltipText="" outgoingEdges="_XNeVm8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//JumboPayload"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//JumboPayload"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//JumboPayload"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//JumboPayload"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2295,8 +2295,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM675sdEEe6D48_IYF6Wsg" name="RPLOption" tooltipText="" outgoingEdges="_XNeVosdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RPLOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RPLOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RPLOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RPLOption"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2306,8 +2306,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM676cdEEe6D48_IYF6Wsg" name="TunnelEncapsulationLimit" tooltipText="" outgoingEdges="_3trAatJiEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//TunnelEncapsulationLimit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//TunnelEncapsulationLimit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//TunnelEncapsulationLimit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//TunnelEncapsulationLimit"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2317,8 +2317,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM677MdEEe6D48_IYF6Wsg" name="RouterAlert" tooltipText="" outgoingEdges="_XNe8msdEEe6D48_IYF6Wsg _wDHgdtJoEe6axLeQT0pVzQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RouterAlert"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RouterAlert"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RouterAlert"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RouterAlert"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2328,8 +2328,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM7i8sdEEe6D48_IYF6Wsg" name="QuickStart" tooltipText="" outgoingEdges="_XNe8ocdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//QuickStart"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//QuickStart"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//QuickStart"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//QuickStart"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2339,8 +2339,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM7i9cdEEe6D48_IYF6Wsg" name="Calipso" tooltipText="" outgoingEdges="_XNe8qMdEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Calipso"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Calipso"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Calipso"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Calipso"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2350,8 +2350,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM7i-MdEEe6D48_IYF6Wsg" name="SmfDpd" tooltipText="" outgoingEdges="_XNe8r8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//SmfDpd"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//SmfDpd"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//SmfDpd"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//SmfDpd"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2361,8 +2361,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8KAMdEEe6D48_IYF6Wsg" name="HomeAdress" tooltipText="" outgoingEdges="_BoyltNJjEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HomeAdress"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HomeAdress"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HomeAdress"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HomeAdress"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2372,8 +2372,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8KA8dEEe6D48_IYF6Wsg" name="Deprecated" tooltipText="" outgoingEdges="_wtzeIdcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Deprecated"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Deprecated"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Deprecated"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Deprecated"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2383,8 +2383,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8KBsdEEe6D48_IYF6Wsg" name="EndPointIdentification" tooltipText="" outgoingEdges="_uywuBtcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//EndPointIdentification"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//EndPointIdentification"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//EndPointIdentification"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//EndPointIdentification"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2394,8 +2394,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8xEcdEEe6D48_IYF6Wsg" name="ILNPNonce" tooltipText="" outgoingEdges="_PctorNJjEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//ILNPNonce"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//ILNPNonce"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//ILNPNonce"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//ILNPNonce"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2405,8 +2405,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8xFMdEEe6D48_IYF6Wsg" name="LineIdOption" tooltipText="" outgoingEdges="_Q14bWtJjEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//LineIdOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//LineIdOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//LineIdOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//LineIdOption"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2416,8 +2416,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM8xF8dEEe6D48_IYF6Wsg" name="MPLOption" tooltipText="" outgoingEdges="_XNfjw8dEEe6D48_IYF6Wsg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MPLOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MPLOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MPLOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MPLOption"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2427,8 +2427,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9YI8dEEe6D48_IYF6Wsg" name="RFC3692Experiment" tooltipText="" outgoingEdges="_yKb0UtcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2438,8 +2438,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9YKcdEEe6D48_IYF6Wsg" name="IpAddSpec" tooltipText="" incomingEdges="_XNYO_MdEEe6D48_IYF6Wsg _Se2168wcEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//IpAddSpec"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//IpAddSpec"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//IpAddSpec"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//IpAddSpec"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2448,33 +2448,33 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_XNQ6IMdEEe6D48_IYF6Wsg" name="adress : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/adress"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/adress"/>
+        <target xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/adress"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/adress"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_XNQ6IcdEEe6D48_IYF6Wsg" labelAlignment="LEFT" description="_XNPFCMdEEe6D48_IYF6Wsg">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_XNQ6IsdEEe6D48_IYF6Wsg" name="port : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/port"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/port"/>
+        <target xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/port"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/port"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_XNQ6I8dEEe6D48_IYF6Wsg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_XNQ6JMdEEe6D48_IYF6Wsg" name="mask : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/mask"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="Leho.ecore#//IpAddSpec/mask"/>
+        <target xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/mask"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="leho.ecore#//IpAddSpec/mask"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_XNRhMMdEEe6D48_IYF6Wsg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9_M8dEEe6D48_IYF6Wsg" name="Port" tooltipText="" incomingEdges="_XNYO4MdEEe6D48_IYF6Wsg _q1EEs8wfEe6VscAWPgrMjA _r1TZ7MwfEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Port"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Port"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9_M8dEEe6D48_IYF6Wsg" name="TypeInterface" tooltipText="" incomingEdges="_XNYO4MdEEe6D48_IYF6Wsg _q1EEs8wfEe6VscAWPgrMjA _r1TZ7MwfEe6VscAWPgrMjA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="leho.ecore#//TypeInterface"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//TypeInterface"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2486,8 +2486,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNXAxsdEEe6D48_IYF6Wsg" name="[1..1] action" sourceNode="_KfCIcMdOEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Rule/action"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Rule/action"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Rule/action"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Rule/action"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNXAx8dEEe6D48_IYF6Wsg" description="_XNVLkcdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNXAycdEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2500,8 +2500,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNXAzcdEEe6D48_IYF6Wsg" name="[1..1] packetspec" sourceNode="_KfCIcMdOEe6D48_IYF6Wsg" targetNode="_XM2DYsdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Rule/packetspec"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Rule/packetspec"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Rule/packetspec"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Rule/packetspec"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNXAzsdEEe6D48_IYF6Wsg" description="_XNVLkcdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNXA0MdEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2514,8 +2514,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNYO4MdEEe6D48_IYF6Wsg" name="[0..1] port" sourceNode="_XM2DYsdEEe6D48_IYF6Wsg" targetNode="_XM9_M8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//PacketSpec/port"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//PacketSpec/port"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//PacketSpec/port"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//PacketSpec/port"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNYO4cdEEe6D48_IYF6Wsg" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNYO48dEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2527,8 +2527,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNYO7sdEEe6D48_IYF6Wsg" name="[1..*] extensionheader" sourceNode="_XM2DYsdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//PacketSpec/extensionheader"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//PacketSpec/extensionheader"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//PacketSpec/extensionheader"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//PacketSpec/extensionheader"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EsVQ0tZGEe6ju6IxiyoWbA" description="_XNVLkcdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EsVQ1NZGEe6ju6IxiyoWbA" showIcon="false">
           <labelFormat>bold</labelFormat>
@@ -2538,8 +2538,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNYO9cdEEe6D48_IYF6Wsg" name="[0..*] options" sourceNode="_XM4fqMdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//HopByHopOpts/options"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//HopByHopOpts/options"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//HopByHopOpts/options"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//HopByHopOpts/options"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNYO9sdEEe6D48_IYF6Wsg" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNYO-MdEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2551,8 +2551,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNYO_MdEEe6D48_IYF6Wsg" name="[0..1] to" sourceNode="_KfCIcMdOEe6D48_IYF6Wsg" targetNode="_XM9YKcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Rule/to"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Rule/to"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Rule/to"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Rule/to"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9TrvzdCcEe6gzPNf0Z9nEw" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9Trvz9CcEe6gzPNf0Z9nEw" showIcon="false"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_9TrvztCcEe6gzPNf0Z9nEw" labelSize="6" showIcon="false" labelColor="39,76,114"/>
@@ -2560,8 +2560,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNY188dEEe6D48_IYF6Wsg" name="[1..1] unit" sourceNode="_XM2Da8dEEe6D48_IYF6Wsg" targetNode="_XM2qcsdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Bandwidth/unit"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Bandwidth/unit"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Bandwidth/unit"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Bandwidth/unit"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNY19MdEEe6D48_IYF6Wsg" description="_XNVLkcdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNY19sdEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2574,8 +2574,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNY1-sdEEe6D48_IYF6Wsg" name="[1..1] time" sourceNode="_XM2Da8dEEe6D48_IYF6Wsg" targetNode="_XM2qdcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Bandwidth/time"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Bandwidth/time"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Bandwidth/time"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Bandwidth/time"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNY1-8dEEe6D48_IYF6Wsg" description="_XNVLkcdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XNY1_cdEEe6D48_IYF6Wsg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -2588,8 +2588,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNb5QMdEEe6D48_IYF6Wsg" sourceNode="_XM2qeMdEEe6D48_IYF6Wsg" targetNode="_XM2qcsdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//BitUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//BitUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//BitUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//BitUnit"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_URrwQMmpEe6uz7sPqknyUQ" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_URrwQcmpEe6uz7sPqknyUQ" showIcon="false">
@@ -2600,8 +2600,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNcgVsdEEe6D48_IYF6Wsg" sourceNode="_XM3RgMdEEe6D48_IYF6Wsg" targetNode="_XM2qcsdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//OctetUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//OctetUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//OctetUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//OctetUnit"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNcgV8dEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNcgWMdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2612,8 +2612,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNcgXcdEEe6D48_IYF6Wsg" sourceNode="_XM3Rg8dEEe6D48_IYF6Wsg" targetNode="_XM2qcsdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//PacketUnit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//PacketUnit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//PacketUnit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//PacketUnit"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNcgXsdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNcgX8dEEe6D48_IYF6Wsg" showIcon="false">
@@ -2624,8 +2624,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNcgZMdEEe6D48_IYF6Wsg" sourceNode="_XM34kMdEEe6D48_IYF6Wsg" targetNode="_XM2qdcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Second"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Second"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Second"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Second"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNcgZcdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNcgZsdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2636,8 +2636,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNcga8dEEe6D48_IYF6Wsg" sourceNode="_XM34k8dEEe6D48_IYF6Wsg" targetNode="_XM2qdcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Minute"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Minute"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Minute"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Minute"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNcgbMdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNcgbcdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2648,8 +2648,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHYMdEEe6D48_IYF6Wsg" sourceNode="_XM34lsdEEe6D48_IYF6Wsg" targetNode="_XM2qdcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Hour"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Hour"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Hour"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Hour"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHYcdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHYsdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2660,8 +2660,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHZ8dEEe6D48_IYF6Wsg" sourceNode="_XM34mcdEEe6D48_IYF6Wsg" targetNode="_XM2qdcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Day"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Day"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Day"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Day"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHaMdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHacdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2672,8 +2672,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHbsdEEe6D48_IYF6Wsg" sourceNode="_XM4fqMdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HopByHopOpts"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HopByHopOpts"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HopByHopOpts"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HopByHopOpts"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHb8dEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHcMdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2684,8 +2684,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHdcdEEe6D48_IYF6Wsg" sourceNode="_XM4fq8dEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Routing"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Routing"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Routing"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Routing"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHdsdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHd8dEEe6D48_IYF6Wsg" showIcon="false">
@@ -2696,8 +2696,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHfMdEEe6D48_IYF6Wsg" sourceNode="_XM5GssdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Fragment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Fragment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Fragment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Fragment"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHfcdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHfsdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2708,8 +2708,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdHg8dEEe6D48_IYF6Wsg" sourceNode="_XM5GtcdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//EncapsulingSecurityPayload"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//EncapsulingSecurityPayload"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//EncapsulingSecurityPayload"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//EncapsulingSecurityPayload"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdHhMdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdHhcdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2720,8 +2720,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNducMdEEe6D48_IYF6Wsg" sourceNode="_XM5GuMdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//AuthentificationHeader"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//AuthentificationHeader"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//AuthentificationHeader"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//AuthentificationHeader"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNduccdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNducsdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2732,8 +2732,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdud8dEEe6D48_IYF6Wsg" sourceNode="_XM5twMdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DestinationOpts"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DestinationOpts"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DestinationOpts"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DestinationOpts"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdueMdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNduecdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2744,8 +2744,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdufsdEEe6D48_IYF6Wsg" sourceNode="_XM5tw8dEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MobilityHeader"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MobilityHeader"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MobilityHeader"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MobilityHeader"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNduf8dEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdugMdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2756,8 +2756,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNduhcdEEe6D48_IYF6Wsg" sourceNode="_XM5txsdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//UnknownEH"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//UnknownEH"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//UnknownEH"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//UnknownEH"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNduhsdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNduh8dEEe6D48_IYF6Wsg" showIcon="false">
@@ -2768,8 +2768,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNdujMdEEe6D48_IYF6Wsg" sourceNode="_XM5tycdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//ExperimentationAndTesting"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//ExperimentationAndTesting"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//ExperimentationAndTesting"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//ExperimentationAndTesting"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNdujcdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNdujsdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2780,8 +2780,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNduk8dEEe6D48_IYF6Wsg" sourceNode="_XM6U0cdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HostIdentityProtocol"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HostIdentityProtocol"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HostIdentityProtocol"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HostIdentityProtocol"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNeVgMdEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNeVgcdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2792,8 +2792,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNeVhsdEEe6D48_IYF6Wsg" sourceNode="_XM6U1MdEEe6D48_IYF6Wsg" targetNode="_XM4fosdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Shim6Protocol"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Shim6Protocol"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Shim6Protocol"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Shim6Protocol"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XNeVh8dEEe6D48_IYF6Wsg" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_XNeViMdEEe6D48_IYF6Wsg" showIcon="false">
@@ -2804,8 +2804,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNeVm8dEEe6D48_IYF6Wsg" sourceNode="_XM6748dEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//JumboPayload"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//JumboPayload"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//JumboPayload"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//JumboPayload"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cJzUtcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cJzU9cUEe6tTIwe30bXmA" showIcon="false">
@@ -2816,8 +2816,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNeVosdEEe6D48_IYF6Wsg" sourceNode="_XM675sdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RPLOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RPLOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RPLOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RPLOption"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cJzWNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cJzWdcUEe6tTIwe30bXmA" showIcon="false">
@@ -2828,8 +2828,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNe8msdEEe6D48_IYF6Wsg" sourceNode="_XM677MdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RouterAlert"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RouterAlert"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RouterAlert"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RouterAlert"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cJzZNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cJzZdcUEe6tTIwe30bXmA" showIcon="false">
@@ -2840,8 +2840,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNe8ocdEEe6D48_IYF6Wsg" sourceNode="_XM7i8sdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//QuickStart"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//QuickStart"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//QuickStart"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//QuickStart"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cJzatcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cJza9cUEe6tTIwe30bXmA" showIcon="false">
@@ -2852,8 +2852,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNe8qMdEEe6D48_IYF6Wsg" sourceNode="_XM7i9cdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Calipso"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Calipso"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Calipso"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Calipso"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cKaINcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cKaIdcUEe6tTIwe30bXmA" showIcon="false">
@@ -2864,8 +2864,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNe8r8dEEe6D48_IYF6Wsg" sourceNode="_XM7i-MdEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//SmfDpd"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//SmfDpd"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//SmfDpd"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//SmfDpd"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cKaJtcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cKaJ9cUEe6tTIwe30bXmA" showIcon="false">
@@ -2876,8 +2876,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XNfjw8dEEe6D48_IYF6Wsg" sourceNode="_XM8xF8dEEe6D48_IYF6Wsg" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MPLOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MPLOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MPLOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MPLOption"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cKaStcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cKaS9cUEe6tTIwe30bXmA" showIcon="false">
@@ -2888,8 +2888,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_KfCIcMdOEe6D48_IYF6Wsg" name="Rule" tooltipText="" outgoingEdges="_XNXAxsdEEe6D48_IYF6Wsg _XNXAzcdEEe6D48_IYF6Wsg _XNYO_MdEEe6D48_IYF6Wsg _zDiR7MdOEe69mfUoWJsaCg _Se2168wcEe6VscAWPgrMjA" incomingEdges="_zDiR7MdOEe69mfUoWJsaCg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Rule"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Rule"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Rule"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Rule"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2899,8 +2899,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zDiR7MdOEe69mfUoWJsaCg" name="[0..1] next" sourceNode="_KfCIcMdOEe6D48_IYF6Wsg" targetNode="_KfCIcMdOEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Rule/next"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Rule/next"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Rule/next"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Rule/next"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_SqPnu8wREe62b6f9gth--w" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_SqPnvcwREe62b6f9gth--w" showIcon="false"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_SqPnvMwREe62b6f9gth--w" labelSize="6" showIcon="false" labelColor="39,76,114"/>
@@ -2908,8 +2908,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_esYV4MwMEe62b6f9gth--w" name="Protocol" tooltipText="" incomingEdges="_oBAGZNClEe6xR51hav6PtA _q8hcJNClEe6xR51hav6PtA _wDHgdtJoEe6axLeQT0pVzQ" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Protocol"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Protocol"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Protocol"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Protocol"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -2920,8 +2920,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Se2168wcEe6VscAWPgrMjA" name="[0..1] from" sourceNode="_KfCIcMdOEe6D48_IYF6Wsg" targetNode="_XM9YKcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Rule/from"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Rule/from"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Rule/from"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Rule/from"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_9yPT8tCcEe6gzPNf0Z9nEw" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_9yPT9NCcEe6gzPNf0Z9nEw" showIcon="false"/>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_9yPT89CcEe6gzPNf0Z9nEw" labelSize="6" showIcon="false" labelColor="39,76,114"/>
@@ -2929,8 +2929,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8JzNsswdEe6VscAWPgrMjA" sourceNode="_XM01RsdEEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Reject"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Reject"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Reject"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Reject"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8Jz0gMwdEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_8Jz0gcwdEe6VscAWPgrMjA" showIcon="false">
@@ -2941,8 +2941,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8tphYMwdEe6VscAWPgrMjA" sourceNode="_XM01Q8dEEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Drop"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Drop"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Drop"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Drop"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8tphYcwdEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_8tphYswdEe6VscAWPgrMjA" showIcon="false">
@@ -2953,8 +2953,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-CAFPMwdEe6VscAWPgrMjA" sourceNode="_XM1cWcdEEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Discard"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Discard"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Discard"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Discard"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-CAFPcwdEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_-CAFPswdEe6VscAWPgrMjA" showIcon="false">
@@ -2965,8 +2965,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-mhHwswdEe6VscAWPgrMjA" sourceNode="_XM1cVsdEEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Allow"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Allow"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Accept"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Accept"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-mhHw8wdEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_-mhHxMwdEe6VscAWPgrMjA" showIcon="false">
@@ -2977,8 +2977,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__Xss1swdEe6VscAWPgrMjA" sourceNode="_XM2Da8dEEe6D48_IYF6Wsg" targetNode="_XM1cU8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Bandwidth"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Bandwidth"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Bandwidth"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Bandwidth"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__Xss18wdEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__Xss2MwdEe6VscAWPgrMjA" showIcon="false">
@@ -2989,8 +2989,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_q1EEs8wfEe6VscAWPgrMjA" sourceNode="_XM2DZcdEEe6D48_IYF6Wsg" targetNode="_XM9_M8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Inbound"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Inbound"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Inbound"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Inbound"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_q1EEtMwfEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_q1EEtcwfEe6VscAWPgrMjA" showIcon="false">
@@ -3001,8 +3001,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r1TZ7MwfEe6VscAWPgrMjA" sourceNode="_XM2DaMdEEe6D48_IYF6Wsg" targetNode="_XM9_M8dEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Outbound"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Outbound"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Outbound"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Outbound"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r1TZ7cwfEe6VscAWPgrMjA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_r1TZ7swfEe6VscAWPgrMjA" showIcon="false">
@@ -3013,8 +3013,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mAyh0NClEe6xR51hav6PtA" name="RSVP" tooltipText="" outgoingEdges="_oBAGZNClEe6xR51hav6PtA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RSVP"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RSVP"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RSVP"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RSVP"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3024,8 +3024,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oBAGZNClEe6xR51hav6PtA" sourceNode="_mAyh0NClEe6xR51hav6PtA" targetNode="_esYV4MwMEe62b6f9gth--w">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RSVP"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RSVP"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RSVP"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RSVP"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oBAtINClEe6xR51hav6PtA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_oBAtIdClEe6xR51hav6PtA" showIcon="false">
@@ -3036,8 +3036,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_o-4qoNClEe6xR51hav6PtA" name="MLD" tooltipText="" outgoingEdges="_q8hcJNClEe6xR51hav6PtA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MLD"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MLD"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MLD"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MLD"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3047,8 +3047,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_q8hcJNClEe6xR51hav6PtA" sourceNode="_o-4qoNClEe6xR51hav6PtA" targetNode="_esYV4MwMEe62b6f9gth--w">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//MLD"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//MLD"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//MLD"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//MLD"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_q8hcJdClEe6xR51hav6PtA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_q8hcJtClEe6xR51hav6PtA" showIcon="false">
@@ -3059,8 +3059,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_jotc8NJiEe6_GoSKKxIIog" name="OptionDestination" tooltipText="" incomingEdges="_ocJW2NJiEe6_GoSKKxIIog _3trAatJiEe6_GoSKKxIIog _87Lm5NJiEe6_GoSKKxIIog _BoyltNJjEe6_GoSKKxIIog _PctorNJjEe6_GoSKKxIIog _Q14bWtJjEe6_GoSKKxIIog _9u3g0tcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//OptionDestination"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//OptionDestination"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//OptionDestination"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//OptionDestination"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3071,8 +3071,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ocJW2NJiEe6_GoSKKxIIog" name="[0..*] options" sourceNode="_XM5twMdEEe6D48_IYF6Wsg" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//DestinationOpts/options"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//DestinationOpts/options"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//DestinationOpts/options"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//DestinationOpts/options"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ocJW2dJiEe6_GoSKKxIIog" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ocJW29JiEe6_GoSKKxIIog" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -3084,8 +3084,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3trAatJiEe6_GoSKKxIIog" sourceNode="_XM676cdEEe6D48_IYF6Wsg" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//TunnelEncapsulationLimit"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//TunnelEncapsulationLimit"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//TunnelEncapsulationLimit"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//TunnelEncapsulationLimit"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnAINcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnAIdcUEe6tTIwe30bXmA" showIcon="false">
@@ -3096,8 +3096,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_4-aPMNJiEe6_GoSKKxIIog" name="IPv6PerformanceDiagnostic" tooltipText="" outgoingEdges="_87Lm5NJiEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//IPv6PerformanceDiagnostic"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//IPv6PerformanceDiagnostic"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//IPv6PerformanceDiagnostic"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//IPv6PerformanceDiagnostic"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3107,8 +3107,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_87Lm5NJiEe6_GoSKKxIIog" sourceNode="_4-aPMNJiEe6_GoSKKxIIog" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//IPv6PerformanceDiagnostic"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//IPv6PerformanceDiagnostic"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//IPv6PerformanceDiagnostic"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//IPv6PerformanceDiagnostic"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnAdNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnAddcUEe6tTIwe30bXmA" showIcon="false">
@@ -3119,8 +3119,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_BoyltNJjEe6_GoSKKxIIog" sourceNode="_XM8KAMdEEe6D48_IYF6Wsg" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//HomeAdress"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//HomeAdress"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//HomeAdress"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//HomeAdress"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnAPtcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnAP9cUEe6tTIwe30bXmA" showIcon="false">
@@ -3131,8 +3131,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PctorNJjEe6_GoSKKxIIog" sourceNode="_XM8xEcdEEe6D48_IYF6Wsg" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//ILNPNonce"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//ILNPNonce"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//ILNPNonce"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//ILNPNonce"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnAUNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnAUdcUEe6tTIwe30bXmA" showIcon="false">
@@ -3143,8 +3143,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Q14bWtJjEe6_GoSKKxIIog" sourceNode="_XM8xFMdEEe6D48_IYF6Wsg" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//LineIdOption"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//LineIdOption"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//LineIdOption"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//LineIdOption"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnAVtcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnAV9cUEe6tTIwe30bXmA" showIcon="false">
@@ -3155,8 +3155,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_JjylsNJmEe6_GoSKKxIIog" name="TypeRouting" tooltipText="" incomingEdges="_2Tar0tJmEe6_GoSKKxIIog _2zsHXtJmEe6_GoSKKxIIog _78iQgdJmEe6_GoSKKxIIog __WhreNJmEe6_GoSKKxIIog _GNHIYtJnEe6_GoSKKxIIog _JZtALNJnEe6_GoSKKxIIog _N2f73tJnEe6_GoSKKxIIog _QdyG5tJnEe6_GoSKKxIIog _VLt2BtJnEe6_GoSKKxIIog _Wlz1N9JnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//TypeRouting"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//TypeRouting"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//TypeRouting"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//TypeRouting"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3167,8 +3167,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_yRIiENJmEe6_GoSKKxIIog" name="SourceRoute" tooltipText="" outgoingEdges="_2Tar0tJmEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//SourceRoute"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//SourceRoute"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//SourceRoute"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//SourceRoute"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3178,8 +3178,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_08Kk8NJmEe6_GoSKKxIIog" name="Nimrod" tooltipText="" outgoingEdges="_2zsHXtJmEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Nimrod"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Nimrod"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Nimrod"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Nimrod"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3189,8 +3189,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2Tar0tJmEe6_GoSKKxIIog" sourceNode="_yRIiENJmEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//SourceRoute"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//SourceRoute"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//SourceRoute"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//SourceRoute"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2Tar09JmEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_2Tar1NJmEe6_GoSKKxIIog" showIcon="false">
@@ -3201,8 +3201,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2zsHXtJmEe6_GoSKKxIIog" sourceNode="_08Kk8NJmEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Nimrod"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Nimrod"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Nimrod"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Nimrod"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2zsHX9JmEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_2zsHYNJmEe6_GoSKKxIIog" showIcon="false">
@@ -3213,8 +3213,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6k8yYNJmEe6_GoSKKxIIog" name="Type2" tooltipText="" outgoingEdges="_78iQgdJmEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Type2"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Type2"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Type2"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Type2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3224,8 +3224,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_78iQgdJmEe6_GoSKKxIIog" sourceNode="_6k8yYNJmEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Type2"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Type2"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Type2"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Type2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_78iQgtJmEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_78iQg9JmEe6_GoSKKxIIog" showIcon="false">
@@ -3236,8 +3236,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_9aIPwNJmEe6_GoSKKxIIog" name="RPLSource" tooltipText="" outgoingEdges="__WhreNJmEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RPLSource"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RPLSource"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RPLSource"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RPLSource"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3247,8 +3247,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__WhreNJmEe6_GoSKKxIIog" sourceNode="_9aIPwNJmEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RPLSource"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RPLSource"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RPLSource"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RPLSource"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__WhredJmEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="__WhretJmEe6_GoSKKxIIog" showIcon="false">
@@ -3259,8 +3259,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ASwpwNJnEe6_GoSKKxIIog" name="Segment" tooltipText="" outgoingEdges="_GNHIYtJnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Segment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Segment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Segment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Segment"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3270,8 +3270,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GNHIYtJnEe6_GoSKKxIIog" sourceNode="_ASwpwNJnEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Segment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Segment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Segment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Segment"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GNHIY9JnEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_GNHIZNJnEe6_GoSKKxIIog" showIcon="false">
@@ -3282,8 +3282,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_G4oxkNJnEe6_GoSKKxIIog" name="Unassigned" tooltipText="" outgoingEdges="_JZtALNJnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Unassigned"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Unassigned"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Unassigned"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Unassigned"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3293,8 +3293,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JZtALNJnEe6_GoSKKxIIog" sourceNode="_G4oxkNJnEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Unassigned"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Unassigned"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Unassigned"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Unassigned"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JZtALdJnEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_JZtALtJnEe6_GoSKKxIIog" showIcon="false">
@@ -3305,8 +3305,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_KFSTwNJnEe6_GoSKKxIIog" name="RFC3692Experiment1" tooltipText="" outgoingEdges="_N2f73tJnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment1"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment1"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment1"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3316,8 +3316,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_N2f73tJnEe6_GoSKKxIIog" sourceNode="_KFSTwNJnEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment1"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment1"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment1"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_N2gioNJnEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_N2giodJnEe6_GoSKKxIIog" showIcon="false">
@@ -3328,8 +3328,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_OP0agNJnEe6_GoSKKxIIog" name="RFC3692Experiment2" tooltipText="" outgoingEdges="_QdyG5tJnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment2"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment2"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment2"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3339,8 +3339,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QdyG5tJnEe6_GoSKKxIIog" sourceNode="_OP0agNJnEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment2"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment2"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment2"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QdyG59JnEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_QdyG6NJnEe6_GoSKKxIIog" showIcon="false">
@@ -3351,8 +3351,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RfQyANJnEe6_GoSKKxIIog" name="Reserved" tooltipText="" outgoingEdges="_VLt2BtJnEe6_GoSKKxIIog" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Reserved"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Reserved"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Reserved"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Reserved"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3362,8 +3362,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_VLt2BtJnEe6_GoSKKxIIog" sourceNode="_RfQyANJnEe6_GoSKKxIIog" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Reserved"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Reserved"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Reserved"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Reserved"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_VLucsNJnEe6_GoSKKxIIog" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_VLucsdJnEe6_GoSKKxIIog" showIcon="false">
@@ -3374,8 +3374,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Wlz1N9JnEe6_GoSKKxIIog" name="[0..*] types" sourceNode="_XM4fq8dEEe6D48_IYF6Wsg" targetNode="_JjylsNJmEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//Routing/types"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//Routing/types"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//Routing/types"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//Routing/types"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Wl0cINJnEe6_GoSKKxIIog" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Wl0cItJnEe6_GoSKKxIIog" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -3387,8 +3387,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wDHgdtJoEe6axLeQT0pVzQ" name="[0..*] protocol" sourceNode="_XM677MdEEe6D48_IYF6Wsg" targetNode="_esYV4MwMEe62b6f9gth--w">
-      <target xmi:type="ecore:EReference" href="Leho.ecore#//RouterAlert/protocol"/>
-      <semanticElements xmi:type="ecore:EReference" href="Leho.ecore#//RouterAlert/protocol"/>
+      <target xmi:type="ecore:EReference" href="leho.ecore#//RouterAlert/protocol"/>
+      <semanticElements xmi:type="ecore:EReference" href="leho.ecore#//RouterAlert/protocol"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wDIukNJoEe6axLeQT0pVzQ" description="_XNVypMdEEe6D48_IYF6Wsg" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wDIuktJoEe6axLeQT0pVzQ" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -3400,8 +3400,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="__S1ykNSPEe65RI-g4e1q3w" name="DiscardDrop" tooltipText="" outgoingEdges="_CkGvA9SQEe65RI-g4e1q3w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DiscardDrop"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DiscardDrop"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DiscardDrop"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DiscardDrop"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3411,8 +3411,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_CkGvA9SQEe65RI-g4e1q3w" sourceNode="__S1ykNSPEe65RI-g4e1q3w" targetNode="_XM01QMdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DiscardDrop"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DiscardDrop"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DiscardDrop"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DiscardDrop"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_CkGvBNSQEe65RI-g4e1q3w" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_CkGvBdSQEe65RI-g4e1q3w" showIcon="false">
@@ -3423,8 +3423,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DGaK0NSQEe65RI-g4e1q3w" name="DiscardReject" tooltipText="" outgoingEdges="_F-UzetSQEe65RI-g4e1q3w" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DiscardReject"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DiscardReject"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DiscardReject"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DiscardReject"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3434,8 +3434,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_F-UzetSQEe65RI-g4e1q3w" sourceNode="_DGaK0NSQEe65RI-g4e1q3w" targetNode="_XM01QMdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DiscardReject"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DiscardReject"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DiscardReject"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DiscardReject"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_F-VaMNSQEe65RI-g4e1q3w" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_F-VaMdSQEe65RI-g4e1q3w" showIcon="false">
@@ -3446,8 +3446,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_tNq0YNbpEe6tTIwe30bXmA" name="DFF" tooltipText="" outgoingEdges="_vdEEhtbpEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DFF"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DFF"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DFF"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DFF"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3457,8 +3457,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vdEEhtbpEe6tTIwe30bXmA" sourceNode="_tNq0YNbpEe6tTIwe30bXmA" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//DFF"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//DFF"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//DFF"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//DFF"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cLBTtcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cLBT9cUEe6tTIwe30bXmA" showIcon="false">
@@ -3469,8 +3469,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_lD7Q0NcPEe6tTIwe30bXmA" name="Options" tooltipText="" outgoingEdges="_8qWI-NcPEe6tTIwe30bXmA _9u3g0tcPEe6tTIwe30bXmA" incomingEdges="_rNcM2NcPEe6tTIwe30bXmA _tQMH0NcPEe6tTIwe30bXmA _uywuBtcPEe6tTIwe30bXmA _wtzeIdcPEe6tTIwe30bXmA _yKb0UtcPEe6tTIwe30bXmA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3481,8 +3481,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rNcM2NcPEe6tTIwe30bXmA" sourceNode="_XM6U18dEEe6D48_IYF6Wsg" targetNode="_lD7Q0NcPEe6tTIwe30bXmA">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Pad1"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Pad1"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Pad1"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Pad1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rNcM2dcPEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_rNcM2tcPEe6tTIwe30bXmA" showIcon="false">
@@ -3493,8 +3493,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_tQMH0NcPEe6tTIwe30bXmA" sourceNode="_XM674MdEEe6D48_IYF6Wsg" targetNode="_lD7Q0NcPEe6tTIwe30bXmA">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//PadN"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//PadN"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//PadN"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//PadN"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_tQMH0dcPEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_tQMH0tcPEe6tTIwe30bXmA" showIcon="false">
@@ -3505,8 +3505,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_uywuBtcPEe6tTIwe30bXmA" sourceNode="_XM8KBsdEEe6D48_IYF6Wsg" targetNode="_lD7Q0NcPEe6tTIwe30bXmA">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//EndPointIdentification"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//EndPointIdentification"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//EndPointIdentification"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//EndPointIdentification"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_uywuB9cPEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_uywuCNcPEe6tTIwe30bXmA" showIcon="false">
@@ -3517,8 +3517,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wtzeIdcPEe6tTIwe30bXmA" sourceNode="_XM8KA8dEEe6D48_IYF6Wsg" targetNode="_lD7Q0NcPEe6tTIwe30bXmA">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Deprecated"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Deprecated"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Deprecated"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Deprecated"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wtzeItcPEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_wtzeI9cPEe6tTIwe30bXmA" showIcon="false">
@@ -3529,8 +3529,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yKb0UtcPEe6tTIwe30bXmA" sourceNode="_XM9YI8dEEe6D48_IYF6Wsg" targetNode="_lD7Q0NcPEe6tTIwe30bXmA">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//RFC3692Experiment"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//RFC3692Experiment"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yKb0U9cPEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_yKb0VNcPEe6tTIwe30bXmA" showIcon="false">
@@ -3541,8 +3541,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8qWI-NcPEe6tTIwe30bXmA" sourceNode="_lD7Q0NcPEe6tTIwe30bXmA" targetNode="_XM4fpcdEEe6D48_IYF6Wsg">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3cLBVNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3cLBVdcUEe6tTIwe30bXmA" showIcon="false">
@@ -3553,8 +3553,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_9u3g0tcPEe6tTIwe30bXmA" sourceNode="_lD7Q0NcPEe6tTIwe30bXmA" targetNode="_jotc8NJiEe6_GoSKKxIIog">
-      <target xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
-      <semanticElements xmi:type="ecore:EClass" href="Leho.ecore#//Options"/>
+      <target xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
+      <semanticElements xmi:type="ecore:EClass" href="leho.ecore#//Options"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3wnnbNcUEe6tTIwe30bXmA" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_3wnnbdcUEe6tTIwe30bXmA" showIcon="false">
@@ -3569,6 +3569,6 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
-    <target xmi:type="ecore:EPackage" href="Leho.ecore#/"/>
+    <target xmi:type="ecore:EPackage" href="leho.ecore#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

@@ -1,0 +1,31 @@
+Discrard = reject
+
+allow hop-by-hop
+    where option = pad1
+    and option = padn
+    and option = jumbo-payload
+discard hop-by-hop
+    where option = router-alert
+    and option = SMF_DPD
+    and option = RPL23
+    and option = deprecated
+    and option = RPL63
+    and option = endpoint-id
+
+discard routing header
+    where type = source-route
+    and type = nimrod
+    and type = RPL
+allow routing-header
+    where type = type-2-routing-header
+    and type = SRH
+    and type = unassigned
+    and type = reserved
+
+allow destination-option
+    where option = pad1
+    and option = padn
+discard destination-option
+    where option = deprecated
+    and option = endpoint-id
+    and option = line-id-option
