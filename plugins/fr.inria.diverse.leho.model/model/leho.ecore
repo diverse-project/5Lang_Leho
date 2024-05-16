@@ -1,109 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="leho" nsURI="http://www.inria.fr/diverse/leho" nsPrefix="leho">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="leho" nsURI="http://www.inria.fr/diverse/leho" nsPrefix="leho">
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
     <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Configuration" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="//Action"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Drop" eSuperTypes="#//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reject" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="Action" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Accept" eSuperTypes="//Action"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Accept" eSuperTypes="#//Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="#//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="PacketSpec">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="//TypeInterface" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="//ExtensionHeader" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="#//TypeInterface"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1"
+        upperBound="-1" eType="#//ExtensionHeader" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="//TypeInterface"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="//TypeInterface"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Bandwidth" eSuperTypes="//Action">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" lowerBound="1" eType="//Unit" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="//Time" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="#//TypeInterface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="#//TypeInterface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Bandwidth" eSuperTypes="#//Action">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" lowerBound="1" eType="#//Unit"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="time" lowerBound="1" eType="#//Time"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Unit" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Time" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="BitUnit" eSuperTypes="//Unit"/>
-  <eClassifiers xsi:type="ecore:EClass" name="OctetUnit" eSuperTypes="//Unit"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PacketUnit" eSuperTypes="//Unit"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Second" eSuperTypes="//Time"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Minute" eSuperTypes="//Time"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Hour" eSuperTypes="//Time"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Day" eSuperTypes="//Time"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BitUnit" eSuperTypes="#//Unit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OctetUnit" eSuperTypes="#//Unit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PacketUnit" eSuperTypes="#//Unit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Second" eSuperTypes="#//Time"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Minute" eSuperTypes="#//Time"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Hour" eSuperTypes="#//Time"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Day" eSuperTypes="#//Time"/>
   <eClassifiers xsi:type="ecore:EClass" name="ExtensionHeader" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="OptionHopByHop" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="HopByHopOpts" eSuperTypes="//ExtensionHeader">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="options" upperBound="-1" eType="//OptionHopByHop" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HopByHopOpts" eSuperTypes="#//ExtensionHeader">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="options" upperBound="-1"
+        eType="#//OptionHopByHop" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Routing" eSuperTypes="//ExtensionHeader">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="types" upperBound="-1" eType="//TypeRouting" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Routing" eSuperTypes="#//ExtensionHeader">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="types" upperBound="-1"
+        eType="#//TypeRouting" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fragment" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EncapsulingSecurityPayload" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="AuthentificationHeader" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DestinationOpts" eSuperTypes="//ExtensionHeader">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="options" upperBound="-1" eType="//OptionDestination" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Fragment" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EncapsulingSecurityPayload" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AuthentificationHeader" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DestinationOpts" eSuperTypes="#//ExtensionHeader">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="options" upperBound="-1"
+        eType="#//OptionDestination" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MobilityHeader" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="UnknownEH" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ExperimentationAndTesting" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="HostIdentityProtocol" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Shim6Protocol" eSuperTypes="//ExtensionHeader"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Pad1" eSuperTypes="//Options"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PadN" eSuperTypes="//Options"/>
-  <eClassifiers xsi:type="ecore:EClass" name="JumboPayload" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RPLOption" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="TunnelEncapsulationLimit" eSuperTypes="//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RouterAlert" eSuperTypes="//OptionHopByHop">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="protocol" upperBound="-1" eType="//Protocol" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MobilityHeader" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UnknownEH" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExperimentationAndTesting" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HostIdentityProtocol" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Shim6Protocol" eSuperTypes="#//ExtensionHeader"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pad1" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PadN" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="JumboPayload" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RPLOption" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TunnelEncapsulationLimit" eSuperTypes="#//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RouterAlert" eSuperTypes="#//OptionHopByHop">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="protocol" upperBound="-1"
+        eType="#//Protocol" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QuickStart" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Calipso" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SmfDpd" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="HomeAdress" eSuperTypes="//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Deprecated" eSuperTypes="//Options"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EndPointIdentification" eSuperTypes="//Options"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ILNPNonce" eSuperTypes="//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="LineIdOption" eSuperTypes="//OptionDestination"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MPLOption" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment" eSuperTypes="//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="QuickStart" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Calipso" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SmfDpd" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HomeAdress" eSuperTypes="#//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Deprecated" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EndPointIdentification" eSuperTypes="#//Options"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ILNPNonce" eSuperTypes="#//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LineIdOption" eSuperTypes="#//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MPLOption" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment" eSuperTypes="#//Options"/>
   <eClassifiers xsi:type="ecore:EClass" name="IpAddSpec">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress" lowerBound="1">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="port">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adress" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TypeInterface" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Rule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1" eType="//Action" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="packetspec" lowerBound="1" eType="//PacketSpec" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="//IpAddSpec" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Rule" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="//IpAddSpec" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1"
+        eType="#//Action" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="packetspec" lowerBound="1"
+        eType="#//PacketSpec" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//IpAddSpec"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Rule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//IpAddSpec"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Protocol" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RSVP" eSuperTypes="//Protocol"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MLD" eSuperTypes="//Protocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RSVP" eSuperTypes="#//Protocol"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MLD" eSuperTypes="#//Protocol"/>
   <eClassifiers xsi:type="ecore:EClass" name="OptionDestination" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="IPv6PerformanceDiagnostic" eSuperTypes="//OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IPv6PerformanceDiagnostic" eSuperTypes="#//OptionDestination"/>
   <eClassifiers xsi:type="ecore:EClass" name="TypeRouting" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SourceRoute" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Nimrod" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Type2" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RPLSource" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Segment" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Unassigned" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment1" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment2" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Reserved" eSuperTypes="//TypeRouting"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DiscardDrop" eSuperTypes="//Configuration"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DiscardReject" eSuperTypes="//Configuration"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DFF" eSuperTypes="//OptionHopByHop"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Options" abstract="true" eSuperTypes="//OptionHopByHop //OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceRoute" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Nimrod" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Type2" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RPLSource" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Segment" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Unassigned" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment1" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RFC3692Experiment2" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reserved" eSuperTypes="#//TypeRouting"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DiscardDrop" eSuperTypes="#//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DiscardReject" eSuperTypes="#//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DFF" eSuperTypes="#//OptionHopByHop"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Options" abstract="true" eSuperTypes="#//OptionHopByHop #//OptionDestination"/>
 </ecore:EPackage>

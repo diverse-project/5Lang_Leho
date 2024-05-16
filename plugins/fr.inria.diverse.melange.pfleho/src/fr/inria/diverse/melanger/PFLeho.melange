@@ -1,0 +1,147 @@
+package fr.inria.diverse.melange.leho
+
+language Gpfl {
+ 	syntax "platform:/resource/fr.inria.diverse.gpfl.model/model/gpfl.ecore"
+	
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.MultAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IntegerDecAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InterfaceRefAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IterationAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.SendAspect 
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InequalityAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AutomataAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PlusAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StringDecAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.VariableDeclarationAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PacketAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PolicyAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.GreaterAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AcceptAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PortAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.VariableRefAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NopAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InitSeqAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewInterruptionAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AlarmAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BlockAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ConditionAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BooleanDecAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StringLiteralAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.SetVariableAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AndAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BytesDecAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ExpressionAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IntLiteralAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.LowerOrEqualAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PortRefAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StepAutomataAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StmtAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.DivAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PrologueAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.DropAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.OrAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.EqualityAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewAutomataAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.LowerAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.EventAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.CmdAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.MinusAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BytesLiteralAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.UnaryOpAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.GreaterOrEqualAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BinaryOpAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NotAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewEventOccurenceAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BooleanLiteralAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StateAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NegAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.FilterAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.TransitionAspect
+	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ReadAspect
+}
+
+language Leho {	
+	syntax "platform:/resource/fr.inria.diverse.leho.model/model/leho.ecore"
+	
+	with fr.inria.diverse.melanger.ConfigurationAspect
+	with fr.inria.diverse.melanger.DropAspect
+	with fr.inria.diverse.melanger.RejectAspect
+	with fr.inria.diverse.melanger.ActionAspect
+	with fr.inria.diverse.melanger.AcceptAspect
+	with fr.inria.diverse.melanger.DiscardAspect
+	with fr.inria.diverse.melanger.PacketSpecAspect
+	with fr.inria.diverse.melanger.InboundAspect
+	with fr.inria.diverse.melanger.OutboundAspect
+	with fr.inria.diverse.melanger.BandwidthAspect
+	with fr.inria.diverse.melanger.UnitAspect
+	with fr.inria.diverse.melanger.TimeAspect
+	with fr.inria.diverse.melanger.BitUnitAspect
+	with fr.inria.diverse.melanger.OctetUnitAspect
+	with fr.inria.diverse.melanger.PacketUnitAspect
+	with fr.inria.diverse.melanger.SecondAspect
+	with fr.inria.diverse.melanger.MinuteAspect
+	with fr.inria.diverse.melanger.HourAspect
+	with fr.inria.diverse.melanger.DayAspect
+	with fr.inria.diverse.melanger.ExtensionHeaderAspect
+	with fr.inria.diverse.melanger.OptionHopByHopAspect
+	with fr.inria.diverse.melanger.HopByHopOptsAspect
+	with fr.inria.diverse.melanger.RoutingAspect
+	with fr.inria.diverse.melanger.FragmentAspect
+	with fr.inria.diverse.melanger.EncapsulingSecurityPayloadAspect
+	with fr.inria.diverse.melanger.AuthentificationHeaderAspect
+	with fr.inria.diverse.melanger.DestinationOptsAspect
+	with fr.inria.diverse.melanger.MobilityHeaderAspect
+	with fr.inria.diverse.melanger.UnknownEHAspect
+	with fr.inria.diverse.melanger.ExperimentationAndTestingAspect
+	with fr.inria.diverse.melanger.HostIdentityProtocolAspect
+	with fr.inria.diverse.melanger.Shim6ProtocolAspect
+	with fr.inria.diverse.melanger.Pad1Aspect
+	with fr.inria.diverse.melanger.PadNAspect
+	with fr.inria.diverse.melanger.JumboPayloadAspect
+	with fr.inria.diverse.melanger.RPLOptionAspect
+	with fr.inria.diverse.melanger.TunnelEncapsulationLimitAspect
+	with fr.inria.diverse.melanger.RouterAlertAspect
+	with fr.inria.diverse.melanger.QuickStartAspect
+	with fr.inria.diverse.melanger.CalipsoAspect
+	with fr.inria.diverse.melanger.SmfDpdAspect
+	with fr.inria.diverse.melanger.HomeAdressAspect
+	with fr.inria.diverse.melanger.DeprecatedAspect
+	with fr.inria.diverse.melanger.EndPointIdentificationAspect
+	with fr.inria.diverse.melanger.ILNPNonceAspect
+	with fr.inria.diverse.melanger.LineIdOptionAspect
+	with fr.inria.diverse.melanger.MPLOptionAspect
+	with fr.inria.diverse.melanger.RFC3692ExperimentAspect
+	with fr.inria.diverse.melanger.IpAddSpecAspect
+	with fr.inria.diverse.melanger.RuleAspect
+	with fr.inria.diverse.melanger.ProtocolAspect
+	with fr.inria.diverse.melanger.RSVPAspect
+	with fr.inria.diverse.melanger.MLDAspect
+	with fr.inria.diverse.melanger.OptionDestinationAspect
+	with fr.inria.diverse.melanger.IPv6PerformanceDiagnosticAspect
+	with fr.inria.diverse.melanger.TypeRoutingAspect
+	with fr.inria.diverse.melanger.SourceRouteAspect
+	with fr.inria.diverse.melanger.NimrodAspect
+	with fr.inria.diverse.melanger.Type2Aspect
+	with fr.inria.diverse.melanger.RPLSourceAspect
+	with fr.inria.diverse.melanger.SegmentAspect
+	with fr.inria.diverse.melanger.UnassignedAspect
+	with fr.inria.diverse.melanger.RFC3692Experiment1Aspect
+	with fr.inria.diverse.melanger.RFC3692Experiment2Aspect
+	with fr.inria.diverse.melanger.ReservedAspect
+	with fr.inria.diverse.melanger.DiscardDropAspect
+	with fr.inria.diverse.melanger.DiscardRejectAspect
+	with fr.inria.diverse.melanger.DFFAspect
+	with fr.inria.diverse.melanger.OptionsAspect
+	with fr.inria.diverse.melanger.IpAddSpecAspect
+}
+
+language PFLeho inherits Leho {
+	
+	slice Gpfl on [
+		'Policy'
+	]
+	renaming {'gpfl' to 'leho'}
+	
+	with fr.inria.diverse.melanger.PolicyGlue
+	with fr.inria.diverse.melanger.FilterGlue
+}

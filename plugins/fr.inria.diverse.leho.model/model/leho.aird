@@ -5,7 +5,7 @@
     <semanticResources>leho.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_QYW24MaLEe69D-H-e__5XQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="Leho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="45d5e608-3d59-445d-98d4-d081f51f376f">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="Leho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="bb0056eb-2641-40bf-8eda-887f02b4626f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="leho.ecore#/"/>
       </ownedRepresentationDescriptors>

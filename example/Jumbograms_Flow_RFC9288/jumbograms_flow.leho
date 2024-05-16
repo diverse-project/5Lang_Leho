@@ -3,7 +3,12 @@ Discrard = reject
 allow hop-by-hop
     where option = pad1
     and option = padn
+
+allow hop-by-hop
     and option = jumbo-payload
+    from 2001:db8:abcd:0012::/64
+    to 2001:db8:abcd:0013::/64
+
 discard hop-by-hop
     where option = router-alert
     and option = SMF_DPD
