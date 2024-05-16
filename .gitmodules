@@ -1,0 +1,3 @@
+[submodule "5Lang_GPFL"]
+	path = 5Lang_GPFL
+	url = https://github.com/diverse-project/5Lang_GPFL.git
