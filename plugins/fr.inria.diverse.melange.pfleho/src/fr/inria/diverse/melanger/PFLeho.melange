@@ -60,85 +60,79 @@ language Gpfl {
 	with fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ReadAspect
 }
 
-language Leho {	
-	syntax "platform:/resource/fr.inria.diverse.leho.model/model/leho.ecore"
+language Eho {
+	syntax "platform:/resource/fr.inria.diverse.eho.model/model/eho.ecore"
+	renaming{'eho' to 'leho'}
 	
-	with fr.inria.diverse.melanger.ConfigurationAspect
-	with fr.inria.diverse.melanger.DropAspect
-	with fr.inria.diverse.melanger.RejectAspect
-	with fr.inria.diverse.melanger.ActionAspect
-	with fr.inria.diverse.melanger.AcceptAspect
-	with fr.inria.diverse.melanger.DiscardAspect
-	with fr.inria.diverse.melanger.PacketSpecAspect
-	with fr.inria.diverse.melanger.InboundAspect
-	with fr.inria.diverse.melanger.OutboundAspect
-	with fr.inria.diverse.melanger.BandwidthAspect
-	with fr.inria.diverse.melanger.UnitAspect
-	with fr.inria.diverse.melanger.TimeAspect
-	with fr.inria.diverse.melanger.BitUnitAspect
-	with fr.inria.diverse.melanger.OctetUnitAspect
-	with fr.inria.diverse.melanger.PacketUnitAspect
-	with fr.inria.diverse.melanger.SecondAspect
-	with fr.inria.diverse.melanger.MinuteAspect
-	with fr.inria.diverse.melanger.HourAspect
-	with fr.inria.diverse.melanger.DayAspect
-	with fr.inria.diverse.melanger.ExtensionHeaderAspect
-	with fr.inria.diverse.melanger.OptionHopByHopAspect
-	with fr.inria.diverse.melanger.HopByHopOptsAspect
-	with fr.inria.diverse.melanger.RoutingAspect
-	with fr.inria.diverse.melanger.FragmentAspect
-	with fr.inria.diverse.melanger.EncapsulingSecurityPayloadAspect
-	with fr.inria.diverse.melanger.AuthentificationHeaderAspect
-	with fr.inria.diverse.melanger.DestinationOptsAspect
-	with fr.inria.diverse.melanger.MobilityHeaderAspect
-	with fr.inria.diverse.melanger.UnknownEHAspect
-	with fr.inria.diverse.melanger.ExperimentationAndTestingAspect
-	with fr.inria.diverse.melanger.HostIdentityProtocolAspect
-	with fr.inria.diverse.melanger.Shim6ProtocolAspect
-	with fr.inria.diverse.melanger.Pad1Aspect
-	with fr.inria.diverse.melanger.PadNAspect
-	with fr.inria.diverse.melanger.JumboPayloadAspect
-	with fr.inria.diverse.melanger.RPLOptionAspect
-	with fr.inria.diverse.melanger.TunnelEncapsulationLimitAspect
-	with fr.inria.diverse.melanger.RouterAlertAspect
-	with fr.inria.diverse.melanger.QuickStartAspect
-	with fr.inria.diverse.melanger.CalipsoAspect
-	with fr.inria.diverse.melanger.SmfDpdAspect
-	with fr.inria.diverse.melanger.HomeAdressAspect
-	with fr.inria.diverse.melanger.DeprecatedAspect
-	with fr.inria.diverse.melanger.EndPointIdentificationAspect
-	with fr.inria.diverse.melanger.ILNPNonceAspect
-	with fr.inria.diverse.melanger.LineIdOptionAspect
-	with fr.inria.diverse.melanger.MPLOptionAspect
-	with fr.inria.diverse.melanger.RFC3692ExperimentAspect
-	with fr.inria.diverse.melanger.IpAddSpecAspect
-	with fr.inria.diverse.melanger.RuleAspect
-	with fr.inria.diverse.melanger.ProtocolAspect
-	with fr.inria.diverse.melanger.RSVPAspect
-	with fr.inria.diverse.melanger.MLDAspect
-	with fr.inria.diverse.melanger.OptionDestinationAspect
-	with fr.inria.diverse.melanger.IPv6PerformanceDiagnosticAspect
-	with fr.inria.diverse.melanger.TypeRoutingAspect
-	with fr.inria.diverse.melanger.SourceRouteAspect
-	with fr.inria.diverse.melanger.NimrodAspect
-	with fr.inria.diverse.melanger.Type2Aspect
-	with fr.inria.diverse.melanger.RPLSourceAspect
-	with fr.inria.diverse.melanger.SegmentAspect
-	with fr.inria.diverse.melanger.UnassignedAspect
-	with fr.inria.diverse.melanger.RFC3692Experiment1Aspect
-	with fr.inria.diverse.melanger.RFC3692Experiment2Aspect
-	with fr.inria.diverse.melanger.ReservedAspect
-	with fr.inria.diverse.melanger.DiscardDropAspect
-	with fr.inria.diverse.melanger.DiscardRejectAspect
-	with fr.inria.diverse.melanger.DFFAspect
-	with fr.inria.diverse.melanger.OptionsAspect
-	with fr.inria.diverse.melanger.IpAddSpecAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DropAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.AcceptAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.PacketSpecAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.InboundAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.OutboundAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.BandwidthAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.HopByHopOptsAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.FragmentAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.EncapsulingSecurityPayloadAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.AuthentificationHeaderAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DestinationOptsAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.MobilityHeaderAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ExperimentationAndTestingAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.HostIdentityProtocolAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.Shim6ProtocolAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RPLOptionAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.TunnelEncapsulationLimitAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.QuickStartAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ILNPNonceAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.LineIdOptionAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.IpAddSpecAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RuleAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ProtocolAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RSVPAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.MLDAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.IPv6PerformanceDiagnosticAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.SourceRouteAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.NimrodAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RPLSourceAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.UnassignedAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment1Aspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment2Aspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardDropAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.DFFAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect
+	with fr.inria.diverse.eho.k3dsa.Eho.aspects.IpAddSpecAspect
 }
 
-language PFLeho inherits Leho {
+language Leho inherits Eho {
 	
 	slice Gpfl on [
-		'Policy'
+		'Policy', 'Filter',
+		'Packet', 'Port', 'Interface',
+		'Accept', 'Drop'
 	]
 	renaming {'gpfl' to 'leho'}
 	

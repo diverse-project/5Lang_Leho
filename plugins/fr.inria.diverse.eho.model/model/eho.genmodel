@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.eho.model/src-gen" creationIcons="false" editDirectory="/fr.inria.diverse.eho.model.edit/src-gen" editorDirectory="/fr.inria.diverse.eho.model.editor/src-gen" modelPluginID="fr.inria.diverse.eho.model" modelName="eho" editPluginClass="fr.inria.diverse.eho.model.eho.provider.ehoEditPlugin" editorPluginClass="fr.inria.diverse.eho.model.eho.presentation.ehoEditorPlugin" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true" testSuiteClass="fr.inria.diverse.eho.model.eho.tests.ehoAllTests" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false" editPluginID="fr.inria.diverse.eho.model.edit" editorPluginID="fr.inria.diverse.eho.model.editor" operationReflection="true" importOrganizing="true" pluginKey="eho">
+  <foreignModel>eho.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Eho" basePackage="fr.inria.diverse.eho.model" disposableProviderFactory="true">
+    <ecorePackage href="eho.ecore#/"/>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Configuration"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Drop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Reject"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Action"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Accept"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Discard"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//PacketSpec"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//PacketSpec/port"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//PacketSpec/extensionheader"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Inbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Outbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Bandwidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//Bandwidth/number"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Bandwidth/unit"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Bandwidth/time"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Unit"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Time"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//BitUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//OctetUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//PacketUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Second"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Minute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Hour"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Day"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//ExtensionHeader"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//OptionHopByHop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//HopByHopOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//HopByHopOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Routing"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Routing/types"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Fragment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//EncapsulingSecurityPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//AuthentificationHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//DestinationOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//DestinationOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//MobilityHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//UnknownEH"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//ExperimentationAndTesting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//HostIdentityProtocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Shim6Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Pad1"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//PadN"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//JumboPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RPLOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//TunnelEncapsulationLimit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RouterAlert"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//RouterAlert/protocol"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//QuickStart"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Calipso"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//SmfDpd"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//HomeAdress"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Deprecated"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//EndPointIdentification"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//ILNPNonce"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//LineIdOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//MPLOption"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RFC3692Experiment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//IpAddSpec"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//IpAddSpec/adress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//IpAddSpec/port"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//IpAddSpec/mask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//TypeInterface"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Rule"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/action"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/packetspec"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/to"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/next"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/from"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RSVP"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//MLD"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//OptionDestination"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//IPv6PerformanceDiagnostic"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//TypeRouting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//SourceRoute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Nimrod"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Type2"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RPLSource"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Segment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Unassigned"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RFC3692Experiment1"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//RFC3692Experiment2"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Reserved"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//DiscardDrop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//DiscardReject"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//DFF"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="eho.ecore#//Options"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
