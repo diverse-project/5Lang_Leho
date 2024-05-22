@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Leho -->
+      <package
+            uri="http://fr.inria.diverse.melanger.leho/eho/"
+            class="fr.inria.diverse.melanger.leho.leho.EhoPackage"
+            genModel="model/Leho.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Leho -->
+      <package
+            uri="http://fr.inria.diverse.melanger.leho/leho/"
+            class="fr.inria.diverse.melanger.leho.leho.LehoPackage"
+            genModel="model/Leho.genmodel"/>
+   </extension>
+</plugin>
