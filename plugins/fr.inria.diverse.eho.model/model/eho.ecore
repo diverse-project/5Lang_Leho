@@ -9,12 +9,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Action" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Accept" eSuperTypes="//Action"/>
   <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="//Action"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PacketSpec">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="//TypeInterface" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="//ExtensionHeader" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="//TypeInterface"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="//TypeInterface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="//Interface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="//Interface"/>
   <eClassifiers xsi:type="ecore:EClass" name="Bandwidth" eSuperTypes="//Action">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -73,19 +69,22 @@
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port">
-      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mask">
       <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TypeInterface" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ports" upperBound="-1" eType="//Port" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Rule">
     <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1" eType="//Action" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="packetspec" lowerBound="1" eType="//PacketSpec" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="//IpAddSpec" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="//Rule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="//IpAddSpec" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" upperBound="-1" eType="//ExtensionHeader" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Protocol" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="RSVP" eSuperTypes="//Protocol"/>
@@ -106,4 +105,34 @@
   <eClassifiers xsi:type="ecore:EClass" name="DiscardReject" eSuperTypes="//Configuration"/>
   <eClassifiers xsi:type="ecore:EClass" name="DFF" eSuperTypes="//OptionHopByHop"/>
   <eClassifiers xsi:type="ecore:EClass" name="Options" abstract="true" eSuperTypes="//OptionHopByHop //OptionDestination"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Filter">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="firstRule" lowerBound="1" eType="//Rule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currentRule" eType="//Rule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="//Packet"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Policy">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" lowerBound="1" eType="//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" lowerBound="1" eType="//Filter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="packets" upperBound="-1" eType="//Packet" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ports" upperBound="-1" eType="//Port" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Packet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceAddress" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinationAddress" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inPort" lowerBound="1" eType="//Port"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="//ExtensionHeader" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="//Interface"/>
+  </eClassifiers>
 </ecore:EPackage>

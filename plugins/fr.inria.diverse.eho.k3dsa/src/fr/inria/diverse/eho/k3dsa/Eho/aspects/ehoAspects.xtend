@@ -37,7 +37,6 @@ import fr.inria.diverse.eho.model.eho.OptionDestination
 import fr.inria.diverse.eho.model.eho.OptionHopByHop
 import fr.inria.diverse.eho.model.eho.Options
 import fr.inria.diverse.eho.model.eho.Outbound
-import fr.inria.diverse.eho.model.eho.PacketSpec
 import fr.inria.diverse.eho.model.eho.Pad1
 import fr.inria.diverse.eho.model.eho.PadN
 import fr.inria.diverse.eho.model.eho.Protocol
@@ -59,12 +58,27 @@ import fr.inria.diverse.eho.model.eho.SmfDpd
 import fr.inria.diverse.eho.model.eho.SourceRoute
 import fr.inria.diverse.eho.model.eho.TunnelEncapsulationLimit
 import fr.inria.diverse.eho.model.eho.Type2
-import fr.inria.diverse.eho.model.eho.TypeInterface
 import fr.inria.diverse.eho.model.eho.TypeRouting
 import fr.inria.diverse.eho.model.eho.Unassigned
 import fr.inria.diverse.eho.model.eho.UnknownEH
 import fr.inria.diverse.k3.al.annotationprocessor.Aspect
 import java.util.stream.IntStream
+import fr.inria.diverse.eho.model.eho.Interface
+import fr.inria.diverse.eho.model.eho.Policy
+
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.ProtocolAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.IpAddSpecAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.RuleAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.InterfaceAspect.*
+import static extension fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect.*
+import java.math.BigInteger
+import java.net.InetAddress
 
 // --------------------------------------------------------------- //
 // ------------------------ CONFIGURATION ------------------------ //
@@ -98,72 +112,215 @@ class DiscardRejectAspect extends ConfigurationAspect {
 // ------------------------------------------------------ //
 
 @Aspect(className=Rule)
-class RuleAspect {}
+class RuleAspect {
+	public static var ExtensionHeader nextHeader
+	
+	private def Boolean eval(Policy root) {
+		nextHeader = root.filter.currentPacket.extensionheader.get(0)
+		for(var i=0; i<_self.extensionheader.length &&  nextHeader!= 59; i++) {
+			if(!_self.extensionheader.get(i).eval(root)) return false
+			nextHeader = root.filter.currentPacket.extensionheader.get(i+1)
+		}
+		return true
+	}
+	
+	def void run(Policy root) {
+		var from = _self.from === null ? true : _self.from.eval(root, true)
+		var to = _self.to === null ? true : _self.to.eval(root, true)
+		var interface = _self.interface === null ? true : _self.interface.eval(root)
+		var packetSpec = _self.eval(root)
+		if (from && to && interface && packetSpec) {
+			_self.action.run(root)
+		}
+	}
+}
 
 @Aspect(className=IpAddSpec)
-class IpAddSpecAspect {}
+class IpAddSpecAspect {
+	def Boolean eval(Policy root, Boolean type) {
+		if((_self.port !== null && (_self.port.equals(root.filter.currentPacket.inPort.number) || _self.port.equals("any"))) || _self.port === null) {
+			val compIp = new BigInteger(1, InetAddress.getByName(_self.adress).getAddress())
+			if ((type && root.filter.currentPacket.sourceAddress >= compIp) || (!type && root.filter.currentPacket.destinationAddress <= compIp)) return true
+		}
+		return false
+	}
+}
 
-@Aspect(className=PacketSpec)
-class PacketSpecAspect {}
 
 // ------------------------ Port ------------------------ //
 
-@Aspect(className=TypeInterface)
-class TypeInterfaceAspect {
-	def Boolean eval() {
+@Aspect(className=Interface)
+class InterfaceAspect {
+	def Boolean eval(Policy root) {
 		EhoMessagingModule.error("Port: run of " +_self +" should never occur, please tell the developer to write a method run for this class") 
 		return false 
 	}
 }
 
 @Aspect(className=Inbound)
-class InboundAspect {}
+class InboundAspect {
+	def Boolean eval(Policy root) {
+		return root.filter.currentPacket.inPort.interface instanceof Inbound
+	}
+}
 
 @Aspect(className=Outbound)
-class OutboundAspect {}
+class OutboundAspect {
+	def Boolean eval(Policy root) {
+		return root.filter.currentPacket.inPort.interface instanceof Outbound
+	} 
+}
 
 // ------------------------ Extension Header ------------------------ //
 
 @Aspect(className=ExtensionHeader)
 abstract class ExtensionHeaderAspect {
-	def Boolean eval() {
+	def Boolean eval(Policy root) {
 		EhoMessagingModule.error("EH: run of " +_self +" should never occur, please tell the developer to write a method run for this class")
 		return false
 	}
 }
 
 @Aspect(className=HopByHopOpts)
-class HopByHopOptsAspect extends ExtensionHeaderAspect {}
+class HopByHopOptsAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		if(nextHeader == 0) {
+			
+			val hdrExtLen = root.read(nextEhStart+8, 8).intValue
+			nextEhStart += 64+hdrExtLen*64
+			var optDataLen = 0
+			for(option : _self.options) {
+				var optionType = root.read(nextEhStart+optDataLen+16, 8).intValue
+				optDataLen = optionType == 0 ? 8 : root.read(nextEhStart+16+8, 8).intValue
+				if(!option.eval(optionType)) return false
+				if(optionType == 5) {
+					val protocol = root.read(nextEhStart+16+optDataLen+16, 16).intValue
+					for (proto : (option as RouterAlert).protocol) {
+						if(!proto.eval(protocol)) return false 
+					}
+				}
+			}
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=Routing)
-class RoutingAspect extends ExtensionHeaderAspect {}
+class RoutingAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		if(nextHeader == 43) {
+			val hdrExtLen = root.read(nextEhStart+8, 8).intValue
+			var routingType = root.read(nextEhStart+8+8, 8).intValue
+			nextEhStart += 64+hdrExtLen*64
+			for(type : _self.types)
+				if(type.eval(routingType)) return true
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=Fragment)
-class FragmentAspect extends ExtensionHeaderAspect {}
+class FragmentAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		if(nextHeader == 44) {
+			nextEhStart += nextEhStart+64
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=EncapsulingSecurityPayload)
-class EncapsulingSecurityPayloadAspect extends ExtensionHeaderAspect {}
+class EncapsulingSecurityPayloadAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		if(nextHeader == 44) {
+			nextHeader = 59
+			// TODO understand how this header really works
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=AuthentificationHeader)
-class AuthentificationHeaderAspect extends ExtensionHeaderAspect {}
+class AuthentificationHeaderAspect extends ExtensionHeaderAspect {
+	// https://datatracker.ietf.org/doc/html/rfc4302#section-2
+	def Boolean eval(Policy root) {
+		if(nextHeader == 44) {
+			nextEhStart += nextEhStart+64+(root.read(nextEhStart+8, 8).intValue *32)
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=DestinationOpts)
-class DestinationOptsAspect extends ExtensionHeaderAspect {}
+class DestinationOptsAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		if(nextHeader == 60) {
+			val hdrExtLen = root.read(nextEhStart+8, 8).intValue
+			nextEhStart += 64+hdrExtLen*64
+			var optDataLen = 0
+			for(option : _self.options) {
+				var optionType = root.read(nextEhStart+16+optDataLen, 8).intValue
+				optDataLen = optionType == 0 ? 8 : root.read(nextEhStart+16+8, 8).intValue
+				if(!option.eval(optionType)) return false
+			}
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=MobilityHeader)
-class MobilityHeaderAspect extends ExtensionHeaderAspect {}
+class MobilityHeaderAspect extends ExtensionHeaderAspect {
+	// https://www.rfc-editor.org/rfc/set(nextEhStart, nextEhStart+8)rfc6275.html#section-6.1.1
+	def Boolean eval(Policy root) {
+		if(nextHeader == 135) {
+			nextEhStart += 64+root.read(nextEhStart+8, 8).intValue*64
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=HostIdentityProtocol)
-class HostIdentityProtocolAspect extends ExtensionHeaderAspect {}
+class HostIdentityProtocolAspect extends ExtensionHeaderAspect {
+	// https://www.rfc-editor.org/rfc/rfc7401.html#section-5
+	def Boolean eval(Policy root) {
+		if(nextHeader == 139) {
+			nextEhStart += 8+root.read(nextEhStart+8, 8).intValue*8
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=Shim6Protocol)
 class Shim6ProtocolAspect extends ExtensionHeaderAspect {}
 
 @Aspect(className=ExperimentationAndTesting)
-class ExperimentationAndTestingAspect extends ExtensionHeaderAspect {}
+class ExperimentationAndTestingAspect extends ExtensionHeaderAspect {
+	// https://www.rfc-editor.org/rfc/rfc3692.html
+	// https://www.rfc-editor.org/rfc/rfc4727.html
+	def Boolean eval(Policy root) {
+		if(nextHeader == 253 && nextHeader == 254) {
+			nextHeader = 59
+			return true
+		}
+		return false
+	}
+}
 
 @Aspect(className=UnknownEH)
-class UnknownEHAspect extends ExtensionHeaderAspect {}
+class UnknownEHAspect extends ExtensionHeaderAspect {
+	def Boolean eval(Policy root) {
+		val int[] knownHeaders = #[0, 43, 44, 50, 51, 60, 135, 139, 140, 253, 254]
+		return IntStream.of(knownHeaders).anyMatch[num | num == nextHeader]
+	}
+}
 
 // ------------------------ Options ------------------------ //
 
@@ -421,22 +578,78 @@ class ReservedAspect extends TypeRoutingAspect {
 
 @Aspect(className=Action)
 abstract class ActionAspect {
-	def void run() {
+	def void run(Policy root) {
 		EhoMessagingModule.error("Action: run of " +_self +" should never occur, please tell the developer to write a method run for this class")
 	}
 }
 
 @Aspect(className=Drop)
-class DropAspect extends ActionAspect {}
+class DropAspect extends ActionAspect {
+	// TODO: voir si la reuse se fait pas toute seul sur ses classes en double 
+	 def void run(Policy root) {
+	 	val drop = GpflFactory.eINSTANCE.createDrop
+	 	drop.run(root)
+	 }
+}
 
 @Aspect(className=Reject)
-class RejectAspect extends ActionAspect {}
+class RejectAspect extends ActionAspect {
+	// TODO later: change to a real reject
+	// (would take too much time with all the particular cases)
+	def void run(Policy root) {
+	 	val drop = EhoFactory.eINSTANCE.createDrop
+	 	drop.run(root)
+	}
+}
 
 @Aspect(className=Discard)
-class DiscardAspect extends ActionAspect {}
+class DiscardAspect extends ActionAspect {
+	def void run(Policy root) {
+		discard.run(root)
+	}
+}
 
 @Aspect(className=Accept)
-class AcceptAspect extends ActionAspect {}
+class AcceptAspect extends ActionAspect {
+	def void run(Policy root) {
+	 	val accept = GpflFactory.eINSTANCE.createAccept
+	 	accept.run(root)
+	 }
+}
 
 @Aspect(className=Bandwidth)
-class BandwidthAspect extends ActionAspect {}
+class BandwidthAspect extends ActionAspect {
+public static var nextAcceptTime = 0
+	public static var nbPackets = 0
+	public static var nbOctets = 0
+	public static var nbBits = 0
+	
+	def void run(Policy root) {
+		val time = _self.time instanceof Day ? 86400 :
+			_self.time instanceof Hour ? 3600 :
+			_self.time instanceof Minute ? 60 :
+			_self.time instanceof Second ? 1
+			
+		nbPackets++
+		nbOctets += root.currentPacket.content.length/8
+		nbBits += root.currentPacket.content.length
+			
+		val unit = _self.unit instanceof PacketUnit ? nbPackets :
+			_self.unit instanceof OctetUnit ? nbOctets :
+			_self.unit instanceof BitUnit ? nbBits
+			
+		if(unit > _self.number) {
+			nextAcceptTime = root.currentTime+time
+		}
+		if(root.currentTime < nextAcceptTime) {
+			val drop = GpflFactory.eINSTANCE.createDrop
+	 		drop.run(root)
+		}
+		// if the limitation is finished
+		if (root.currentTime > nextAcceptTime && unit > _self.number) {
+			nbPackets = 0
+			nbOctets = 0
+			nbBits = 0
+		}
+	}	
+}

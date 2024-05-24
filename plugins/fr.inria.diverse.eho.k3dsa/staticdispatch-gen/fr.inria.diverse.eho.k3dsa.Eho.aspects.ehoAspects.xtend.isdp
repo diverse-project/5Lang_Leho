@@ -1,13 +1,3 @@
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.EndPointIdentification){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.eho.model.eho.EndPointIdentification)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.RFC3692Experiment){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.eho.model.eho.RFC3692Experiment)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.Pad1){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect.eval((fr.inria.diverse.eho.model.eho.Pad1)_self,optionType);
@@ -23,16 +13,136 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect.eval((fr.inria.diverse.eho.model.eho.PadN)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.JumboPayload){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect.eval((fr.inria.diverse.eho.model.eho.JumboPayload)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment1Aspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.RFC3692Experiment1){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment1Aspect.eval((fr.inria.diverse.eho.model.eho.RFC3692Experiment1)_self,routingType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment1Aspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Routing){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect.eval((fr.inria.diverse.eho.model.eho.Routing)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.FragmentAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Fragment){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.FragmentAspect.eval((fr.inria.diverse.eho.model.eho.Fragment)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.FragmentAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Pad1){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect.eval((fr.inria.diverse.eho.model.eho.Pad1)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Deprecated){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect.eval((fr.inria.diverse.eho.model.eho.Deprecated)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DropAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Drop){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.DropAspect.run((fr.inria.diverse.eho.model.eho.Drop)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DropAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Reserved){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect.eval((fr.inria.diverse.eho.model.eho.Reserved)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.AuthentificationHeaderAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.AuthentificationHeader){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.AuthentificationHeaderAspect.eval((fr.inria.diverse.eho.model.eho.AuthentificationHeader)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.AuthentificationHeaderAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Deprecated){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect.eval((fr.inria.diverse.eho.model.eho.Deprecated)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Segment){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect.eval((fr.inria.diverse.eho.model.eho.Segment)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Reject){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect.run((fr.inria.diverse.eho.model.eho.Reject)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HopByHopOptsAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.HopByHopOpts){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.HopByHopOptsAspect.eval((fr.inria.diverse.eho.model.eho.HopByHopOpts)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HopByHopOptsAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.EndPointIdentification){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.eho.model.eho.EndPointIdentification)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.RouterAlert){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect.eval((fr.inria.diverse.eho.model.eho.RouterAlert)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HostIdentityProtocolAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.HostIdentityProtocol){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.HostIdentityProtocolAspect.eval((fr.inria.diverse.eho.model.eho.HostIdentityProtocol)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HostIdentityProtocolAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.HomeAdress){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect.eval((fr.inria.diverse.eho.model.eho.HomeAdress)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.AcceptAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Accept){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.AcceptAspect.run((fr.inria.diverse.eho.model.eho.Accept)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.AcceptAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.DiscardReject){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect.run((fr.inria.diverse.eho.model.eho.DiscardReject)_self);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Calipso){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect.eval((fr.inria.diverse.eho.model.eho.Calipso)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.SmfDpd){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect.eval((fr.inria.diverse.eho.model.eho.SmfDpd)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Type2){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect.eval((fr.inria.diverse.eho.model.eho.Type2)_self,routingType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.MPLOption){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect.eval((fr.inria.diverse.eho.model.eho.MPLOption)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.EndPointIdentification){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.eho.model.eho.EndPointIdentification)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.RFC3692Experiment){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.eho.model.eho.RFC3692Experiment)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.JumboPayload){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect.eval((fr.inria.diverse.eho.model.eho.JumboPayload)_self,optionType);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Discard){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardAspect.run((fr.inria.diverse.eho.model.eho.Discard)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.Options){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect.eval((fr.inria.diverse.eho.model.eho.Options)_self,optionType);
@@ -53,16 +163,21 @@
 			fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardDropAspect.run((fr.inria.diverse.eho.model.eho.DiscardDrop)_self);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardDropAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Pad1){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect.eval((fr.inria.diverse.eho.model.eho.Pad1)_self,optionType);
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DestinationOptsAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.DestinationOpts){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DestinationOptsAspect.eval((fr.inria.diverse.eho.model.eho.DestinationOpts)_self,root);
 		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Deprecated){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect.eval((fr.inria.diverse.eho.model.eho.Deprecated)_self,optionType);
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DestinationOptsAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ExperimentationAndTestingAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.ExperimentationAndTesting){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.ExperimentationAndTestingAspect.eval((fr.inria.diverse.eho.model.eho.ExperimentationAndTesting)_self,root);
 		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ExperimentationAndTestingAspect
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EncapsulingSecurityPayloadAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.EncapsulingSecurityPayload){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EncapsulingSecurityPayloadAspect.eval((fr.inria.diverse.eho.model.eho.EncapsulingSecurityPayload)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EncapsulingSecurityPayloadAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ILNPNonceAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.ILNPNonce){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.ILNPNonceAspect.eval((fr.inria.diverse.eho.model.eho.ILNPNonce)_self,optionType);
@@ -73,26 +188,11 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect.eval((fr.inria.diverse.eho.model.eho.Options)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Reserved){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect.eval((fr.inria.diverse.eho.model.eho.Reserved)_self,routingType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Deprecated){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect.eval((fr.inria.diverse.eho.model.eho.Deprecated)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.EndPointIdentification){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.eho.model.eho.EndPointIdentification)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Segment){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect.eval((fr.inria.diverse.eho.model.eho.Segment)_self,routingType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.UnassignedAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.Unassigned){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.UnassignedAspect.eval((fr.inria.diverse.eho.model.eho.Unassigned)_self,routingType);
@@ -113,11 +213,6 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect.eval((fr.inria.diverse.eho.model.eho.RFC3692Experiment)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.EndPointIdentification){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect.eval((fr.inria.diverse.eho.model.eho.EndPointIdentification)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.PadN){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect.eval((fr.inria.diverse.eho.model.eho.PadN)_self,optionType);
@@ -128,26 +223,16 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RSVPAspect.eval((fr.inria.diverse.eho.model.eho.RSVP)_self,protocol);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ProtocolAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RSVPAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.RouterAlert){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect.eval((fr.inria.diverse.eho.model.eho.RouterAlert)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.TunnelEncapsulationLimitAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.TunnelEncapsulationLimit){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.TunnelEncapsulationLimitAspect.eval((fr.inria.diverse.eho.model.eho.TunnelEncapsulationLimit)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.TunnelEncapsulationLimitAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.HomeAdress){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect.eval((fr.inria.diverse.eho.model.eho.HomeAdress)_self,optionType);
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MobilityHeaderAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.MobilityHeader){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.MobilityHeaderAspect.eval((fr.inria.diverse.eho.model.eho.MobilityHeader)_self,root);
 		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.DiscardReject){
-			fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect.run((fr.inria.diverse.eho.model.eho.DiscardReject)_self);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MobilityHeaderAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.QuickStartAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.QuickStart){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.QuickStartAspect.eval((fr.inria.diverse.eho.model.eho.QuickStart)_self,optionType);
@@ -173,21 +258,11 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect.eval((fr.inria.diverse.eho.model.eho.PadN)_self,optionType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Calipso){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect.eval((fr.inria.diverse.eho.model.eho.Calipso)_self,optionType);
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.BandwidthAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.Bandwidth){
+			fr.inria.diverse.eho.k3dsa.Eho.aspects.BandwidthAspect.run((fr.inria.diverse.eho.model.eho.Bandwidth)_self,root);
 		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.SmfDpd){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect.eval((fr.inria.diverse.eho.model.eho.SmfDpd)_self,optionType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.Type2){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect.eval((fr.inria.diverse.eho.model.eho.Type2)_self,routingType);
-		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.BandwidthAspect
 	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect
 		if (_self instanceof fr.inria.diverse.eho.model.eho.Deprecated){
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect.eval((fr.inria.diverse.eho.model.eho.Deprecated)_self,optionType);
@@ -208,8 +283,8 @@
 			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment2Aspect.eval((fr.inria.diverse.eho.model.eho.RFC3692Experiment2)_self,routingType);
 		} else
 		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment2Aspect
-	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect
-		if (_self instanceof fr.inria.diverse.eho.model.eho.MPLOption){
-			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect.eval((fr.inria.diverse.eho.model.eho.MPLOption)_self,optionType);
+	// BeginInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect
+		if (_self instanceof fr.inria.diverse.eho.model.eho.UnknownEH){
+			result = fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect.eval((fr.inria.diverse.eho.model.eho.UnknownEH)_self,root);
 		} else
-		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect#Boolean eval(int) from fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect
+		// EndInjectInto fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect#Boolean eval(Policy) from fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect

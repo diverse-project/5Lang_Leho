@@ -23,15 +23,6 @@
       <ecoreClass href="eho.ecore#//Discard"/>
     </genClasses>
     <genClasses>
-      <ecoreClass href="eho.ecore#//PacketSpec"/>
-      <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//PacketSpec/port"/>
-      </genFeatures>
-      <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//PacketSpec/extensionheader"/>
-      </genFeatures>
-    </genClasses>
-    <genClasses>
       <ecoreClass href="eho.ecore#//Inbound"/>
     </genClasses>
     <genClasses>
@@ -188,15 +179,15 @@
       </genFeatures>
     </genClasses>
     <genClasses image="false">
-      <ecoreClass href="eho.ecore#//TypeInterface"/>
+      <ecoreClass href="eho.ecore#//Interface"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Interface/ports"/>
+      </genFeatures>
     </genClasses>
     <genClasses>
       <ecoreClass href="eho.ecore#//Rule"/>
       <genFeatures property="None" children="true" createChild="true">
         <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/action"/>
-      </genFeatures>
-      <genFeatures property="None" children="true" createChild="true">
-        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/packetspec"/>
       </genFeatures>
       <genFeatures property="None" children="true" createChild="true">
         <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/to"/>
@@ -206,6 +197,12 @@
       </genFeatures>
       <genFeatures property="None" children="true" createChild="true">
         <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/from"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/interface"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Rule/extensionheader"/>
       </genFeatures>
     </genClasses>
     <genClasses image="false">
@@ -264,6 +261,60 @@
     </genClasses>
     <genClasses image="false">
       <ecoreClass href="eho.ecore#//Options"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Filter"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Filter/firstRule"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Filter/currentRule"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Filter/currentPacket"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Policy"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Policy/configuration"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Policy/filter"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Policy/packets"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Policy/ports"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Packet"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//Packet/time"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//Packet/sourceAddress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//Packet/destinationAddress"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Packet/inPort"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Packet/extensionheader"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="eho.ecore#//Port"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="eho.ecore#//Port/number"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="eho.ecore#//Port/interface"/>
+      </genFeatures>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
