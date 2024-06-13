@@ -3,19 +3,27 @@
 package fr.inria.diverse.melanger.leho.leho.impl;
 
 import fr.inria.diverse.melanger.leho.leho.Action;
+import fr.inria.diverse.melanger.leho.leho.ExtensionHeader;
+import fr.inria.diverse.melanger.leho.leho.Interface;
 import fr.inria.diverse.melanger.leho.leho.IpAddSpec;
 import fr.inria.diverse.melanger.leho.leho.LehoPackage;
-import fr.inria.diverse.melanger.leho.leho.PacketSpec;
 import fr.inria.diverse.melanger.leho.leho.Rule;
+
+import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,10 +34,11 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getAction <em>Action</em>}</li>
- *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getPacketspec <em>Packetspec</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getTo <em>To</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getNext <em>Next</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getFrom <em>From</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getExtensionheader <em>Extensionheader</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl#getInterface <em>Interface</em>}</li>
  * </ul>
  *
  * @generated
@@ -44,16 +53,6 @@ public class RuleImpl extends EObjectImpl implements Rule {
 	 * @ordered
 	 */
 	protected Action action;
-
-	/**
-	 * The cached value of the '{@link #getPacketspec() <em>Packetspec</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPacketspec()
-	 * @generated
-	 * @ordered
-	 */
-	protected PacketSpec packetspec;
 
 	/**
 	 * The cached value of the '{@link #getTo() <em>To</em>}' containment reference.
@@ -84,6 +83,26 @@ public class RuleImpl extends EObjectImpl implements Rule {
 	 * @ordered
 	 */
 	protected IpAddSpec from;
+
+	/**
+	 * The cached value of the '{@link #getExtensionheader() <em>Extensionheader</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExtensionheader()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ExtensionHeader> extensionheader;
+
+	/**
+	 * The cached value of the '{@link #getInterface() <em>Interface</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInterface()
+	 * @generated
+	 * @ordered
+	 */
+	protected Interface interface_;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,51 +166,6 @@ public class RuleImpl extends EObjectImpl implements Rule {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.RULE__ACTION, newAction, newAction));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PacketSpec getPacketspec() {
-		return packetspec;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetPacketspec(PacketSpec newPacketspec, NotificationChain msgs) {
-		PacketSpec oldPacketspec = packetspec;
-		packetspec = newPacketspec;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LehoPackage.RULE__PACKETSPEC, oldPacketspec, newPacketspec);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPacketspec(PacketSpec newPacketspec) {
-		if (newPacketspec != packetspec) {
-			NotificationChain msgs = null;
-			if (packetspec != null)
-				msgs = ((InternalEObject)packetspec).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LehoPackage.RULE__PACKETSPEC, null, msgs);
-			if (newPacketspec != null)
-				msgs = ((InternalEObject)newPacketspec).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LehoPackage.RULE__PACKETSPEC, null, msgs);
-			msgs = basicSetPacketspec(newPacketspec, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.RULE__PACKETSPEC, newPacketspec, newPacketspec));
 	}
 
 	/**
@@ -335,18 +309,71 @@ public class RuleImpl extends EObjectImpl implements Rule {
 	 * @generated
 	 */
 	@Override
+	public EList<ExtensionHeader> getExtensionheader() {
+		if (extensionheader == null) {
+			extensionheader = new EObjectContainmentEList<ExtensionHeader>(ExtensionHeader.class, this, LehoPackage.RULE__EXTENSIONHEADER);
+		}
+		return extensionheader;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Interface getInterface() {
+		if (interface_ != null && interface_.eIsProxy()) {
+			InternalEObject oldInterface = (InternalEObject)interface_;
+			interface_ = (Interface)eResolveProxy(oldInterface);
+			if (interface_ != oldInterface) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LehoPackage.RULE__INTERFACE, oldInterface, interface_));
+			}
+		}
+		return interface_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Interface basicGetInterface() {
+		return interface_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInterface(Interface newInterface) {
+		Interface oldInterface = interface_;
+		interface_ = newInterface;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.RULE__INTERFACE, oldInterface, interface_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case LehoPackage.RULE__ACTION:
 				return basicSetAction(null, msgs);
-			case LehoPackage.RULE__PACKETSPEC:
-				return basicSetPacketspec(null, msgs);
 			case LehoPackage.RULE__TO:
 				return basicSetTo(null, msgs);
 			case LehoPackage.RULE__NEXT:
 				return basicSetNext(null, msgs);
 			case LehoPackage.RULE__FROM:
 				return basicSetFrom(null, msgs);
+			case LehoPackage.RULE__EXTENSIONHEADER:
+				return ((InternalEList<?>)getExtensionheader()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -361,14 +388,17 @@ public class RuleImpl extends EObjectImpl implements Rule {
 		switch (featureID) {
 			case LehoPackage.RULE__ACTION:
 				return getAction();
-			case LehoPackage.RULE__PACKETSPEC:
-				return getPacketspec();
 			case LehoPackage.RULE__TO:
 				return getTo();
 			case LehoPackage.RULE__NEXT:
 				return getNext();
 			case LehoPackage.RULE__FROM:
 				return getFrom();
+			case LehoPackage.RULE__EXTENSIONHEADER:
+				return getExtensionheader();
+			case LehoPackage.RULE__INTERFACE:
+				if (resolve) return getInterface();
+				return basicGetInterface();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -378,14 +408,12 @@ public class RuleImpl extends EObjectImpl implements Rule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case LehoPackage.RULE__ACTION:
 				setAction((Action)newValue);
-				return;
-			case LehoPackage.RULE__PACKETSPEC:
-				setPacketspec((PacketSpec)newValue);
 				return;
 			case LehoPackage.RULE__TO:
 				setTo((IpAddSpec)newValue);
@@ -395,6 +423,13 @@ public class RuleImpl extends EObjectImpl implements Rule {
 				return;
 			case LehoPackage.RULE__FROM:
 				setFrom((IpAddSpec)newValue);
+				return;
+			case LehoPackage.RULE__EXTENSIONHEADER:
+				getExtensionheader().clear();
+				getExtensionheader().addAll((Collection<? extends ExtensionHeader>)newValue);
+				return;
+			case LehoPackage.RULE__INTERFACE:
+				setInterface((Interface)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -411,9 +446,6 @@ public class RuleImpl extends EObjectImpl implements Rule {
 			case LehoPackage.RULE__ACTION:
 				setAction((Action)null);
 				return;
-			case LehoPackage.RULE__PACKETSPEC:
-				setPacketspec((PacketSpec)null);
-				return;
 			case LehoPackage.RULE__TO:
 				setTo((IpAddSpec)null);
 				return;
@@ -422,6 +454,12 @@ public class RuleImpl extends EObjectImpl implements Rule {
 				return;
 			case LehoPackage.RULE__FROM:
 				setFrom((IpAddSpec)null);
+				return;
+			case LehoPackage.RULE__EXTENSIONHEADER:
+				getExtensionheader().clear();
+				return;
+			case LehoPackage.RULE__INTERFACE:
+				setInterface((Interface)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -437,14 +475,16 @@ public class RuleImpl extends EObjectImpl implements Rule {
 		switch (featureID) {
 			case LehoPackage.RULE__ACTION:
 				return action != null;
-			case LehoPackage.RULE__PACKETSPEC:
-				return packetspec != null;
 			case LehoPackage.RULE__TO:
 				return to != null;
 			case LehoPackage.RULE__NEXT:
 				return next != null;
 			case LehoPackage.RULE__FROM:
 				return from != null;
+			case LehoPackage.RULE__EXTENSIONHEADER:
+				return extensionheader != null && !extensionheader.isEmpty();
+			case LehoPackage.RULE__INTERFACE:
+				return interface_ != null;
 		}
 		return super.eIsSet(featureID);
 	}

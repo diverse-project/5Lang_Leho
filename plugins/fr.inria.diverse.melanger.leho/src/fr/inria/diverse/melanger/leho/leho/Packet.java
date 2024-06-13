@@ -2,6 +2,10 @@
  */
 package fr.inria.diverse.melanger.leho.leho;
 
+import java.math.BigInteger;
+
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -16,6 +20,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getTime <em>Time</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getInPort <em>In Port</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getContent <em>Content</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getSourceAddress <em>Source Address</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getDestinationAddress <em>Destination Address</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.Packet#getExtensionheaders <em>Extensionheaders</em>}</li>
  * </ul>
  *
  * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPacket()
@@ -88,5 +95,64 @@ public interface Packet extends EObject {
 	 * @generated
 	 */
 	void setContent(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Address</em>' attribute.
+	 * @see #setSourceAddress(BigInteger)
+	 * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPacket_SourceAddress()
+	 * @model annotation="aspect"
+	 *        annotation="containment"
+	 * @generated
+	 */
+	BigInteger getSourceAddress();
+
+	/**
+	 * Sets the value of the '{@link fr.inria.diverse.melanger.leho.leho.Packet#getSourceAddress <em>Source Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Source Address</em>' attribute.
+	 * @see #getSourceAddress()
+	 * @generated
+	 */
+	void setSourceAddress(BigInteger value);
+
+	/**
+	 * Returns the value of the '<em><b>Destination Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Destination Address</em>' attribute.
+	 * @see #setDestinationAddress(BigInteger)
+	 * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPacket_DestinationAddress()
+	 * @model annotation="aspect"
+	 *        annotation="containment"
+	 * @generated
+	 */
+	BigInteger getDestinationAddress();
+
+	/**
+	 * Sets the value of the '{@link fr.inria.diverse.melanger.leho.leho.Packet#getDestinationAddress <em>Destination Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Destination Address</em>' attribute.
+	 * @see #getDestinationAddress()
+	 * @generated
+	 */
+	void setDestinationAddress(BigInteger value);
+
+	/**
+	 * Returns the value of the '<em><b>Extensionheaders</b></em>' containment reference list.
+	 * The list contents are of type {@link fr.inria.diverse.melanger.leho.leho.ExtensionHeader}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Extensionheaders</em>' containment reference list.
+	 * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPacket_Extensionheaders()
+	 * @model containment="true"
+	 *        annotation="aspect"
+	 * @generated
+	 */
+	EList<ExtensionHeader> getExtensionheaders();
 
 } // Packet

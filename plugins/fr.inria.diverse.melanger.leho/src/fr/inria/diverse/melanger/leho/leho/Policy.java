@@ -18,8 +18,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getFilter <em>Filter</em>}</li>
- *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentTime <em>Current Time</em>}</li>
- *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentPacket <em>Current Packet</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getPackets <em>Packets</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getInPorts <em>In Ports</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.Policy#getInterfaces <em>Interfaces</em>}</li>
@@ -52,52 +50,6 @@ public interface Policy extends EObject {
 	 * @generated
 	 */
 	void setFilter(Filter value);
-
-	/**
-	 * Returns the value of the '<em><b>Current Time</b></em>' attribute.
-	 * The default value is <code>"0"</code>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Current Time</em>' attribute.
-	 * @see #setCurrentTime(int)
-	 * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPolicy_CurrentTime()
-	 * @model default="0" required="true"
-	 *        annotation="aspect"
-	 * @generated
-	 */
-	int getCurrentTime();
-
-	/**
-	 * Sets the value of the '{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentTime <em>Current Time</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Current Time</em>' attribute.
-	 * @see #getCurrentTime()
-	 * @generated
-	 */
-	void setCurrentTime(int value);
-
-	/**
-	 * Returns the value of the '<em><b>Current Packet</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Current Packet</em>' reference.
-	 * @see #setCurrentPacket(Packet)
-	 * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getPolicy_CurrentPacket()
-	 * @model annotation="aspect"
-	 * @generated
-	 */
-	Packet getCurrentPacket();
-
-	/**
-	 * Sets the value of the '{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentPacket <em>Current Packet</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Current Packet</em>' reference.
-	 * @see #getCurrentPacket()
-	 * @generated
-	 */
-	void setCurrentPacket(Packet value);
 
 	/**
 	 * Returns the value of the '<em><b>Packets</b></em>' containment reference list.

@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class InboundImpl extends TypeInterfaceImpl implements Inbound {
+public class InboundImpl extends InterfaceImpl implements Inbound {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

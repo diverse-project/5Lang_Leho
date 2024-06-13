@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public abstract class ExtensionHeaderImpl extends EObjectImpl implements ExtensionHeader {
+public class ExtensionHeaderImpl extends EObjectImpl implements ExtensionHeader {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

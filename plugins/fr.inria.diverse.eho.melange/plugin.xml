@@ -20,22 +20,34 @@
     <!-- @generated PFLehoMT -->
     <package class="fr.inria.diverse.melange.leho.pflehomt.leho.LehoPackage" genModel="model-gen/PFLehoMT.genmodel" uri="http://fr.inria.diverse.melange.leho.pflehomt/leho/"/>
   </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <!-- @generated GpflMT -->
-    <package class="fr.inria.diverse.melanger.gpflmt.gpfl.GpflPackage" genModel="model-gen/GpflMT.genmodel" uri="http://fr.inria.diverse.melanger.gpflmt/gpfl/"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <!-- @generated EhoMT -->
-    <package class="fr.inria.diverse.melanger.ehomt.eho.EhoPackage" genModel="model-gen/EhoMT.genmodel" uri="http://fr.inria.diverse.melanger.ehomt/eho/"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <!-- @generated LehoMT -->
-    <package class="fr.inria.diverse.melanger.lehomt.leho.LehoPackage" genModel="model-gen/LehoMT.genmodel" uri="http://fr.inria.diverse.melanger.lehomt/leho/"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <!-- @generated LehoMT -->
-    <package class="fr.inria.diverse.melanger.lehomt.eho.EhoPackage" genModel="model-gen/LehoMT.genmodel" uri="http://fr.inria.diverse.melanger.lehomt/eho/"/>
-  </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GpflMT -->
+      <package
+            uri="http://fr.inria.diverse.melanger.gpflmt/gpfl/"
+            class="fr.inria.diverse.melanger.gpflmt.gpfl.GpflPackage"
+            genModel="model-gen/GpflMT.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated EhoMT -->
+      <package
+            uri="http://fr.inria.diverse.melanger.ehomt/eho/"
+            class="fr.inria.diverse.melanger.ehomt.eho.EhoPackage"
+            genModel="model-gen/EhoMT.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated LehoMT -->
+      <package
+            uri="http://fr.inria.diverse.melanger.lehomt/leho/"
+            class="fr.inria.diverse.melanger.lehomt.leho.LehoPackage"
+            genModel="model-gen/LehoMT.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated LehoMT -->
+      <package
+            uri="http://fr.inria.diverse.melanger.lehomt/eho/"
+            class="fr.inria.diverse.melanger.lehomt.eho.EhoPackage"
+            genModel="model-gen/LehoMT.genmodel"/>
+   </extension>
   <extension point="org.eclipse.emf.ecore.generated_package">
     <!-- @generated PflMT -->
     <package class="fr.inria.diverse.melanger.pflmt.gpfl.GpflPackage" genModel="model-gen/PflMT.genmodel" uri="http://fr.inria.diverse.melanger.pflmt/gpfl/"/>
@@ -45,15 +57,14 @@
     <package class="fr.inria.diverse.melanger.pflmt.leho.LehoPackage" genModel="model-gen/PflMT.genmodel" uri="http://fr.inria.diverse.melanger.pflmt/leho/"/>
   </extension>
   <extension point="fr.inria.diverse.melange.modeltype">
-    <modeltype id="fr.inria.diverse.melanger.GpflMT" uri="http://fr.inria.diverse.melanger.gpflmt/"/>
-    <modeltype id="fr.inria.diverse.melanger.EhoMT" uri="http://fr.inria.diverse.melanger.ehomt/"/>
+    <modeltype id="fr.inria.diverse.melanger.LehoMT" uri="http://fr.inria.diverse.melanger.lehomt/">
+      <subtyping modeltypeId="fr.inria.diverse.melanger.EhoMT"/>
+    </modeltype>
   </extension>
   <extension point="fr.inria.diverse.melange.language">
-    <language aspects="Policy:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PolicyAspect;Lower:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.LowerAspect;Or:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.OrAspect;Port:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PortAspect;BytesLiteral:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BytesLiteralAspect;Send:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.SendAspect;Read:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ReadAspect;Prologue:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PrologueAspect;LowerOrEqual:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.LowerOrEqualAspect;BooleanDec:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BooleanDecAspect;IntLiteral:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IntLiteralAspect;Equality:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.EqualityAspect;Cmd:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.CmdAspect;Plus:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PlusAspect;Packet:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PacketAspect;BytesDec:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BytesDecAspect;Accept:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AcceptAspect;Nop:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NopAspect;NewEventOccurence:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewEventOccurenceAspect;NewInterruption:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewInterruptionAspect;Drop:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.DropAspect;Not:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NotAspect;StringLiteral:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StringLiteralAspect;And:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AndAspect;State:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StateAspect;StringDec:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StringDecAspect;IntegerDec:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IntegerDecAspect;Block:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BlockAspect;Minus:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.MinusAspect;Inequality:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InequalityAspect;VariableRef:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.VariableRefAspect;BooleanLiteral:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BooleanLiteralAspect;Iteration:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.IterationAspect;NewAutomata:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NewAutomataAspect;Stmt:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StmtAspect;InitSeq:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InitSeqAspect;VariableDeclaration:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.VariableDeclarationAspect;SetVariable:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.SetVariableAspect;BinaryOp:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.BinaryOpAspect;Condition:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ConditionAspect;UnaryOp:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.UnaryOpAspect;InterfaceRef:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.InterfaceRefAspect;PortRef:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PortRefAspect;GreaterOrEqual:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.GreaterOrEqualAspect;Div:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.DivAspect;Neg:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.NegAspect;Mult:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.MultAspect;Expression:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.ExpressionAspect;Filter:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.FilterAspect;Automata:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AutomataAspect;StepAutomata:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.StepAutomataAspect;Alarm:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.AlarmAspect;Transition:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.TransitionAspect;Event:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.EventAspect;Greater:fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.GreaterAspect" entryPoints="fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PolicyAspect.run(fr.inria.diverse.gpfl.model.gpfl.Policy)" exactType="fr.inria.diverse.melanger.GpflMT" id="fr.inria.diverse.melanger.Gpfl" uri="http://fr.inria.diverse.melanger.gpfl/gpfl/">
-      <adapter class="fr.inria.diverse.melanger.gpfl.adapters.gpflmt.GpflAdapter" modeltypeId="fr.inria.diverse.melanger.GpflMT"/>
-    </language>
-    <language aspects="ExtensionHeader:fr.inria.diverse.eho.k3dsa.Eho.aspects.ExtensionHeaderAspect;Nimrod:fr.inria.diverse.eho.k3dsa.Eho.aspects.NimrodAspect;Configuration:fr.inria.diverse.eho.k3dsa.Eho.aspects.ConfigurationAspect;MLD:fr.inria.diverse.eho.k3dsa.Eho.aspects.MLDAspect;IPv6PerformanceDiagnostic:fr.inria.diverse.eho.k3dsa.Eho.aspects.IPv6PerformanceDiagnosticAspect;DFF:fr.inria.diverse.eho.k3dsa.Eho.aspects.DFFAspect;Fragment:fr.inria.diverse.eho.k3dsa.Eho.aspects.FragmentAspect;AuthentificationHeader:fr.inria.diverse.eho.k3dsa.Eho.aspects.AuthentificationHeaderAspect;HostIdentityProtocol:fr.inria.diverse.eho.k3dsa.Eho.aspects.HostIdentityProtocolAspect;Reject:fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect;JumboPayload:fr.inria.diverse.eho.k3dsa.Eho.aspects.JumboPayloadAspect;RPLSource:fr.inria.diverse.eho.k3dsa.Eho.aspects.RPLSourceAspect;PacketSpec:fr.inria.diverse.eho.k3dsa.Eho.aspects.PacketSpecAspect;DiscardDrop:fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardDropAspect;Calipso:fr.inria.diverse.eho.k3dsa.Eho.aspects.CalipsoAspect;RSVP:fr.inria.diverse.eho.k3dsa.Eho.aspects.RSVPAspect;PadN:fr.inria.diverse.eho.k3dsa.Eho.aspects.PadNAspect;MPLOption:fr.inria.diverse.eho.k3dsa.Eho.aspects.MPLOptionAspect;DiscardReject:fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardRejectAspect;Accept:fr.inria.diverse.eho.k3dsa.Eho.aspects.AcceptAspect;Discard:fr.inria.diverse.eho.k3dsa.Eho.aspects.DiscardAspect;Inbound:fr.inria.diverse.eho.k3dsa.Eho.aspects.InboundAspect;Drop:fr.inria.diverse.eho.k3dsa.Eho.aspects.DropAspect;OptionHopByHop:fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionHopByHopAspect;DestinationOpts:fr.inria.diverse.eho.k3dsa.Eho.aspects.DestinationOptsAspect;RPLOption:fr.inria.diverse.eho.k3dsa.Eho.aspects.RPLOptionAspect;Shim6Protocol:fr.inria.diverse.eho.k3dsa.Eho.aspects.Shim6ProtocolAspect;Unassigned:fr.inria.diverse.eho.k3dsa.Eho.aspects.UnassignedAspect;Pad1:fr.inria.diverse.eho.k3dsa.Eho.aspects.Pad1Aspect;Rule:fr.inria.diverse.eho.k3dsa.Eho.aspects.RuleAspect;Reserved:fr.inria.diverse.eho.k3dsa.Eho.aspects.ReservedAspect;Type2:fr.inria.diverse.eho.k3dsa.Eho.aspects.Type2Aspect;Options:fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionsAspect;Action:fr.inria.diverse.eho.k3dsa.Eho.aspects.ActionAspect;HopByHopOpts:fr.inria.diverse.eho.k3dsa.Eho.aspects.HopByHopOptsAspect;LineIdOption:fr.inria.diverse.eho.k3dsa.Eho.aspects.LineIdOptionAspect;ILNPNonce:fr.inria.diverse.eho.k3dsa.Eho.aspects.ILNPNonceAspect;OptionDestination:fr.inria.diverse.eho.k3dsa.Eho.aspects.OptionDestinationAspect;Segment:fr.inria.diverse.eho.k3dsa.Eho.aspects.SegmentAspect;ExperimentationAndTesting:fr.inria.diverse.eho.k3dsa.Eho.aspects.ExperimentationAndTestingAspect;Outbound:fr.inria.diverse.eho.k3dsa.Eho.aspects.OutboundAspect;TunnelEncapsulationLimit:fr.inria.diverse.eho.k3dsa.Eho.aspects.TunnelEncapsulationLimitAspect;QuickStart:fr.inria.diverse.eho.k3dsa.Eho.aspects.QuickStartAspect;TypeRouting:fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeRoutingAspect;Deprecated:fr.inria.diverse.eho.k3dsa.Eho.aspects.DeprecatedAspect;Bandwidth:fr.inria.diverse.eho.k3dsa.Eho.aspects.BandwidthAspect;RFC3692Experiment:fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692ExperimentAspect;Protocol:fr.inria.diverse.eho.k3dsa.Eho.aspects.ProtocolAspect;SmfDpd:fr.inria.diverse.eho.k3dsa.Eho.aspects.SmfDpdAspect;EncapsulingSecurityPayload:fr.inria.diverse.eho.k3dsa.Eho.aspects.EncapsulingSecurityPayloadAspect;EndPointIdentification:fr.inria.diverse.eho.k3dsa.Eho.aspects.EndPointIdentificationAspect;Routing:fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect;SourceRoute:fr.inria.diverse.eho.k3dsa.Eho.aspects.SourceRouteAspect;MobilityHeader:fr.inria.diverse.eho.k3dsa.Eho.aspects.MobilityHeaderAspect;UnknownEH:fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect;RFC3692Experiment2:fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment2Aspect;RFC3692Experiment1:fr.inria.diverse.eho.k3dsa.Eho.aspects.RFC3692Experiment1Aspect;IpAddSpec:fr.inria.diverse.eho.k3dsa.Eho.aspects.IpAddSpecAspect,fr.inria.diverse.eho.k3dsa.Eho.aspects.IpAddSpecAspect;RouterAlert:fr.inria.diverse.eho.k3dsa.Eho.aspects.RouterAlertAspect;HomeAdress:fr.inria.diverse.eho.k3dsa.Eho.aspects.HomeAdressAspect" entryPoints="" exactType="fr.inria.diverse.melanger.EhoMT" id="fr.inria.diverse.melanger.Eho" uri="http://fr.inria.diverse.melanger.eho/eho/">
-      <adapter class="fr.inria.diverse.melanger.eho.adapters.ehomt.EhoAdapter" modeltypeId="fr.inria.diverse.melanger.EhoMT"/>
+    <language aspects="Policy:fr.inria.diverse.eho.melanger.PolicyGlue;ExtensionHeader:fr.inria.diverse.eho.melanger.ExtensionHeaderGlue;Action:fr.inria.diverse.eho.melanger.ActionGlue;HopByHopOpts:fr.inria.diverse.eho.melanger.HopByHopOptsGlue;Fragment:fr.inria.diverse.eho.melanger.FragmentGlue;AuthentificationHeader:fr.inria.diverse.eho.melanger.AuthentificationHeaderGlue;HostIdentityProtocol:fr.inria.diverse.eho.melanger.HostIdentityProtocolGlue;ExperimentationAndTesting:fr.inria.diverse.eho.melanger.ExperimentationAndTestingGlue;Outbound:fr.inria.diverse.eho.melanger.OutboundGlue;Reject:fr.inria.diverse.eho.melanger.RejectGlue;PacketSpec:fr.inria.diverse.eho.melanger.PacketSpecGlue;Bandwidth:fr.inria.diverse.eho.melanger.BandwidthGlue;EncapsulingSecurityPayload:fr.inria.diverse.eho.melanger.EncapsulingSecurityPayloadGlue;Accept:fr.inria.diverse.eho.melanger.AcceptGlue;Routing:fr.inria.diverse.eho.melanger.RoutingGlue;Discard:fr.inria.diverse.eho.melanger.DiscardGlue;Inbound:fr.inria.diverse.eho.melanger.InboundGlue;MobilityHeader:fr.inria.diverse.eho.melanger.MobilityHeaderGlue;DestinationOpts:fr.inria.diverse.eho.melanger.DestinationOptsGlue;Drop:fr.inria.diverse.eho.melanger.DropGlue;UnknownEH:fr.inria.diverse.eho.melanger.UnknownEHGlue;Filter:fr.inria.diverse.eho.melanger.FilterGlue;Rule:fr.inria.diverse.eho.melanger.RuleGlue;IpAddSpec:fr.inria.diverse.eho.melanger.IpAddSpecGlue;Interface:fr.inria.diverse.eho.melanger.InterfaceGlue" entryPoints="" exactType="fr.inria.diverse.melanger.LehoMT" id="fr.inria.diverse.melanger.Leho" uri="http://fr.inria.diverse.melanger.leho/eho/">
+      <adapter class="fr.inria.diverse.melanger.leho.adapters.ehomt.LehoAdapter" modeltypeId="fr.inria.diverse.melanger.EhoMT"/>
+      <adapter class="fr.inria.diverse.melanger.leho.adapters.lehomt.LehoAdapter" modeltypeId="fr.inria.diverse.melanger.LehoMT"/>
     </language>
   </extension>
 </plugin>

@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.eho.melange/src-gen" modelPluginID="fr.inria.diverse.eho.melange" modelName="LehoMT" complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>platform:/resource/fr.inria.diverse.eho.melange/model-gen/LehoMT.ecore</foreignModel>
+  <genPackages prefix="Eho" basePackage="fr.inria.diverse.melanger.lehomt" disposableProviderFactory="true">
+    <ecorePackage href="LehoMT.ecore#/0"/>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Configuration"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Configuration/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Drop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Drop/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Drop/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Reject"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Reject/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Reject/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Action"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Action/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Accept"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Accept/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Accept/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Discard"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Discard/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Discard/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/PacketSpec"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/PacketSpec/port"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/PacketSpec/extensionheader"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/PacketSpec/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/PacketSpec/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Inbound"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Inbound/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Inbound/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Outbound"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Outbound/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Outbound/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Bandwidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/0/Bandwidth/number"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Bandwidth/unit"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Bandwidth/time"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Bandwidth/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Bandwidth/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Unit"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Time"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/BitUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/OctetUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/PacketUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Second"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Minute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Hour"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Day"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/ExtensionHeader"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/ExtensionHeader/eval"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/OptionHopByHop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/OptionHopByHop/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/OptionHopByHop/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/HopByHopOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/HopByHopOpts/options"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/HopByHopOpts/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/HopByHopOpts/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Routing"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Routing/types"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Routing/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Routing/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Fragment"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Fragment/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Fragment/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/EncapsulingSecurityPayload"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/EncapsulingSecurityPayload/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/EncapsulingSecurityPayload/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/AuthentificationHeader"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/AuthentificationHeader/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/AuthentificationHeader/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/DestinationOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/DestinationOpts/options"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/DestinationOpts/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/DestinationOpts/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/MobilityHeader"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/MobilityHeader/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/MobilityHeader/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/UnknownEH"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/UnknownEH/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/UnknownEH/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/ExperimentationAndTesting"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/ExperimentationAndTesting/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/ExperimentationAndTesting/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/HostIdentityProtocol"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/HostIdentityProtocol/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/HostIdentityProtocol/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Shim6Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Pad1"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Pad1/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Pad1/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/PadN"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/PadN/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/PadN/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/JumboPayload"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/JumboPayload/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/JumboPayload/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RPLOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/TunnelEncapsulationLimit"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/TunnelEncapsulationLimit/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/TunnelEncapsulationLimit/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RouterAlert"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/RouterAlert/protocol"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RouterAlert/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RouterAlert/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/QuickStart"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/QuickStart/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/QuickStart/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Calipso"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Calipso/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Calipso/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/SmfDpd"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/SmfDpd/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/SmfDpd/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/HomeAdress"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/HomeAdress/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/HomeAdress/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Deprecated"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Deprecated/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Deprecated/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/EndPointIdentification"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/EndPointIdentification/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/EndPointIdentification/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/ILNPNonce"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/ILNPNonce/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/ILNPNonce/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/LineIdOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/LineIdOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/LineIdOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/MPLOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/MPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/MPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RFC3692Experiment"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RFC3692Experiment/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RFC3692Experiment/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/IpAddSpec"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/0/IpAddSpec/adress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/0/IpAddSpec/port"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/0/IpAddSpec/mask"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/IpAddSpec/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/IpAddSpec/eval/root"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/IpAddSpec/eval/type"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Interface"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Interface/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Interface/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Rule"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Rule/action"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Rule/packetspec"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Rule/to"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Rule/next"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/0/Rule/from"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Rule/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Rule/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Protocol"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Protocol/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Protocol/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RSVP"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RSVP/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RSVP/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/MLD"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/MLD/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/MLD/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/OptionDestination"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/OptionDestination/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/OptionDestination/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/IPv6PerformanceDiagnostic"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/IPv6PerformanceDiagnostic/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/IPv6PerformanceDiagnostic/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/TypeRouting"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/TypeRouting/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/TypeRouting/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/SourceRoute"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/SourceRoute/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/SourceRoute/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Nimrod"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Nimrod/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Nimrod/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Type2"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Type2/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Type2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RPLSource"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RPLSource/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RPLSource/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Segment"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Segment/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Segment/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Unassigned"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Unassigned/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Unassigned/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RFC3692Experiment1"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RFC3692Experiment1/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RFC3692Experiment1/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/RFC3692Experiment2"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/RFC3692Experiment2/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/RFC3692Experiment2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Reserved"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Reserved/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Reserved/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/DiscardDrop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/DiscardDrop/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/DiscardReject"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/DiscardReject/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/DFF"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/DFF/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/DFF/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/0/Options"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/0/Options/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/0/Options/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/0/Policy"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Leho" basePackage="fr.inria.diverse.melanger.lehomt" disposableProviderFactory="true">
+    <ecorePackage href="LehoMT.ecore#/1"/>
+    <genDataTypes>
+      <ecoreDataType href="LehoMT.ecore#/1/Object"/>
+    </genDataTypes>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Configuration"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Configuration/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Drop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Drop/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Drop/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Reject"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Action"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Action/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Accept"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Accept/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Accept/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Discard"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/PacketSpec"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/PacketSpec/port"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/PacketSpec/extensionheader"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Inbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Outbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Bandwidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Bandwidth/number"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Bandwidth/unit"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Bandwidth/time"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Unit"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Time"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/BitUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/OctetUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/PacketUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Second"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Minute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Hour"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Day"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/ExtensionHeader"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/ExtensionHeader/eval"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/OptionHopByHop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/OptionHopByHop/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/OptionHopByHop/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/HopByHopOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/HopByHopOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Routing"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Routing/types"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Fragment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/EncapsulingSecurityPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/AuthentificationHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/DestinationOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/DestinationOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/MobilityHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/UnknownEH"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/ExperimentationAndTesting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/HostIdentityProtocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Shim6Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Pad1"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Pad1/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Pad1/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/PadN"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/PadN/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/PadN/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/JumboPayload"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/JumboPayload/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/JumboPayload/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RPLOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/TunnelEncapsulationLimit"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/TunnelEncapsulationLimit/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/TunnelEncapsulationLimit/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RouterAlert"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/RouterAlert/protocol"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RouterAlert/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RouterAlert/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/QuickStart"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/QuickStart/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/QuickStart/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Calipso"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Calipso/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Calipso/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/SmfDpd"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/SmfDpd/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/SmfDpd/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/HomeAdress"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/HomeAdress/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/HomeAdress/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Deprecated"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Deprecated/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Deprecated/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/EndPointIdentification"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/EndPointIdentification/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/EndPointIdentification/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/ILNPNonce"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/ILNPNonce/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/ILNPNonce/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/LineIdOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/LineIdOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/LineIdOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/MPLOption"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/MPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/MPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RFC3692Experiment"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RFC3692Experiment/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RFC3692Experiment/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/IpAddSpec"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/IpAddSpec/adress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/IpAddSpec/port"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/IpAddSpec/mask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Interface"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Interface/name"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Interface/ports"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Rule"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Rule/action"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Rule/packetspec"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Rule/to"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Rule/next"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Rule/from"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Protocol"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Protocol/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Protocol/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RSVP"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RSVP/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RSVP/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/MLD"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/MLD/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/MLD/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/OptionDestination"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/OptionDestination/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/OptionDestination/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/IPv6PerformanceDiagnostic"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/IPv6PerformanceDiagnostic/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/IPv6PerformanceDiagnostic/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/TypeRouting"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/TypeRouting/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/TypeRouting/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/SourceRoute"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/SourceRoute/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/SourceRoute/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Nimrod"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Nimrod/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Nimrod/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Type2"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Type2/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Type2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RPLSource"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RPLSource/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RPLSource/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Segment"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Segment/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Segment/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Unassigned"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Unassigned/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Unassigned/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RFC3692Experiment1"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RFC3692Experiment1/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RFC3692Experiment1/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/RFC3692Experiment2"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/RFC3692Experiment2/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/RFC3692Experiment2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Reserved"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Reserved/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Reserved/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/DiscardDrop"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/DiscardDrop/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/DiscardReject"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/DiscardReject/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/DFF"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/DFF/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/DFF/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Options"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Options/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Options/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Policy"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/prologue"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/filter"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/variables"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/packets"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/inPorts"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/interruptions"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/interfaces"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Policy/configuration"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Policy/initializeModel"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Policy/initializeModel/args"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Policy/run"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Policy/read"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Policy/read/offset"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Policy/read/length"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Prologue"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Prologue/automataDefinition"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Prologue/init"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Prologue/eventPool"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Prologue/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Prologue/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Automata"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Automata/name"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Automata/initialState"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Automata/transitions"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Automata/states"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Automata/events"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/State"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/State/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Transition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Transition/from"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Transition/to"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Transition/event"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Event"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Event/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/InitSeq"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/InitSeq/block"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/InitSeq/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/InitSeq/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Block"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Block/firstStmt"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Block/currentStmt"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Block/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Block/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Stmt"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Stmt/next"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Stmt/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Stmt/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/EventOccurence"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/EventOccurence/name"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/EventOccurence/event"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Filter"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Filter/block"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Filter/currentPacket"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Filter/currentTime"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Filter/firstRule"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Filter/currentRule"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Filter/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Filter/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Packet"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Packet/time"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Packet/inPort"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Packet/content"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Packet/sourceAddress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Packet/destinationAddress"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Packet/extensionheaders"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/Port"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/Port/number"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/Port/interface"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/VariableDeclaration"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/VariableDeclaration/name"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/VariableDeclaration/eval"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/VariableDeclaration/eval/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="LehoMT.ecore#/1/NewInterruption"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/NewInterruption/time"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="LehoMT.ecore#/1/NewInterruption/block"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="LehoMT.ecore#/1/NewInterruption/loop"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/NewInterruption/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/NewInterruption/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="LehoMT.ecore#/1/Cmd"/>
+      <genOperations>
+        <ecoreOperation href="LehoMT.ecore#/1/Cmd/run"/>
+        <genParameters>
+          <ecoreParameter href="LehoMT.ecore#/1/Cmd/run/root"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+  <usedGenPackages href="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"/>
+</genmodel:GenModel>

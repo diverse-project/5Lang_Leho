@@ -44,17 +44,17 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eParameters name="root" eType="/0/Policy"/>
       </eOperations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="/0/TypeInterface" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="/0/Interface" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="/0/ExtensionHeader" containment="true"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="/0/TypeInterface">
+    <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="/0/Interface">
       <eOperations name="eval">
         <eAnnotations source="aspect"/>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eParameters name="root" eType="/0/Policy"/>
       </eOperations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="/0/TypeInterface">
+    <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="/0/Interface">
       <eOperations name="eval">
         <eAnnotations source="aspect"/>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
@@ -334,7 +334,7 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="TypeInterface" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="Interface" abstract="true">
       <eOperations name="eval">
         <eAnnotations source="aspect"/>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
@@ -547,12 +547,8 @@
       </eOperations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Discard" eSuperTypes="/1/Action"/>
-    <eClassifiers xsi:type="ecore:EClass" name="PacketSpec">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="port" eType="/1/TypeInterface" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="/1/ExtensionHeader" containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="/1/TypeInterface"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="/1/TypeInterface"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="/1/Interface"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="/1/Interface"/>
     <eClassifiers xsi:type="ecore:EClass" name="Bandwidth" eSuperTypes="/1/Action">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -569,7 +565,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="Minute" eSuperTypes="/1/Time"/>
     <eClassifiers xsi:type="ecore:EClass" name="Hour" eSuperTypes="/1/Time"/>
     <eClassifiers xsi:type="ecore:EClass" name="Day" eSuperTypes="/1/Time"/>
-    <eClassifiers xsi:type="ecore:EClass" name="ExtensionHeader" abstract="true">
+    <eClassifiers xsi:type="ecore:EClass" name="ExtensionHeader">
       <eOperations name="eval">
         <eAnnotations source="aspect"/>
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
@@ -757,13 +753,19 @@
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="TypeInterface" abstract="true"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Interface">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" upperBound="-1" eType="/1/Port"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Rule">
       <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1" eType="/1/Action" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="packetspec" lowerBound="1" eType="/1/PacketSpec" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="/1/IpAddSpec" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="/1/Rule" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="/1/IpAddSpec" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1" upperBound="-1" eType="/1/ExtensionHeader" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="/1/Interface"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Protocol" abstract="true">
       <eOperations name="eval">
@@ -949,13 +951,6 @@
         </eParameters>
       </eOperations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="/1/Filter" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentTime" lowerBound="1" defaultValueLiteral="0">
-        <eAnnotations source="aspect"/>
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="/1/Packet">
-        <eAnnotations source="aspect"/>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="packets" upperBound="-1" eType="/1/Packet" transient="true" containment="true">
         <eAnnotations source="aspect"/>
       </eStructuralFeatures>
@@ -970,15 +965,19 @@
         <eAnnotations source="aspect"/>
         <eParameters name="root" eType="/1/Policy"/>
       </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="currentPacket" eType="/1/Packet">
+        <eAnnotations source="aspect"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentTime" lowerBound="1" defaultValueLiteral="0">
+        <eAnnotations source="aspect"/>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="firstRule" eType="/1/Rule" containment="true">
         <eAnnotations source="aspect"/>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="currentRule" eType="/1/Rule" containment="true">
         <eAnnotations source="aspect"/>
       </eStructuralFeatures>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EDataType" name="Object" instanceClassName="java.lang.Object">
-      <eAnnotations source="aspect"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Packet">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" lowerBound="1">
@@ -988,6 +987,19 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" lowerBound="1">
         <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceAddress">
+        <eAnnotations source="aspect"/>
+        <eAnnotations source="containment"/>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinationAddress">
+        <eAnnotations source="aspect"/>
+        <eAnnotations source="containment"/>
+        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBigInteger"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheaders" upperBound="-1" eType="/1/ExtensionHeader" containment="true">
+        <eAnnotations source="aspect"/>
+      </eStructuralFeatures>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Port">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1">
@@ -995,11 +1007,8 @@
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="/1/Interface"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Interface">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1">
-        <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="ports" upperBound="-1" eType="/1/Port"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="Object" instanceClassName="java.lang.Object">
+      <eAnnotations source="aspect"/>
     </eClassifiers>
   </ecore:EPackage>
 </xmi:XMI>

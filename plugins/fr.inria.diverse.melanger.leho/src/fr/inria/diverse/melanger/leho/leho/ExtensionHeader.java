@@ -11,7 +11,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see fr.inria.diverse.melanger.leho.leho.LehoPackage#getExtensionHeader()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface ExtensionHeader extends EObject {

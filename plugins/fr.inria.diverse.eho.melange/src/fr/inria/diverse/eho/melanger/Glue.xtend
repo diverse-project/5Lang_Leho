@@ -21,7 +21,7 @@ import fr.inria.diverse.eho.k3dsa.Eho.aspects.PacketSpecAspect
 import fr.inria.diverse.eho.k3dsa.Eho.aspects.RejectAspect
 import fr.inria.diverse.eho.k3dsa.Eho.aspects.RoutingAspect
 import fr.inria.diverse.eho.k3dsa.Eho.aspects.RuleAspect
-import fr.inria.diverse.eho.k3dsa.Eho.aspects.TypeInterfaceAspect
+import fr.inria.diverse.eho.k3dsa.Eho.aspects.InterfaceAspect
 import fr.inria.diverse.eho.k3dsa.Eho.aspects.UnknownEHAspect
 import fr.inria.diverse.eho.model.eho.Accept
 import fr.inria.diverse.eho.model.eho.Action
@@ -54,7 +54,7 @@ import fr.inria.diverse.eho.model.eho.RouterAlert
 import fr.inria.diverse.eho.model.eho.Routing
 import fr.inria.diverse.eho.model.eho.Rule
 import fr.inria.diverse.eho.model.eho.Second
-import fr.inria.diverse.eho.model.eho.TypeInterface
+import fr.inria.diverse.eho.model.eho.Interface
 import fr.inria.diverse.eho.model.eho.UnknownEH
 import fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.FilterAspect
 import fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PolicyAspect
@@ -81,12 +81,15 @@ import static extension fr.inria.diverse.eho.melanger.PacketSpecGlue.*
 import static extension fr.inria.diverse.eho.melanger.PolicyGlue.*
 import static extension fr.inria.diverse.eho.melanger.RuleGlue.*
 import static extension fr.inria.diverse.eho.melanger.ExtensionHeaderGlue.*
-import static extension fr.inria.diverse.eho.melanger.TypeInterfaceGlue.*
+import static extension fr.inria.diverse.eho.melanger.InterfaceGlue.*
+import fr.inria.diverse.gpfl.model.gpfl.Packet
+import fr.inria.diverse.gpfl.k3dsa.Gpfl.aspects.PacketAspect
+import java.util.List
 
 @Aspect(className=Policy)
 class PolicyGlue extends PolicyAspect {
 	def BigInteger read(int offset, int length) {
-		new BigInteger(_self.currentPacket.content.toString.substring(offset, offset + length), 2)
+		new BigInteger(_self.filter.currentPacket.content.toString.substring(offset, offset + length), 2)
 	}
 	
     @Containment
@@ -95,7 +98,7 @@ class PolicyGlue extends PolicyAspect {
     override void run() {
     	_self.configuration.run()
     	for (packet : _self.packets) {
-			_self.currentPacket = packet			
+			_self.filter.currentPacket = packet			
 	 		_self.filter.run(_self)
 		}
     }
@@ -117,6 +120,16 @@ class FilterGlue extends FilterAspect {
 	}
 }
 
+@Aspect(className=Packet)
+class PacketGlue extends PacketAspect {
+	@Containment
+	public BigInteger sourceAddress
+	@Containment
+	public BigInteger destinationAddress
+	@Containment
+	public List<ExtensionHeader> extensionheaders
+}
+
 // ------------------------------------------------------ //
 // ------------------------ RULE ------------------------ //
 // ------------------------------------------------------ //
@@ -135,7 +148,7 @@ class RuleGlue extends RuleAspect {
 @Aspect(className=IpAddSpec)
 class IpAddSpecGlue extends IpAddSpecAspect {
 	def Boolean eval(Policy root, Boolean type) {
-		if((_self.port !== null && (Integer.parseInt(_self.port).equals(root.currentPacket.inPort.number) || _self.port.equals("any"))) || _self.port === null) {
+		if((_self.port !== null && (Integer.parseInt(_self.port).equals(root.filter.currentPacket.inPort.number) || _self.port.equals("any"))) || _self.port === null) {
 			val compIp = new BigInteger(1, InetAddress.getByName(_self.adress).getAddress())
 			if ((type && root.read(64, 128) >= compIp) || (!type && root.read(192, 128) <= compIp)) return true
 		}
@@ -160,8 +173,8 @@ class PacketSpecGlue extends PacketSpecAspect {
 
 // ------------------------ Port ------------------------ //
 
-@Aspect(className=TypeInterface)
-class TypeInterfaceGlue extends TypeInterfaceAspect {
+@Aspect(className=Interface)
+class InterfaceGlue extends InterfaceAspect {
 	def Boolean eval(Policy root) {
 		return _self.eval
 	}
@@ -170,7 +183,7 @@ class TypeInterfaceGlue extends TypeInterfaceAspect {
 @Aspect(className=Inbound)
 class InboundGlue extends InboundAspect {
 	def Boolean eval(Policy root) {
-		if(root.currentPacket.inPort.interface.name.equals("inbound"))
+		if(root.filter.currentPacket.inPort.interface.name.equals("inbound"))
 			return true
 		return false
 	} 
@@ -179,7 +192,7 @@ class InboundGlue extends InboundAspect {
 @Aspect(className=Outbound)
 class OutboundGlue extends OutboundAspect {
 	def Boolean eval(Policy root) {
-		if(root.currentPacket.inPort.interface.name.equals("outbound"))
+		if(root.filter.currentPacket.inPort.interface.name.equals("outbound"))
 			return true
 		return false
 	} 
@@ -391,22 +404,22 @@ class BandwidthGlue extends BandwidthAspect {
 			_self.time instanceof Second ? 1
 			
 		nbPackets++
-		nbOctets += root.currentPacket.content.length/8
-		nbBits += root.currentPacket.content.length
+		nbOctets += root.filter.currentPacket.content.length/8
+		nbBits += root.filter.currentPacket.content.length
 			
 		val unit = _self.unit instanceof PacketUnit ? nbPackets :
 			_self.unit instanceof OctetUnit ? nbOctets :
 			_self.unit instanceof BitUnit ? nbBits
 			
 		if(unit > _self.number) {
-			nextAcceptTime = root.currentTime+time
+			nextAcceptTime = root.filter.currentTime+time
 		}
-		if(root.currentTime < nextAcceptTime) {
+		if(root.filter.currentTime < nextAcceptTime) {
 			val drop = GpflFactory.eINSTANCE.createDrop
 	 		drop.run(root)
 		}
 		// if the limitation is finished
-		if (root.currentTime > nextAcceptTime && unit > _self.number) {
+		if (root.filter.currentTime > nextAcceptTime && unit > _self.number) {
 			nbPackets = 0
 			nbOctets = 0
 			nbBits = 0

@@ -2,17 +2,28 @@
  */
 package fr.inria.diverse.melanger.leho.leho.impl;
 
+import fr.inria.diverse.melanger.leho.leho.ExtensionHeader;
 import fr.inria.diverse.melanger.leho.leho.LehoPackage;
 import fr.inria.diverse.melanger.leho.leho.Packet;
 import fr.inria.diverse.melanger.leho.leho.Port;
 
+import java.math.BigInteger;
+
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,6 +36,9 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getTime <em>Time</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getInPort <em>In Port</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getSourceAddress <em>Source Address</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getDestinationAddress <em>Destination Address</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl#getExtensionheaders <em>Extensionheaders</em>}</li>
  * </ul>
  *
  * @generated
@@ -79,6 +93,56 @@ public class PacketImpl extends EObjectImpl implements Packet {
 	 * @ordered
 	 */
 	protected String content = CONTENT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getSourceAddress() <em>Source Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceAddress()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final BigInteger SOURCE_ADDRESS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getSourceAddress() <em>Source Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSourceAddress()
+	 * @generated
+	 * @ordered
+	 */
+	protected BigInteger sourceAddress = SOURCE_ADDRESS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDestinationAddress() <em>Destination Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDestinationAddress()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final BigInteger DESTINATION_ADDRESS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDestinationAddress() <em>Destination Address</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDestinationAddress()
+	 * @generated
+	 * @ordered
+	 */
+	protected BigInteger destinationAddress = DESTINATION_ADDRESS_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getExtensionheaders() <em>Extensionheaders</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExtensionheaders()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ExtensionHeader> extensionheaders;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,6 +255,79 @@ public class PacketImpl extends EObjectImpl implements Packet {
 	 * @generated
 	 */
 	@Override
+	public BigInteger getSourceAddress() {
+		return sourceAddress;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSourceAddress(BigInteger newSourceAddress) {
+		BigInteger oldSourceAddress = sourceAddress;
+		sourceAddress = newSourceAddress;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.PACKET__SOURCE_ADDRESS, oldSourceAddress, sourceAddress));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BigInteger getDestinationAddress() {
+		return destinationAddress;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDestinationAddress(BigInteger newDestinationAddress) {
+		BigInteger oldDestinationAddress = destinationAddress;
+		destinationAddress = newDestinationAddress;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.PACKET__DESTINATION_ADDRESS, oldDestinationAddress, destinationAddress));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ExtensionHeader> getExtensionheaders() {
+		if (extensionheaders == null) {
+			extensionheaders = new EObjectContainmentEList<ExtensionHeader>(ExtensionHeader.class, this, LehoPackage.PACKET__EXTENSIONHEADERS);
+		}
+		return extensionheaders;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case LehoPackage.PACKET__EXTENSIONHEADERS:
+				return ((InternalEList<?>)getExtensionheaders()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case LehoPackage.PACKET__TIME:
@@ -200,6 +337,12 @@ public class PacketImpl extends EObjectImpl implements Packet {
 				return basicGetInPort();
 			case LehoPackage.PACKET__CONTENT:
 				return getContent();
+			case LehoPackage.PACKET__SOURCE_ADDRESS:
+				return getSourceAddress();
+			case LehoPackage.PACKET__DESTINATION_ADDRESS:
+				return getDestinationAddress();
+			case LehoPackage.PACKET__EXTENSIONHEADERS:
+				return getExtensionheaders();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -209,6 +352,7 @@ public class PacketImpl extends EObjectImpl implements Packet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -220,6 +364,16 @@ public class PacketImpl extends EObjectImpl implements Packet {
 				return;
 			case LehoPackage.PACKET__CONTENT:
 				setContent((String)newValue);
+				return;
+			case LehoPackage.PACKET__SOURCE_ADDRESS:
+				setSourceAddress((BigInteger)newValue);
+				return;
+			case LehoPackage.PACKET__DESTINATION_ADDRESS:
+				setDestinationAddress((BigInteger)newValue);
+				return;
+			case LehoPackage.PACKET__EXTENSIONHEADERS:
+				getExtensionheaders().clear();
+				getExtensionheaders().addAll((Collection<? extends ExtensionHeader>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -242,6 +396,15 @@ public class PacketImpl extends EObjectImpl implements Packet {
 			case LehoPackage.PACKET__CONTENT:
 				setContent(CONTENT_EDEFAULT);
 				return;
+			case LehoPackage.PACKET__SOURCE_ADDRESS:
+				setSourceAddress(SOURCE_ADDRESS_EDEFAULT);
+				return;
+			case LehoPackage.PACKET__DESTINATION_ADDRESS:
+				setDestinationAddress(DESTINATION_ADDRESS_EDEFAULT);
+				return;
+			case LehoPackage.PACKET__EXTENSIONHEADERS:
+				getExtensionheaders().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -260,6 +423,12 @@ public class PacketImpl extends EObjectImpl implements Packet {
 				return inPort != null;
 			case LehoPackage.PACKET__CONTENT:
 				return CONTENT_EDEFAULT == null ? content != null : !CONTENT_EDEFAULT.equals(content);
+			case LehoPackage.PACKET__SOURCE_ADDRESS:
+				return SOURCE_ADDRESS_EDEFAULT == null ? sourceAddress != null : !SOURCE_ADDRESS_EDEFAULT.equals(sourceAddress);
+			case LehoPackage.PACKET__DESTINATION_ADDRESS:
+				return DESTINATION_ADDRESS_EDEFAULT == null ? destinationAddress != null : !DESTINATION_ADDRESS_EDEFAULT.equals(destinationAddress);
+			case LehoPackage.PACKET__EXTENSIONHEADERS:
+				return extensionheaders != null && !extensionheaders.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -278,6 +447,10 @@ public class PacketImpl extends EObjectImpl implements Packet {
 		result.append(time);
 		result.append(", content: ");
 		result.append(content);
+		result.append(", sourceAddress: ");
+		result.append(sourceAddress);
+		result.append(", destinationAddress: ");
+		result.append(destinationAddress);
 		result.append(')');
 		return result.toString();
 	}

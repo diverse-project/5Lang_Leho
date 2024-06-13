@@ -5,7 +5,7 @@
     <semanticResources>eho.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_QYW24MaLEe69D-H-e__5XQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="eho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="e773c94f-1452-4e32-af90-b60ee74a88dc">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Wyg30MdEEe6D48_IYF6Wsg" name="eho" repPath="#_WyYU8MdEEe6D48_IYF6Wsg" changeId="1bdcf7ee-3a1d-471c-88a7-32d990ed9fd7">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="eho.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -2472,9 +2472,9 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9_M8dEEe6D48_IYF6Wsg" name="TypeInterface" tooltipText="" incomingEdges="_XNYO4MdEEe6D48_IYF6Wsg _q1EEs8wfEe6VscAWPgrMjA _r1TZ7MwfEe6VscAWPgrMjA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="eho.ecore#//TypeInterface"/>
-      <semanticElements xmi:type="ecore:EClass" href="eho.ecore#//TypeInterface"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_XM9_M8dEEe6D48_IYF6Wsg" name="Interface" tooltipText="" incomingEdges="_XNYO4MdEEe6D48_IYF6Wsg _q1EEs8wfEe6VscAWPgrMjA _r1TZ7MwfEe6VscAWPgrMjA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="eho.ecore#//Interface"/>
+      <semanticElements xmi:type="ecore:EClass" href="eho.ecore#//Interface"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>

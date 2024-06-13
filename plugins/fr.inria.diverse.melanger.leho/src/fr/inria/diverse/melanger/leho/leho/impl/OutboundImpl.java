@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class OutboundImpl extends TypeInterfaceImpl implements Outbound {
+public class OutboundImpl extends InterfaceImpl implements Outbound {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

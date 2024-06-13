@@ -45,7 +45,6 @@ import fr.inria.diverse.melanger.leho.leho.OptionHopByHop;
 import fr.inria.diverse.melanger.leho.leho.Options;
 import fr.inria.diverse.melanger.leho.leho.Outbound;
 import fr.inria.diverse.melanger.leho.leho.Packet;
-import fr.inria.diverse.melanger.leho.leho.PacketSpec;
 import fr.inria.diverse.melanger.leho.leho.PacketUnit;
 import fr.inria.diverse.melanger.leho.leho.Pad1;
 import fr.inria.diverse.melanger.leho.leho.PadN;
@@ -72,7 +71,6 @@ import fr.inria.diverse.melanger.leho.leho.SourceRoute;
 import fr.inria.diverse.melanger.leho.leho.Time;
 import fr.inria.diverse.melanger.leho.leho.TunnelEncapsulationLimit;
 import fr.inria.diverse.melanger.leho.leho.Type2;
-import fr.inria.diverse.melanger.leho.leho.TypeInterface;
 import fr.inria.diverse.melanger.leho.leho.TypeRouting;
 import fr.inria.diverse.melanger.leho.leho.Unassigned;
 import fr.inria.diverse.melanger.leho.leho.Unit;
@@ -164,10 +162,6 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDiscard(Discard object) {
 				return createDiscardAdapter();
-			}
-			@Override
-			public Adapter casePacketSpec(PacketSpec object) {
-				return createPacketSpecAdapter();
 			}
 			@Override
 			public Adapter caseInbound(Inbound object) {
@@ -338,8 +332,8 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 				return createIpAddSpecAdapter();
 			}
 			@Override
-			public Adapter caseTypeInterface(TypeInterface object) {
-				return createTypeInterfaceAdapter();
+			public Adapter caseInterface(Interface object) {
+				return createInterfaceAdapter();
 			}
 			@Override
 			public Adapter caseRule(Rule object) {
@@ -436,10 +430,6 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter casePort(Port object) {
 				return createPortAdapter();
-			}
-			@Override
-			public Adapter caseInterface(Interface object) {
-				return createInterfaceAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -542,20 +532,6 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDiscardAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.melanger.leho.leho.PacketSpec <em>Packet Spec</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.melanger.leho.leho.PacketSpec
-	 * @generated
-	 */
-	public Adapter createPacketSpecAdapter() {
 		return null;
 	}
 
@@ -1148,16 +1124,16 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.melanger.leho.leho.TypeInterface <em>Type Interface</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.melanger.leho.leho.Interface <em>Interface</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.inria.diverse.melanger.leho.leho.TypeInterface
+	 * @see fr.inria.diverse.melanger.leho.leho.Interface
 	 * @generated
 	 */
-	public Adapter createTypeInterfaceAdapter() {
+	public Adapter createInterfaceAdapter() {
 		return null;
 	}
 
@@ -1494,20 +1470,6 @@ public class LehoAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPortAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.inria.diverse.melanger.leho.leho.Interface <em>Interface</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.inria.diverse.melanger.leho.leho.Interface
-	 * @generated
-	 */
-	public Adapter createInterfaceAdapter() {
 		return null;
 	}
 

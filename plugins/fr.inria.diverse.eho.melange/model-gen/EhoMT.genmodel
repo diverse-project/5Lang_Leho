@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.eho.melange/src-gen" modelPluginID="fr.inria.diverse.eho.melange" modelName="EhoMT" complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>platform:/resource/fr.inria.diverse.eho.melange/model-gen/EhoMT.ecore</foreignModel>
+  <genPackages prefix="Eho" basePackage="fr.inria.diverse.melanger.ehomt" disposableProviderFactory="true">
+    <ecorePackage href="EhoMT.ecore#/"/>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Configuration"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Configuration/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Drop"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Reject"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Action"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Action/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Accept"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Discard"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//PacketSpec"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//PacketSpec/port"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//PacketSpec/extensionheader"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Inbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Outbound"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Bandwidth"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="EhoMT.ecore#//Bandwidth/number"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Bandwidth/unit"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Bandwidth/time"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Unit"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Time"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//BitUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//OctetUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//PacketUnit"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Second"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Minute"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Hour"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Day"/>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//ExtensionHeader"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//ExtensionHeader/eval"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//OptionHopByHop"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//OptionHopByHop/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//OptionHopByHop/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//HopByHopOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//HopByHopOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Routing"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Routing/types"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Fragment"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//EncapsulingSecurityPayload"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//AuthentificationHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//DestinationOpts"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//DestinationOpts/options"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//MobilityHeader"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//UnknownEH"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//ExperimentationAndTesting"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//HostIdentityProtocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Shim6Protocol"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Pad1"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Pad1/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Pad1/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//PadN"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//PadN/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//PadN/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//JumboPayload"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//JumboPayload/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//JumboPayload/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RPLOption"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//TunnelEncapsulationLimit"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//TunnelEncapsulationLimit/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//TunnelEncapsulationLimit/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RouterAlert"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//RouterAlert/protocol"/>
+      </genFeatures>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RouterAlert/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RouterAlert/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//QuickStart"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//QuickStart/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//QuickStart/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Calipso"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Calipso/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Calipso/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//SmfDpd"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//SmfDpd/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//SmfDpd/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//HomeAdress"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//HomeAdress/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//HomeAdress/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Deprecated"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Deprecated/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Deprecated/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//EndPointIdentification"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//EndPointIdentification/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//EndPointIdentification/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//ILNPNonce"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//ILNPNonce/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//ILNPNonce/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//LineIdOption"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//LineIdOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//LineIdOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//MPLOption"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//MPLOption/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//MPLOption/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RFC3692Experiment"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RFC3692Experiment/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RFC3692Experiment/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//IpAddSpec"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="EhoMT.ecore#//IpAddSpec/adress"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="EhoMT.ecore#//IpAddSpec/port"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="EhoMT.ecore#//IpAddSpec/mask"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Interface"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Rule"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Rule/action"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Rule/packetspec"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Rule/to"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Rule/next"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="EhoMT.ecore#//Rule/from"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Protocol"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Protocol/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Protocol/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RSVP"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RSVP/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RSVP/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//MLD"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//MLD/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//MLD/eval/protocol"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//OptionDestination"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//OptionDestination/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//OptionDestination/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//IPv6PerformanceDiagnostic"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//IPv6PerformanceDiagnostic/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//IPv6PerformanceDiagnostic/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//TypeRouting"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//TypeRouting/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//TypeRouting/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//SourceRoute"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//SourceRoute/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//SourceRoute/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Nimrod"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Nimrod/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Nimrod/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Type2"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Type2/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Type2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RPLSource"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RPLSource/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RPLSource/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Segment"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Segment/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Segment/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Unassigned"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Unassigned/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Unassigned/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RFC3692Experiment1"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RFC3692Experiment1/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RFC3692Experiment1/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//RFC3692Experiment2"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//RFC3692Experiment2/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//RFC3692Experiment2/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//Reserved"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Reserved/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Reserved/eval/routingType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//DiscardDrop"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//DiscardDrop/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//DiscardReject"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//DiscardReject/run"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="EhoMT.ecore#//DFF"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//DFF/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//DFF/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="EhoMT.ecore#//Options"/>
+      <genOperations>
+        <ecoreOperation href="EhoMT.ecore#//Options/eval"/>
+        <genParameters>
+          <ecoreParameter href="EhoMT.ecore#//Options/eval/optionType"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+  <usedGenPackages href="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"/>
+</genmodel:GenModel>

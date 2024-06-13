@@ -67,15 +67,6 @@ public interface LehoFactory extends EFactory {
 	Discard createDiscard();
 
 	/**
-	 * Returns a new object of class '<em>Packet Spec</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Packet Spec</em>'.
-	 * @generated
-	 */
-	PacketSpec createPacketSpec();
-
-	/**
 	 * Returns a new object of class '<em>Inbound</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -164,6 +155,15 @@ public interface LehoFactory extends EFactory {
 	 * @generated
 	 */
 	Day createDay();
+
+	/**
+	 * Returns a new object of class '<em>Extension Header</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Extension Header</em>'.
+	 * @generated
+	 */
+	ExtensionHeader createExtensionHeader();
 
 	/**
 	 * Returns a new object of class '<em>Hop By Hop Opts</em>'.
@@ -418,6 +418,15 @@ public interface LehoFactory extends EFactory {
 	IpAddSpec createIpAddSpec();
 
 	/**
+	 * Returns a new object of class '<em>Interface</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Interface</em>'.
+	 * @generated
+	 */
+	Interface createInterface();
+
+	/**
 	 * Returns a new object of class '<em>Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -596,15 +605,6 @@ public interface LehoFactory extends EFactory {
 	 * @generated
 	 */
 	Port createPort();
-
-	/**
-	 * Returns a new object of class '<em>Interface</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Interface</em>'.
-	 * @generated
-	 */
-	Interface createInterface();
 
 	/**
 	 * Returns the package supported by this factory.

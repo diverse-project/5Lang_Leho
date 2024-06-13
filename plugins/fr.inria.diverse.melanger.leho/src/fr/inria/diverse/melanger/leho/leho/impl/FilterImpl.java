@@ -4,6 +4,7 @@ package fr.inria.diverse.melanger.leho.leho.impl;
 
 import fr.inria.diverse.melanger.leho.leho.Filter;
 import fr.inria.diverse.melanger.leho.leho.LehoPackage;
+import fr.inria.diverse.melanger.leho.leho.Packet;
 import fr.inria.diverse.melanger.leho.leho.Policy;
 import fr.inria.diverse.melanger.leho.leho.Rule;
 
@@ -24,6 +25,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.FilterImpl#getCurrentPacket <em>Current Packet</em>}</li>
+ *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.FilterImpl#getCurrentTime <em>Current Time</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.FilterImpl#getFirstRule <em>First Rule</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.FilterImpl#getCurrentRule <em>Current Rule</em>}</li>
  * </ul>
@@ -31,6 +34,36 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * @generated
  */
 public class FilterImpl extends EObjectImpl implements Filter {
+	/**
+	 * The cached value of the '{@link #getCurrentPacket() <em>Current Packet</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCurrentPacket()
+	 * @generated
+	 * @ordered
+	 */
+	protected Packet currentPacket;
+
+	/**
+	 * The default value of the '{@link #getCurrentTime() <em>Current Time</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCurrentTime()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int CURRENT_TIME_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getCurrentTime() <em>Current Time</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCurrentTime()
+	 * @generated
+	 * @ordered
+	 */
+	protected int currentTime = CURRENT_TIME_EDEFAULT;
+
 	/**
 	 * The cached value of the '{@link #getFirstRule() <em>First Rule</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -68,6 +101,69 @@ public class FilterImpl extends EObjectImpl implements Filter {
 	@Override
 	protected EClass eStaticClass() {
 		return LehoPackage.Literals.FILTER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Packet getCurrentPacket() {
+		if (currentPacket != null && currentPacket.eIsProxy()) {
+			InternalEObject oldCurrentPacket = (InternalEObject)currentPacket;
+			currentPacket = (Packet)eResolveProxy(oldCurrentPacket);
+			if (currentPacket != oldCurrentPacket) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LehoPackage.FILTER__CURRENT_PACKET, oldCurrentPacket, currentPacket));
+			}
+		}
+		return currentPacket;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Packet basicGetCurrentPacket() {
+		return currentPacket;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrentPacket(Packet newCurrentPacket) {
+		Packet oldCurrentPacket = currentPacket;
+		currentPacket = newCurrentPacket;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.FILTER__CURRENT_PACKET, oldCurrentPacket, currentPacket));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getCurrentTime() {
+		return currentTime;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrentTime(int newCurrentTime) {
+		int oldCurrentTime = currentTime;
+		currentTime = newCurrentTime;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.FILTER__CURRENT_TIME, oldCurrentTime, currentTime));
 	}
 
 	/**
@@ -196,6 +292,11 @@ public class FilterImpl extends EObjectImpl implements Filter {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case LehoPackage.FILTER__CURRENT_PACKET:
+				if (resolve) return getCurrentPacket();
+				return basicGetCurrentPacket();
+			case LehoPackage.FILTER__CURRENT_TIME:
+				return getCurrentTime();
 			case LehoPackage.FILTER__FIRST_RULE:
 				return getFirstRule();
 			case LehoPackage.FILTER__CURRENT_RULE:
@@ -212,6 +313,12 @@ public class FilterImpl extends EObjectImpl implements Filter {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case LehoPackage.FILTER__CURRENT_PACKET:
+				setCurrentPacket((Packet)newValue);
+				return;
+			case LehoPackage.FILTER__CURRENT_TIME:
+				setCurrentTime((Integer)newValue);
+				return;
 			case LehoPackage.FILTER__FIRST_RULE:
 				setFirstRule((Rule)newValue);
 				return;
@@ -230,6 +337,12 @@ public class FilterImpl extends EObjectImpl implements Filter {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case LehoPackage.FILTER__CURRENT_PACKET:
+				setCurrentPacket((Packet)null);
+				return;
+			case LehoPackage.FILTER__CURRENT_TIME:
+				setCurrentTime(CURRENT_TIME_EDEFAULT);
+				return;
 			case LehoPackage.FILTER__FIRST_RULE:
 				setFirstRule((Rule)null);
 				return;
@@ -248,12 +361,32 @@ public class FilterImpl extends EObjectImpl implements Filter {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case LehoPackage.FILTER__CURRENT_PACKET:
+				return currentPacket != null;
+			case LehoPackage.FILTER__CURRENT_TIME:
+				return currentTime != CURRENT_TIME_EDEFAULT;
 			case LehoPackage.FILTER__FIRST_RULE:
 				return firstRule != null;
 			case LehoPackage.FILTER__CURRENT_RULE:
 				return currentRule != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (currentTime: ");
+		result.append(currentTime);
+		result.append(')');
+		return result.toString();
 	}
 
 } //FilterImpl

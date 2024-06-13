@@ -172,60 +172,41 @@ public interface LehoPackage extends EPackage {
 	int DISCARD_FEATURE_COUNT = ACTION_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.PacketSpecImpl <em>Packet Spec</em>}' class.
+	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl <em>Interface</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.PacketSpecImpl
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPacketSpec()
+	 * @see fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl
+	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getInterface()
 	 * @generated
 	 */
-	int PACKET_SPEC = 6;
+	int INTERFACE = 48;
 
 	/**
-	 * The feature id for the '<em><b>Port</b></em>' containment reference.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PACKET_SPEC__PORT = 0;
+	int INTERFACE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Extensionheader</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Ports</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PACKET_SPEC__EXTENSIONHEADER = 1;
+	int INTERFACE__PORTS = 1;
 
 	/**
-	 * The number of structural features of the '<em>Packet Spec</em>' class.
+	 * The number of structural features of the '<em>Interface</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PACKET_SPEC_FEATURE_COUNT = 2;
-
-	/**
-	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.TypeInterfaceImpl <em>Type Interface</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.TypeInterfaceImpl
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getTypeInterface()
-	 * @generated
-	 */
-	int TYPE_INTERFACE = 49;
-
-	/**
-	 * The number of structural features of the '<em>Type Interface</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TYPE_INTERFACE_FEATURE_COUNT = 0;
+	int INTERFACE_FEATURE_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InboundImpl <em>Inbound</em>}' class.
@@ -235,7 +216,25 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getInbound()
 	 * @generated
 	 */
-	int INBOUND = 7;
+	int INBOUND = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INBOUND__NAME = INTERFACE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Ports</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INBOUND__PORTS = INTERFACE__PORTS;
 
 	/**
 	 * The number of structural features of the '<em>Inbound</em>' class.
@@ -244,7 +243,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INBOUND_FEATURE_COUNT = TYPE_INTERFACE_FEATURE_COUNT + 0;
+	int INBOUND_FEATURE_COUNT = INTERFACE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.OutboundImpl <em>Outbound</em>}' class.
@@ -254,7 +253,25 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getOutbound()
 	 * @generated
 	 */
-	int OUTBOUND = 8;
+	int OUTBOUND = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTBOUND__NAME = INTERFACE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Ports</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTBOUND__PORTS = INTERFACE__PORTS;
 
 	/**
 	 * The number of structural features of the '<em>Outbound</em>' class.
@@ -263,7 +280,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OUTBOUND_FEATURE_COUNT = TYPE_INTERFACE_FEATURE_COUNT + 0;
+	int OUTBOUND_FEATURE_COUNT = INTERFACE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.BandwidthImpl <em>Bandwidth</em>}' class.
@@ -273,7 +290,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getBandwidth()
 	 * @generated
 	 */
-	int BANDWIDTH = 9;
+	int BANDWIDTH = 8;
 
 	/**
 	 * The feature id for the '<em><b>Number</b></em>' attribute.
@@ -319,7 +336,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getUnit()
 	 * @generated
 	 */
-	int UNIT = 10;
+	int UNIT = 9;
 
 	/**
 	 * The number of structural features of the '<em>Unit</em>' class.
@@ -338,7 +355,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getTime()
 	 * @generated
 	 */
-	int TIME = 11;
+	int TIME = 10;
 
 	/**
 	 * The number of structural features of the '<em>Time</em>' class.
@@ -357,7 +374,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getBitUnit()
 	 * @generated
 	 */
-	int BIT_UNIT = 12;
+	int BIT_UNIT = 11;
 
 	/**
 	 * The number of structural features of the '<em>Bit Unit</em>' class.
@@ -376,7 +393,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getOctetUnit()
 	 * @generated
 	 */
-	int OCTET_UNIT = 13;
+	int OCTET_UNIT = 12;
 
 	/**
 	 * The number of structural features of the '<em>Octet Unit</em>' class.
@@ -395,7 +412,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPacketUnit()
 	 * @generated
 	 */
-	int PACKET_UNIT = 14;
+	int PACKET_UNIT = 13;
 
 	/**
 	 * The number of structural features of the '<em>Packet Unit</em>' class.
@@ -414,7 +431,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getSecond()
 	 * @generated
 	 */
-	int SECOND = 15;
+	int SECOND = 14;
 
 	/**
 	 * The number of structural features of the '<em>Second</em>' class.
@@ -433,7 +450,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getMinute()
 	 * @generated
 	 */
-	int MINUTE = 16;
+	int MINUTE = 15;
 
 	/**
 	 * The number of structural features of the '<em>Minute</em>' class.
@@ -452,7 +469,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getHour()
 	 * @generated
 	 */
-	int HOUR = 17;
+	int HOUR = 16;
 
 	/**
 	 * The number of structural features of the '<em>Hour</em>' class.
@@ -471,7 +488,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDay()
 	 * @generated
 	 */
-	int DAY = 18;
+	int DAY = 17;
 
 	/**
 	 * The number of structural features of the '<em>Day</em>' class.
@@ -490,7 +507,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getExtensionHeader()
 	 * @generated
 	 */
-	int EXTENSION_HEADER = 19;
+	int EXTENSION_HEADER = 18;
 
 	/**
 	 * The number of structural features of the '<em>Extension Header</em>' class.
@@ -509,7 +526,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getOptionHopByHop()
 	 * @generated
 	 */
-	int OPTION_HOP_BY_HOP = 20;
+	int OPTION_HOP_BY_HOP = 19;
 
 	/**
 	 * The number of structural features of the '<em>Option Hop By Hop</em>' class.
@@ -528,7 +545,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getHopByHopOpts()
 	 * @generated
 	 */
-	int HOP_BY_HOP_OPTS = 21;
+	int HOP_BY_HOP_OPTS = 20;
 
 	/**
 	 * The feature id for the '<em><b>Options</b></em>' containment reference list.
@@ -556,7 +573,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRouting()
 	 * @generated
 	 */
-	int ROUTING = 22;
+	int ROUTING = 21;
 
 	/**
 	 * The feature id for the '<em><b>Types</b></em>' containment reference list.
@@ -584,7 +601,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getFragment()
 	 * @generated
 	 */
-	int FRAGMENT = 23;
+	int FRAGMENT = 22;
 
 	/**
 	 * The number of structural features of the '<em>Fragment</em>' class.
@@ -603,7 +620,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getEncapsulingSecurityPayload()
 	 * @generated
 	 */
-	int ENCAPSULING_SECURITY_PAYLOAD = 24;
+	int ENCAPSULING_SECURITY_PAYLOAD = 23;
 
 	/**
 	 * The number of structural features of the '<em>Encapsuling Security Payload</em>' class.
@@ -622,7 +639,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getAuthentificationHeader()
 	 * @generated
 	 */
-	int AUTHENTIFICATION_HEADER = 25;
+	int AUTHENTIFICATION_HEADER = 24;
 
 	/**
 	 * The number of structural features of the '<em>Authentification Header</em>' class.
@@ -641,7 +658,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDestinationOpts()
 	 * @generated
 	 */
-	int DESTINATION_OPTS = 26;
+	int DESTINATION_OPTS = 25;
 
 	/**
 	 * The feature id for the '<em><b>Options</b></em>' containment reference list.
@@ -669,7 +686,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getMobilityHeader()
 	 * @generated
 	 */
-	int MOBILITY_HEADER = 27;
+	int MOBILITY_HEADER = 26;
 
 	/**
 	 * The number of structural features of the '<em>Mobility Header</em>' class.
@@ -688,7 +705,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getUnknownEH()
 	 * @generated
 	 */
-	int UNKNOWN_EH = 28;
+	int UNKNOWN_EH = 27;
 
 	/**
 	 * The number of structural features of the '<em>Unknown EH</em>' class.
@@ -707,7 +724,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getExperimentationAndTesting()
 	 * @generated
 	 */
-	int EXPERIMENTATION_AND_TESTING = 29;
+	int EXPERIMENTATION_AND_TESTING = 28;
 
 	/**
 	 * The number of structural features of the '<em>Experimentation And Testing</em>' class.
@@ -726,7 +743,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getHostIdentityProtocol()
 	 * @generated
 	 */
-	int HOST_IDENTITY_PROTOCOL = 30;
+	int HOST_IDENTITY_PROTOCOL = 29;
 
 	/**
 	 * The number of structural features of the '<em>Host Identity Protocol</em>' class.
@@ -745,7 +762,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getShim6Protocol()
 	 * @generated
 	 */
-	int SHIM6_PROTOCOL = 31;
+	int SHIM6_PROTOCOL = 30;
 
 	/**
 	 * The number of structural features of the '<em>Shim6 Protocol</em>' class.
@@ -764,7 +781,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getOptions()
 	 * @generated
 	 */
-	int OPTIONS = 69;
+	int OPTIONS = 68;
 
 	/**
 	 * The number of structural features of the '<em>Options</em>' class.
@@ -783,7 +800,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPad1()
 	 * @generated
 	 */
-	int PAD1 = 32;
+	int PAD1 = 31;
 
 	/**
 	 * The number of structural features of the '<em>Pad1</em>' class.
@@ -802,7 +819,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPadN()
 	 * @generated
 	 */
-	int PAD_N = 33;
+	int PAD_N = 32;
 
 	/**
 	 * The number of structural features of the '<em>Pad N</em>' class.
@@ -821,7 +838,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getJumboPayload()
 	 * @generated
 	 */
-	int JUMBO_PAYLOAD = 34;
+	int JUMBO_PAYLOAD = 33;
 
 	/**
 	 * The number of structural features of the '<em>Jumbo Payload</em>' class.
@@ -840,7 +857,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRPLOption()
 	 * @generated
 	 */
-	int RPL_OPTION = 35;
+	int RPL_OPTION = 34;
 
 	/**
 	 * The number of structural features of the '<em>RPL Option</em>' class.
@@ -859,7 +876,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getOptionDestination()
 	 * @generated
 	 */
-	int OPTION_DESTINATION = 54;
+	int OPTION_DESTINATION = 53;
 
 	/**
 	 * The number of structural features of the '<em>Option Destination</em>' class.
@@ -878,7 +895,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getTunnelEncapsulationLimit()
 	 * @generated
 	 */
-	int TUNNEL_ENCAPSULATION_LIMIT = 36;
+	int TUNNEL_ENCAPSULATION_LIMIT = 35;
 
 	/**
 	 * The number of structural features of the '<em>Tunnel Encapsulation Limit</em>' class.
@@ -897,7 +914,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRouterAlert()
 	 * @generated
 	 */
-	int ROUTER_ALERT = 37;
+	int ROUTER_ALERT = 36;
 
 	/**
 	 * The feature id for the '<em><b>Protocol</b></em>' containment reference list.
@@ -925,7 +942,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getQuickStart()
 	 * @generated
 	 */
-	int QUICK_START = 38;
+	int QUICK_START = 37;
 
 	/**
 	 * The number of structural features of the '<em>Quick Start</em>' class.
@@ -944,7 +961,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getCalipso()
 	 * @generated
 	 */
-	int CALIPSO = 39;
+	int CALIPSO = 38;
 
 	/**
 	 * The number of structural features of the '<em>Calipso</em>' class.
@@ -963,7 +980,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getSmfDpd()
 	 * @generated
 	 */
-	int SMF_DPD = 40;
+	int SMF_DPD = 39;
 
 	/**
 	 * The number of structural features of the '<em>Smf Dpd</em>' class.
@@ -982,7 +999,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getHomeAdress()
 	 * @generated
 	 */
-	int HOME_ADRESS = 41;
+	int HOME_ADRESS = 40;
 
 	/**
 	 * The number of structural features of the '<em>Home Adress</em>' class.
@@ -1001,7 +1018,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDeprecated()
 	 * @generated
 	 */
-	int DEPRECATED = 42;
+	int DEPRECATED = 41;
 
 	/**
 	 * The number of structural features of the '<em>Deprecated</em>' class.
@@ -1020,7 +1037,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getEndPointIdentification()
 	 * @generated
 	 */
-	int END_POINT_IDENTIFICATION = 43;
+	int END_POINT_IDENTIFICATION = 42;
 
 	/**
 	 * The number of structural features of the '<em>End Point Identification</em>' class.
@@ -1039,7 +1056,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getILNPNonce()
 	 * @generated
 	 */
-	int ILNP_NONCE = 44;
+	int ILNP_NONCE = 43;
 
 	/**
 	 * The number of structural features of the '<em>ILNP Nonce</em>' class.
@@ -1058,7 +1075,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getLineIdOption()
 	 * @generated
 	 */
-	int LINE_ID_OPTION = 45;
+	int LINE_ID_OPTION = 44;
 
 	/**
 	 * The number of structural features of the '<em>Line Id Option</em>' class.
@@ -1077,7 +1094,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getMPLOption()
 	 * @generated
 	 */
-	int MPL_OPTION = 46;
+	int MPL_OPTION = 45;
 
 	/**
 	 * The number of structural features of the '<em>MPL Option</em>' class.
@@ -1096,7 +1113,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRFC3692Experiment()
 	 * @generated
 	 */
-	int RFC3692_EXPERIMENT = 47;
+	int RFC3692_EXPERIMENT = 46;
 
 	/**
 	 * The number of structural features of the '<em>RFC3692 Experiment</em>' class.
@@ -1115,7 +1132,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getIpAddSpec()
 	 * @generated
 	 */
-	int IP_ADD_SPEC = 48;
+	int IP_ADD_SPEC = 47;
 
 	/**
 	 * The feature id for the '<em><b>Adress</b></em>' attribute.
@@ -1161,7 +1178,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRule()
 	 * @generated
 	 */
-	int RULE = 50;
+	int RULE = 49;
 
 	/**
 	 * The feature id for the '<em><b>Action</b></em>' containment reference.
@@ -1173,22 +1190,13 @@ public interface LehoPackage extends EPackage {
 	int RULE__ACTION = 0;
 
 	/**
-	 * The feature id for the '<em><b>Packetspec</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RULE__PACKETSPEC = 1;
-
-	/**
 	 * The feature id for the '<em><b>To</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RULE__TO = 2;
+	int RULE__TO = 1;
 
 	/**
 	 * The feature id for the '<em><b>Next</b></em>' containment reference.
@@ -1197,7 +1205,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RULE__NEXT = 3;
+	int RULE__NEXT = 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' containment reference.
@@ -1206,7 +1214,25 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RULE__FROM = 4;
+	int RULE__FROM = 3;
+
+	/**
+	 * The feature id for the '<em><b>Extensionheader</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE__EXTENSIONHEADER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Interface</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE__INTERFACE = 5;
 
 	/**
 	 * The number of structural features of the '<em>Rule</em>' class.
@@ -1215,7 +1241,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RULE_FEATURE_COUNT = 5;
+	int RULE_FEATURE_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.ProtocolImpl <em>Protocol</em>}' class.
@@ -1225,7 +1251,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getProtocol()
 	 * @generated
 	 */
-	int PROTOCOL = 51;
+	int PROTOCOL = 50;
 
 	/**
 	 * The number of structural features of the '<em>Protocol</em>' class.
@@ -1244,7 +1270,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRSVP()
 	 * @generated
 	 */
-	int RSVP = 52;
+	int RSVP = 51;
 
 	/**
 	 * The number of structural features of the '<em>RSVP</em>' class.
@@ -1263,7 +1289,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getMLD()
 	 * @generated
 	 */
-	int MLD = 53;
+	int MLD = 52;
 
 	/**
 	 * The number of structural features of the '<em>MLD</em>' class.
@@ -1282,7 +1308,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getIPv6PerformanceDiagnostic()
 	 * @generated
 	 */
-	int IPV6_PERFORMANCE_DIAGNOSTIC = 55;
+	int IPV6_PERFORMANCE_DIAGNOSTIC = 54;
 
 	/**
 	 * The number of structural features of the '<em>IPv6 Performance Diagnostic</em>' class.
@@ -1301,7 +1327,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getTypeRouting()
 	 * @generated
 	 */
-	int TYPE_ROUTING = 56;
+	int TYPE_ROUTING = 55;
 
 	/**
 	 * The number of structural features of the '<em>Type Routing</em>' class.
@@ -1320,7 +1346,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getSourceRoute()
 	 * @generated
 	 */
-	int SOURCE_ROUTE = 57;
+	int SOURCE_ROUTE = 56;
 
 	/**
 	 * The number of structural features of the '<em>Source Route</em>' class.
@@ -1339,7 +1365,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getNimrod()
 	 * @generated
 	 */
-	int NIMROD = 58;
+	int NIMROD = 57;
 
 	/**
 	 * The number of structural features of the '<em>Nimrod</em>' class.
@@ -1358,7 +1384,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getType2()
 	 * @generated
 	 */
-	int TYPE2 = 59;
+	int TYPE2 = 58;
 
 	/**
 	 * The number of structural features of the '<em>Type2</em>' class.
@@ -1377,7 +1403,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRPLSource()
 	 * @generated
 	 */
-	int RPL_SOURCE = 60;
+	int RPL_SOURCE = 59;
 
 	/**
 	 * The number of structural features of the '<em>RPL Source</em>' class.
@@ -1396,7 +1422,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getSegment()
 	 * @generated
 	 */
-	int SEGMENT = 61;
+	int SEGMENT = 60;
 
 	/**
 	 * The number of structural features of the '<em>Segment</em>' class.
@@ -1415,7 +1441,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getUnassigned()
 	 * @generated
 	 */
-	int UNASSIGNED = 62;
+	int UNASSIGNED = 61;
 
 	/**
 	 * The number of structural features of the '<em>Unassigned</em>' class.
@@ -1434,7 +1460,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRFC3692Experiment1()
 	 * @generated
 	 */
-	int RFC3692_EXPERIMENT1 = 63;
+	int RFC3692_EXPERIMENT1 = 62;
 
 	/**
 	 * The number of structural features of the '<em>RFC3692 Experiment1</em>' class.
@@ -1453,7 +1479,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getRFC3692Experiment2()
 	 * @generated
 	 */
-	int RFC3692_EXPERIMENT2 = 64;
+	int RFC3692_EXPERIMENT2 = 63;
 
 	/**
 	 * The number of structural features of the '<em>RFC3692 Experiment2</em>' class.
@@ -1472,7 +1498,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getReserved()
 	 * @generated
 	 */
-	int RESERVED = 65;
+	int RESERVED = 64;
 
 	/**
 	 * The number of structural features of the '<em>Reserved</em>' class.
@@ -1491,7 +1517,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDiscardDrop()
 	 * @generated
 	 */
-	int DISCARD_DROP = 66;
+	int DISCARD_DROP = 65;
 
 	/**
 	 * The number of structural features of the '<em>Discard Drop</em>' class.
@@ -1510,7 +1536,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDiscardReject()
 	 * @generated
 	 */
-	int DISCARD_REJECT = 67;
+	int DISCARD_REJECT = 66;
 
 	/**
 	 * The number of structural features of the '<em>Discard Reject</em>' class.
@@ -1529,7 +1555,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getDFF()
 	 * @generated
 	 */
-	int DFF = 68;
+	int DFF = 67;
 
 	/**
 	 * The number of structural features of the '<em>DFF</em>' class.
@@ -1548,7 +1574,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPolicy()
 	 * @generated
 	 */
-	int POLICY = 70;
+	int POLICY = 69;
 
 	/**
 	 * The feature id for the '<em><b>Filter</b></em>' containment reference.
@@ -1560,31 +1586,13 @@ public interface LehoPackage extends EPackage {
 	int POLICY__FILTER = 0;
 
 	/**
-	 * The feature id for the '<em><b>Current Time</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POLICY__CURRENT_TIME = 1;
-
-	/**
-	 * The feature id for the '<em><b>Current Packet</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POLICY__CURRENT_PACKET = 2;
-
-	/**
 	 * The feature id for the '<em><b>Packets</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POLICY__PACKETS = 3;
+	int POLICY__PACKETS = 1;
 
 	/**
 	 * The feature id for the '<em><b>In Ports</b></em>' containment reference list.
@@ -1593,7 +1601,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POLICY__IN_PORTS = 4;
+	int POLICY__IN_PORTS = 2;
 
 	/**
 	 * The feature id for the '<em><b>Interfaces</b></em>' containment reference list.
@@ -1602,7 +1610,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POLICY__INTERFACES = 5;
+	int POLICY__INTERFACES = 3;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' containment reference.
@@ -1611,7 +1619,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POLICY__CONFIGURATION = 6;
+	int POLICY__CONFIGURATION = 4;
 
 	/**
 	 * The number of structural features of the '<em>Policy</em>' class.
@@ -1620,7 +1628,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POLICY_FEATURE_COUNT = 7;
+	int POLICY_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.FilterImpl <em>Filter</em>}' class.
@@ -1630,7 +1638,25 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getFilter()
 	 * @generated
 	 */
-	int FILTER = 71;
+	int FILTER = 70;
+
+	/**
+	 * The feature id for the '<em><b>Current Packet</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FILTER__CURRENT_PACKET = 0;
+
+	/**
+	 * The feature id for the '<em><b>Current Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FILTER__CURRENT_TIME = 1;
 
 	/**
 	 * The feature id for the '<em><b>First Rule</b></em>' containment reference.
@@ -1639,7 +1665,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER__FIRST_RULE = 0;
+	int FILTER__FIRST_RULE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Current Rule</b></em>' containment reference.
@@ -1648,7 +1674,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER__CURRENT_RULE = 1;
+	int FILTER__CURRENT_RULE = 3;
 
 	/**
 	 * The number of structural features of the '<em>Filter</em>' class.
@@ -1657,7 +1683,7 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILTER_FEATURE_COUNT = 2;
+	int FILTER_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.PacketImpl <em>Packet</em>}' class.
@@ -1667,7 +1693,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPacket()
 	 * @generated
 	 */
-	int PACKET = 72;
+	int PACKET = 71;
 
 	/**
 	 * The feature id for the '<em><b>Time</b></em>' attribute.
@@ -1697,13 +1723,40 @@ public interface LehoPackage extends EPackage {
 	int PACKET__CONTENT = 2;
 
 	/**
+	 * The feature id for the '<em><b>Source Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PACKET__SOURCE_ADDRESS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Destination Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PACKET__DESTINATION_ADDRESS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Extensionheaders</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PACKET__EXTENSIONHEADERS = 5;
+
+	/**
 	 * The number of structural features of the '<em>Packet</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PACKET_FEATURE_COUNT = 3;
+	int PACKET_FEATURE_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.PortImpl <em>Port</em>}' class.
@@ -1713,7 +1766,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPort()
 	 * @generated
 	 */
-	int PORT = 73;
+	int PORT = 72;
 
 	/**
 	 * The feature id for the '<em><b>Number</b></em>' attribute.
@@ -1743,43 +1796,6 @@ public interface LehoPackage extends EPackage {
 	int PORT_FEATURE_COUNT = 2;
 
 	/**
-	 * The meta object id for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl <em>Interface</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl
-	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getInterface()
-	 * @generated
-	 */
-	int INTERFACE = 74;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Ports</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE__PORTS = 1;
-
-	/**
-	 * The number of structural features of the '<em>Interface</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERFACE_FEATURE_COUNT = 2;
-
-	/**
 	 * The meta object id for the '<em>Object</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1787,7 +1803,7 @@ public interface LehoPackage extends EPackage {
 	 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getObject()
 	 * @generated
 	 */
-	int OBJECT = 75;
+	int OBJECT = 73;
 
 
 	/**
@@ -1849,38 +1865,6 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDiscard();
-
-	/**
-	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.PacketSpec <em>Packet Spec</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Packet Spec</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.PacketSpec
-	 * @generated
-	 */
-	EClass getPacketSpec();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link fr.inria.diverse.melanger.leho.leho.PacketSpec#getPort <em>Port</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Port</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.PacketSpec#getPort()
-	 * @see #getPacketSpec()
-	 * @generated
-	 */
-	EReference getPacketSpec_Port();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link fr.inria.diverse.melanger.leho.leho.PacketSpec#getExtensionheader <em>Extensionheader</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Extensionheader</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.PacketSpec#getExtensionheader()
-	 * @see #getPacketSpec()
-	 * @generated
-	 */
-	EReference getPacketSpec_Extensionheader();
 
 	/**
 	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Inbound <em>Inbound</em>}'.
@@ -2413,14 +2397,36 @@ public interface LehoPackage extends EPackage {
 	EAttribute getIpAddSpec_Mask();
 
 	/**
-	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.TypeInterface <em>Type Interface</em>}'.
+	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Interface <em>Interface</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Type Interface</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.TypeInterface
+	 * @return the meta object for class '<em>Interface</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Interface
 	 * @generated
 	 */
-	EClass getTypeInterface();
+	EClass getInterface();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Interface#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Interface#getName()
+	 * @see #getInterface()
+	 * @generated
+	 */
+	EAttribute getInterface_Name();
+
+	/**
+	 * Returns the meta object for the reference list '{@link fr.inria.diverse.melanger.leho.leho.Interface#getPorts <em>Ports</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Ports</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Interface#getPorts()
+	 * @see #getInterface()
+	 * @generated
+	 */
+	EReference getInterface_Ports();
 
 	/**
 	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Rule <em>Rule</em>}'.
@@ -2442,17 +2448,6 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRule_Action();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link fr.inria.diverse.melanger.leho.leho.Rule#getPacketspec <em>Packetspec</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Packetspec</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Rule#getPacketspec()
-	 * @see #getRule()
-	 * @generated
-	 */
-	EReference getRule_Packetspec();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link fr.inria.diverse.melanger.leho.leho.Rule#getTo <em>To</em>}'.
@@ -2486,6 +2481,28 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRule_From();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link fr.inria.diverse.melanger.leho.leho.Rule#getExtensionheader <em>Extensionheader</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Extensionheader</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Rule#getExtensionheader()
+	 * @see #getRule()
+	 * @generated
+	 */
+	EReference getRule_Extensionheader();
+
+	/**
+	 * Returns the meta object for the reference '{@link fr.inria.diverse.melanger.leho.leho.Rule#getInterface <em>Interface</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Interface</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Rule#getInterface()
+	 * @see #getRule()
+	 * @generated
+	 */
+	EReference getRule_Interface();
 
 	/**
 	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Protocol <em>Protocol</em>}'.
@@ -2699,28 +2716,6 @@ public interface LehoPackage extends EPackage {
 	EReference getPolicy_Filter();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentTime <em>Current Time</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Current Time</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Policy#getCurrentTime()
-	 * @see #getPolicy()
-	 * @generated
-	 */
-	EAttribute getPolicy_CurrentTime();
-
-	/**
-	 * Returns the meta object for the reference '{@link fr.inria.diverse.melanger.leho.leho.Policy#getCurrentPacket <em>Current Packet</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Current Packet</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Policy#getCurrentPacket()
-	 * @see #getPolicy()
-	 * @generated
-	 */
-	EReference getPolicy_CurrentPacket();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link fr.inria.diverse.melanger.leho.leho.Policy#getPackets <em>Packets</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2773,6 +2768,28 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFilter();
+
+	/**
+	 * Returns the meta object for the reference '{@link fr.inria.diverse.melanger.leho.leho.Filter#getCurrentPacket <em>Current Packet</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Current Packet</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Filter#getCurrentPacket()
+	 * @see #getFilter()
+	 * @generated
+	 */
+	EReference getFilter_CurrentPacket();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Filter#getCurrentTime <em>Current Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Current Time</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Filter#getCurrentTime()
+	 * @see #getFilter()
+	 * @generated
+	 */
+	EAttribute getFilter_CurrentTime();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link fr.inria.diverse.melanger.leho.leho.Filter#getFirstRule <em>First Rule</em>}'.
@@ -2840,6 +2857,39 @@ public interface LehoPackage extends EPackage {
 	EAttribute getPacket_Content();
 
 	/**
+	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Packet#getSourceAddress <em>Source Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Address</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Packet#getSourceAddress()
+	 * @see #getPacket()
+	 * @generated
+	 */
+	EAttribute getPacket_SourceAddress();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Packet#getDestinationAddress <em>Destination Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Destination Address</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Packet#getDestinationAddress()
+	 * @see #getPacket()
+	 * @generated
+	 */
+	EAttribute getPacket_DestinationAddress();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link fr.inria.diverse.melanger.leho.leho.Packet#getExtensionheaders <em>Extensionheaders</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Extensionheaders</em>'.
+	 * @see fr.inria.diverse.melanger.leho.leho.Packet#getExtensionheaders()
+	 * @see #getPacket()
+	 * @generated
+	 */
+	EReference getPacket_Extensionheaders();
+
+	/**
 	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Port <em>Port</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2870,38 +2920,6 @@ public interface LehoPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPort_Interface();
-
-	/**
-	 * Returns the meta object for class '{@link fr.inria.diverse.melanger.leho.leho.Interface <em>Interface</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Interface</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Interface
-	 * @generated
-	 */
-	EClass getInterface();
-
-	/**
-	 * Returns the meta object for the attribute '{@link fr.inria.diverse.melanger.leho.leho.Interface#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Interface#getName()
-	 * @see #getInterface()
-	 * @generated
-	 */
-	EAttribute getInterface_Name();
-
-	/**
-	 * Returns the meta object for the reference list '{@link fr.inria.diverse.melanger.leho.leho.Interface#getPorts <em>Ports</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Ports</em>'.
-	 * @see fr.inria.diverse.melanger.leho.leho.Interface#getPorts()
-	 * @see #getInterface()
-	 * @generated
-	 */
-	EReference getInterface_Ports();
 
 	/**
 	 * Returns the meta object for data type '{@link java.lang.Object <em>Object</em>}'.
@@ -2996,32 +3014,6 @@ public interface LehoPackage extends EPackage {
 		 * @generated
 		 */
 		EClass DISCARD = eINSTANCE.getDiscard();
-
-		/**
-		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.PacketSpecImpl <em>Packet Spec</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.PacketSpecImpl
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getPacketSpec()
-		 * @generated
-		 */
-		EClass PACKET_SPEC = eINSTANCE.getPacketSpec();
-
-		/**
-		 * The meta object literal for the '<em><b>Port</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PACKET_SPEC__PORT = eINSTANCE.getPacketSpec_Port();
-
-		/**
-		 * The meta object literal for the '<em><b>Extensionheader</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PACKET_SPEC__EXTENSIONHEADER = eINSTANCE.getPacketSpec_Extensionheader();
 
 		/**
 		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InboundImpl <em>Inbound</em>}' class.
@@ -3524,14 +3516,30 @@ public interface LehoPackage extends EPackage {
 		EAttribute IP_ADD_SPEC__MASK = eINSTANCE.getIpAddSpec_Mask();
 
 		/**
-		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.TypeInterfaceImpl <em>Type Interface</em>}' class.
+		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl <em>Interface</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.TypeInterfaceImpl
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getTypeInterface()
+		 * @see fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl
+		 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getInterface()
 		 * @generated
 		 */
-		EClass TYPE_INTERFACE = eINSTANCE.getTypeInterface();
+		EClass INTERFACE = eINSTANCE.getInterface();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERFACE__NAME = eINSTANCE.getInterface_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Ports</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE__PORTS = eINSTANCE.getInterface_Ports();
 
 		/**
 		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.RuleImpl <em>Rule</em>}' class.
@@ -3550,14 +3558,6 @@ public interface LehoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference RULE__ACTION = eINSTANCE.getRule_Action();
-
-		/**
-		 * The meta object literal for the '<em><b>Packetspec</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference RULE__PACKETSPEC = eINSTANCE.getRule_Packetspec();
 
 		/**
 		 * The meta object literal for the '<em><b>To</b></em>' containment reference feature.
@@ -3582,6 +3582,22 @@ public interface LehoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference RULE__FROM = eINSTANCE.getRule_From();
+
+		/**
+		 * The meta object literal for the '<em><b>Extensionheader</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RULE__EXTENSIONHEADER = eINSTANCE.getRule_Extensionheader();
+
+		/**
+		 * The meta object literal for the '<em><b>Interface</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RULE__INTERFACE = eINSTANCE.getRule_Interface();
 
 		/**
 		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.ProtocolImpl <em>Protocol</em>}' class.
@@ -3792,22 +3808,6 @@ public interface LehoPackage extends EPackage {
 		EReference POLICY__FILTER = eINSTANCE.getPolicy_Filter();
 
 		/**
-		 * The meta object literal for the '<em><b>Current Time</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute POLICY__CURRENT_TIME = eINSTANCE.getPolicy_CurrentTime();
-
-		/**
-		 * The meta object literal for the '<em><b>Current Packet</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference POLICY__CURRENT_PACKET = eINSTANCE.getPolicy_CurrentPacket();
-
-		/**
 		 * The meta object literal for the '<em><b>Packets</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3848,6 +3848,22 @@ public interface LehoPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FILTER = eINSTANCE.getFilter();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Packet</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FILTER__CURRENT_PACKET = eINSTANCE.getFilter_CurrentPacket();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Time</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FILTER__CURRENT_TIME = eINSTANCE.getFilter_CurrentTime();
 
 		/**
 		 * The meta object literal for the '<em><b>First Rule</b></em>' containment reference feature.
@@ -3900,6 +3916,30 @@ public interface LehoPackage extends EPackage {
 		EAttribute PACKET__CONTENT = eINSTANCE.getPacket_Content();
 
 		/**
+		 * The meta object literal for the '<em><b>Source Address</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PACKET__SOURCE_ADDRESS = eINSTANCE.getPacket_SourceAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Destination Address</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PACKET__DESTINATION_ADDRESS = eINSTANCE.getPacket_DestinationAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Extensionheaders</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PACKET__EXTENSIONHEADERS = eINSTANCE.getPacket_Extensionheaders();
+
+		/**
 		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.PortImpl <em>Port</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3924,32 +3964,6 @@ public interface LehoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PORT__INTERFACE = eINSTANCE.getPort_Interface();
-
-		/**
-		 * The meta object literal for the '{@link fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl <em>Interface</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.InterfaceImpl
-		 * @see fr.inria.diverse.melanger.leho.leho.impl.LehoPackageImpl#getInterface()
-		 * @generated
-		 */
-		EClass INTERFACE = eINSTANCE.getInterface();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERFACE__NAME = eINSTANCE.getInterface_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Ports</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTERFACE__PORTS = eINSTANCE.getInterface_Ports();
 
 		/**
 		 * The meta object literal for the '<em>Object</em>' data type.

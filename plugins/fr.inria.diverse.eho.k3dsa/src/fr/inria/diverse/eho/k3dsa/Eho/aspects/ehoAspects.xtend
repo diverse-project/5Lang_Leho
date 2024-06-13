@@ -59,7 +59,7 @@ import fr.inria.diverse.eho.model.eho.SmfDpd
 import fr.inria.diverse.eho.model.eho.SourceRoute
 import fr.inria.diverse.eho.model.eho.TunnelEncapsulationLimit
 import fr.inria.diverse.eho.model.eho.Type2
-import fr.inria.diverse.eho.model.eho.TypeInterface
+import fr.inria.diverse.eho.model.eho.Interface
 import fr.inria.diverse.eho.model.eho.TypeRouting
 import fr.inria.diverse.eho.model.eho.Unassigned
 import fr.inria.diverse.eho.model.eho.UnknownEH
@@ -108,8 +108,8 @@ class PacketSpecAspect {}
 
 // ------------------------ Port ------------------------ //
 
-@Aspect(className=TypeInterface)
-class TypeInterfaceAspect {
+@Aspect(className=Interface)
+class InterfaceAspect {
 	def Boolean eval() {
 		EhoMessagingModule.error("Port: run of " +_self +" should never occur, please tell the developer to write a method run for this class") 
 		return false 

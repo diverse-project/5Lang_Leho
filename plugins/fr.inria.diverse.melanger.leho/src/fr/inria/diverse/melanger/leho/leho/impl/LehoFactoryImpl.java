@@ -18,6 +18,7 @@ import fr.inria.diverse.melanger.leho.leho.Drop;
 import fr.inria.diverse.melanger.leho.leho.EncapsulingSecurityPayload;
 import fr.inria.diverse.melanger.leho.leho.EndPointIdentification;
 import fr.inria.diverse.melanger.leho.leho.ExperimentationAndTesting;
+import fr.inria.diverse.melanger.leho.leho.ExtensionHeader;
 import fr.inria.diverse.melanger.leho.leho.Filter;
 import fr.inria.diverse.melanger.leho.leho.Fragment;
 import fr.inria.diverse.melanger.leho.leho.HomeAdress;
@@ -41,7 +42,6 @@ import fr.inria.diverse.melanger.leho.leho.Nimrod;
 import fr.inria.diverse.melanger.leho.leho.OctetUnit;
 import fr.inria.diverse.melanger.leho.leho.Outbound;
 import fr.inria.diverse.melanger.leho.leho.Packet;
-import fr.inria.diverse.melanger.leho.leho.PacketSpec;
 import fr.inria.diverse.melanger.leho.leho.PacketUnit;
 import fr.inria.diverse.melanger.leho.leho.Pad1;
 import fr.inria.diverse.melanger.leho.leho.PadN;
@@ -127,7 +127,6 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 			case LehoPackage.REJECT: return createReject();
 			case LehoPackage.ACCEPT: return createAccept();
 			case LehoPackage.DISCARD: return createDiscard();
-			case LehoPackage.PACKET_SPEC: return createPacketSpec();
 			case LehoPackage.INBOUND: return createInbound();
 			case LehoPackage.OUTBOUND: return createOutbound();
 			case LehoPackage.BANDWIDTH: return createBandwidth();
@@ -138,6 +137,7 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 			case LehoPackage.MINUTE: return createMinute();
 			case LehoPackage.HOUR: return createHour();
 			case LehoPackage.DAY: return createDay();
+			case LehoPackage.EXTENSION_HEADER: return createExtensionHeader();
 			case LehoPackage.HOP_BY_HOP_OPTS: return createHopByHopOpts();
 			case LehoPackage.ROUTING: return createRouting();
 			case LehoPackage.FRAGMENT: return createFragment();
@@ -166,6 +166,7 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 			case LehoPackage.MPL_OPTION: return createMPLOption();
 			case LehoPackage.RFC3692_EXPERIMENT: return createRFC3692Experiment();
 			case LehoPackage.IP_ADD_SPEC: return createIpAddSpec();
+			case LehoPackage.INTERFACE: return createInterface();
 			case LehoPackage.RULE: return createRule();
 			case LehoPackage.RSVP: return createRSVP();
 			case LehoPackage.MLD: return createMLD();
@@ -186,7 +187,6 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 			case LehoPackage.FILTER: return createFilter();
 			case LehoPackage.PACKET: return createPacket();
 			case LehoPackage.PORT: return createPort();
-			case LehoPackage.INTERFACE: return createInterface();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -275,17 +275,6 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 	public Discard createDiscard() {
 		DiscardImpl discard = new DiscardImpl();
 		return discard;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PacketSpec createPacketSpec() {
-		PacketSpecImpl packetSpec = new PacketSpecImpl();
-		return packetSpec;
 	}
 
 	/**
@@ -396,6 +385,17 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 	public Day createDay() {
 		DayImpl day = new DayImpl();
 		return day;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ExtensionHeader createExtensionHeader() {
+		ExtensionHeaderImpl extensionHeader = new ExtensionHeaderImpl();
+		return extensionHeader;
 	}
 
 	/**
@@ -712,6 +712,17 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 	 * @generated
 	 */
 	@Override
+	public Interface createInterface() {
+		InterfaceImpl interface_ = new InterfaceImpl();
+		return interface_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Rule createRule() {
 		RuleImpl rule = new RuleImpl();
 		return rule;
@@ -924,17 +935,6 @@ public class LehoFactoryImpl extends EFactoryImpl implements LehoFactory {
 	public Port createPort() {
 		PortImpl port = new PortImpl();
 		return port;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Interface createInterface() {
-		InterfaceImpl interface_ = new InterfaceImpl();
-		return interface_;
 	}
 
 	/**

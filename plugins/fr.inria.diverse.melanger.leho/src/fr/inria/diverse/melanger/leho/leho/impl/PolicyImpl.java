@@ -37,8 +37,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getFilter <em>Filter</em>}</li>
- *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getCurrentTime <em>Current Time</em>}</li>
- *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getCurrentPacket <em>Current Packet</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getPackets <em>Packets</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getInPorts <em>In Ports</em>}</li>
  *   <li>{@link fr.inria.diverse.melanger.leho.leho.impl.PolicyImpl#getInterfaces <em>Interfaces</em>}</li>
@@ -57,36 +55,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 	 * @ordered
 	 */
 	protected Filter filter;
-
-	/**
-	 * The default value of the '{@link #getCurrentTime() <em>Current Time</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCurrentTime()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int CURRENT_TIME_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getCurrentTime() <em>Current Time</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCurrentTime()
-	 * @generated
-	 * @ordered
-	 */
-	protected int currentTime = CURRENT_TIME_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getCurrentPacket() <em>Current Packet</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCurrentPacket()
-	 * @generated
-	 * @ordered
-	 */
-	protected Packet currentPacket;
 
 	/**
 	 * The cached value of the '{@link #getPackets() <em>Packets</em>}' containment reference list.
@@ -190,69 +158,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.POLICY__FILTER, newFilter, newFilter));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int getCurrentTime() {
-		return currentTime;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrentTime(int newCurrentTime) {
-		int oldCurrentTime = currentTime;
-		currentTime = newCurrentTime;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.POLICY__CURRENT_TIME, oldCurrentTime, currentTime));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Packet getCurrentPacket() {
-		if (currentPacket != null && currentPacket.eIsProxy()) {
-			InternalEObject oldCurrentPacket = (InternalEObject)currentPacket;
-			currentPacket = (Packet)eResolveProxy(oldCurrentPacket);
-			if (currentPacket != oldCurrentPacket) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, LehoPackage.POLICY__CURRENT_PACKET, oldCurrentPacket, currentPacket));
-			}
-		}
-		return currentPacket;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Packet basicGetCurrentPacket() {
-		return currentPacket;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrentPacket(Packet newCurrentPacket) {
-		Packet oldCurrentPacket = currentPacket;
-		currentPacket = newCurrentPacket;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LehoPackage.POLICY__CURRENT_PACKET, oldCurrentPacket, currentPacket));
 	}
 
 	/**
@@ -407,11 +312,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 		switch (featureID) {
 			case LehoPackage.POLICY__FILTER:
 				return getFilter();
-			case LehoPackage.POLICY__CURRENT_TIME:
-				return getCurrentTime();
-			case LehoPackage.POLICY__CURRENT_PACKET:
-				if (resolve) return getCurrentPacket();
-				return basicGetCurrentPacket();
 			case LehoPackage.POLICY__PACKETS:
 				return getPackets();
 			case LehoPackage.POLICY__IN_PORTS:
@@ -435,12 +335,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 		switch (featureID) {
 			case LehoPackage.POLICY__FILTER:
 				setFilter((Filter)newValue);
-				return;
-			case LehoPackage.POLICY__CURRENT_TIME:
-				setCurrentTime((Integer)newValue);
-				return;
-			case LehoPackage.POLICY__CURRENT_PACKET:
-				setCurrentPacket((Packet)newValue);
 				return;
 			case LehoPackage.POLICY__PACKETS:
 				getPackets().clear();
@@ -472,12 +366,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 			case LehoPackage.POLICY__FILTER:
 				setFilter((Filter)null);
 				return;
-			case LehoPackage.POLICY__CURRENT_TIME:
-				setCurrentTime(CURRENT_TIME_EDEFAULT);
-				return;
-			case LehoPackage.POLICY__CURRENT_PACKET:
-				setCurrentPacket((Packet)null);
-				return;
 			case LehoPackage.POLICY__PACKETS:
 				getPackets().clear();
 				return;
@@ -504,10 +392,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 		switch (featureID) {
 			case LehoPackage.POLICY__FILTER:
 				return filter != null;
-			case LehoPackage.POLICY__CURRENT_TIME:
-				return currentTime != CURRENT_TIME_EDEFAULT;
-			case LehoPackage.POLICY__CURRENT_PACKET:
-				return currentPacket != null;
 			case LehoPackage.POLICY__PACKETS:
 				return packets != null && !packets.isEmpty();
 			case LehoPackage.POLICY__IN_PORTS:
@@ -518,22 +402,6 @@ public class PolicyImpl extends EObjectImpl implements Policy {
 				return configuration != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (currentTime: ");
-		result.append(currentTime);
-		result.append(')');
-		return result.toString();
 	}
 
 } //PolicyImpl

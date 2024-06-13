@@ -13,5 +13,5 @@ package fr.inria.diverse.melanger.leho.leho;
  * @model
  * @generated
  */
-public interface Outbound extends TypeInterface {
+public interface Outbound extends Interface {
 } // Outbound

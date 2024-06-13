@@ -44,7 +44,6 @@ import fr.inria.diverse.melanger.leho.leho.OptionHopByHop;
 import fr.inria.diverse.melanger.leho.leho.Options;
 import fr.inria.diverse.melanger.leho.leho.Outbound;
 import fr.inria.diverse.melanger.leho.leho.Packet;
-import fr.inria.diverse.melanger.leho.leho.PacketSpec;
 import fr.inria.diverse.melanger.leho.leho.PacketUnit;
 import fr.inria.diverse.melanger.leho.leho.Pad1;
 import fr.inria.diverse.melanger.leho.leho.PadN;
@@ -70,7 +69,6 @@ import fr.inria.diverse.melanger.leho.leho.SourceRoute;
 import fr.inria.diverse.melanger.leho.leho.Time;
 import fr.inria.diverse.melanger.leho.leho.TunnelEncapsulationLimit;
 import fr.inria.diverse.melanger.leho.leho.Type2;
-import fr.inria.diverse.melanger.leho.leho.TypeInterface;
 import fr.inria.diverse.melanger.leho.leho.TypeRouting;
 import fr.inria.diverse.melanger.leho.leho.Unassigned;
 import fr.inria.diverse.melanger.leho.leho.Unit;
@@ -133,13 +131,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	private EClass discardEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass packetSpecEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -440,7 +431,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass typeInterfaceEClass = null;
+	private EClass interfaceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -615,13 +606,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass interfaceEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EDataType objectEDataType = null;
 
 	/**
@@ -743,36 +727,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	@Override
 	public EClass getDiscard() {
 		return discardEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getPacketSpec() {
-		return packetSpecEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPacketSpec_Port() {
-		return (EReference)packetSpecEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPacketSpec_Extensionheader() {
-		return (EReference)packetSpecEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1301,8 +1255,28 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTypeInterface() {
-		return typeInterfaceEClass;
+	public EClass getInterface() {
+		return interfaceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInterface_Name() {
+		return (EAttribute)interfaceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getInterface_Ports() {
+		return (EReference)interfaceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1331,7 +1305,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRule_Packetspec() {
+	public EReference getRule_To() {
 		return (EReference)ruleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1341,7 +1315,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRule_To() {
+	public EReference getRule_Next() {
 		return (EReference)ruleEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1351,7 +1325,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRule_Next() {
+	public EReference getRule_From() {
 		return (EReference)ruleEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1361,8 +1335,18 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRule_From() {
+	public EReference getRule_Extensionheader() {
 		return (EReference)ruleEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRule_Interface() {
+		return (EReference)ruleEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1581,28 +1565,8 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPolicy_CurrentTime() {
-		return (EAttribute)policyEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPolicy_CurrentPacket() {
-		return (EReference)policyEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getPolicy_Packets() {
-		return (EReference)policyEClass.getEStructuralFeatures().get(3);
+		return (EReference)policyEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1612,7 +1576,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 */
 	@Override
 	public EReference getPolicy_InPorts() {
-		return (EReference)policyEClass.getEStructuralFeatures().get(4);
+		return (EReference)policyEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1622,7 +1586,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 */
 	@Override
 	public EReference getPolicy_Interfaces() {
-		return (EReference)policyEClass.getEStructuralFeatures().get(5);
+		return (EReference)policyEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1632,7 +1596,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 */
 	@Override
 	public EReference getPolicy_Configuration() {
-		return (EReference)policyEClass.getEStructuralFeatures().get(6);
+		return (EReference)policyEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1651,7 +1615,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getFilter_FirstRule() {
+	public EReference getFilter_CurrentPacket() {
 		return (EReference)filterEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1661,8 +1625,28 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getFilter_CurrentTime() {
+		return (EAttribute)filterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFilter_FirstRule() {
+		return (EReference)filterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getFilter_CurrentRule() {
-		return (EReference)filterEClass.getEStructuralFeatures().get(1);
+		return (EReference)filterEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1711,6 +1695,36 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getPacket_SourceAddress() {
+		return (EAttribute)packetEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPacket_DestinationAddress() {
+		return (EAttribute)packetEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPacket_Extensionheaders() {
+		return (EReference)packetEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getPort() {
 		return portEClass;
 	}
@@ -1733,36 +1747,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 	@Override
 	public EReference getPort_Interface() {
 		return (EReference)portEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInterface() {
-		return interfaceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInterface_Name() {
-		return (EAttribute)interfaceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getInterface_Ports() {
-		return (EReference)interfaceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1815,10 +1799,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		acceptEClass = createEClass(ACCEPT);
 
 		discardEClass = createEClass(DISCARD);
-
-		packetSpecEClass = createEClass(PACKET_SPEC);
-		createEReference(packetSpecEClass, PACKET_SPEC__PORT);
-		createEReference(packetSpecEClass, PACKET_SPEC__EXTENSIONHEADER);
 
 		inboundEClass = createEClass(INBOUND);
 
@@ -1914,14 +1894,17 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		createEAttribute(ipAddSpecEClass, IP_ADD_SPEC__PORT);
 		createEAttribute(ipAddSpecEClass, IP_ADD_SPEC__MASK);
 
-		typeInterfaceEClass = createEClass(TYPE_INTERFACE);
+		interfaceEClass = createEClass(INTERFACE);
+		createEAttribute(interfaceEClass, INTERFACE__NAME);
+		createEReference(interfaceEClass, INTERFACE__PORTS);
 
 		ruleEClass = createEClass(RULE);
 		createEReference(ruleEClass, RULE__ACTION);
-		createEReference(ruleEClass, RULE__PACKETSPEC);
 		createEReference(ruleEClass, RULE__TO);
 		createEReference(ruleEClass, RULE__NEXT);
 		createEReference(ruleEClass, RULE__FROM);
+		createEReference(ruleEClass, RULE__EXTENSIONHEADER);
+		createEReference(ruleEClass, RULE__INTERFACE);
 
 		protocolEClass = createEClass(PROTOCOL);
 
@@ -1963,14 +1946,14 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 
 		policyEClass = createEClass(POLICY);
 		createEReference(policyEClass, POLICY__FILTER);
-		createEAttribute(policyEClass, POLICY__CURRENT_TIME);
-		createEReference(policyEClass, POLICY__CURRENT_PACKET);
 		createEReference(policyEClass, POLICY__PACKETS);
 		createEReference(policyEClass, POLICY__IN_PORTS);
 		createEReference(policyEClass, POLICY__INTERFACES);
 		createEReference(policyEClass, POLICY__CONFIGURATION);
 
 		filterEClass = createEClass(FILTER);
+		createEReference(filterEClass, FILTER__CURRENT_PACKET);
+		createEAttribute(filterEClass, FILTER__CURRENT_TIME);
 		createEReference(filterEClass, FILTER__FIRST_RULE);
 		createEReference(filterEClass, FILTER__CURRENT_RULE);
 
@@ -1978,14 +1961,13 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		createEAttribute(packetEClass, PACKET__TIME);
 		createEReference(packetEClass, PACKET__IN_PORT);
 		createEAttribute(packetEClass, PACKET__CONTENT);
+		createEAttribute(packetEClass, PACKET__SOURCE_ADDRESS);
+		createEAttribute(packetEClass, PACKET__DESTINATION_ADDRESS);
+		createEReference(packetEClass, PACKET__EXTENSIONHEADERS);
 
 		portEClass = createEClass(PORT);
 		createEAttribute(portEClass, PORT__NUMBER);
 		createEReference(portEClass, PORT__INTERFACE);
-
-		interfaceEClass = createEClass(INTERFACE);
-		createEAttribute(interfaceEClass, INTERFACE__NAME);
-		createEReference(interfaceEClass, INTERFACE__PORTS);
 
 		// Create data types
 		objectEDataType = createEDataType(OBJECT);
@@ -2023,8 +2005,8 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		rejectEClass.getESuperTypes().add(this.getAction());
 		acceptEClass.getESuperTypes().add(this.getAction());
 		discardEClass.getESuperTypes().add(this.getAction());
-		inboundEClass.getESuperTypes().add(this.getTypeInterface());
-		outboundEClass.getESuperTypes().add(this.getTypeInterface());
+		inboundEClass.getESuperTypes().add(this.getInterface());
+		outboundEClass.getESuperTypes().add(this.getInterface());
 		bandwidthEClass.getESuperTypes().add(this.getAction());
 		bitUnitEClass.getESuperTypes().add(this.getUnit());
 		octetUnitEClass.getESuperTypes().add(this.getUnit());
@@ -2101,10 +2083,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 
 		initEClass(discardEClass, Discard.class, "Discard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(packetSpecEClass, PacketSpec.class, "PacketSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPacketSpec_Port(), this.getTypeInterface(), null, "port", null, 0, 1, PacketSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPacketSpec_Extensionheader(), this.getExtensionHeader(), null, "extensionheader", null, 1, -1, PacketSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(inboundEClass, Inbound.class, "Inbound", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(outboundEClass, Outbound.class, "Outbound", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2132,7 +2110,7 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 
 		initEClass(dayEClass, Day.class, "Day", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(extensionHeaderEClass, ExtensionHeader.class, "ExtensionHeader", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(extensionHeaderEClass, ExtensionHeader.class, "ExtensionHeader", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		addEOperation(extensionHeaderEClass, ecorePackage.getEBooleanObject(), "eval", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -2252,14 +2230,17 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		initEAttribute(getIpAddSpec_Port(), ecorePackage.getEString(), "port", null, 0, 1, IpAddSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIpAddSpec_Mask(), ecorePackage.getEInt(), "mask", null, 0, 1, IpAddSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(typeInterfaceEClass, TypeInterface.class, "TypeInterface", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getInterface_Name(), ecorePackage.getEString(), "name", null, 1, 1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getInterface_Ports(), this.getPort(), null, "ports", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(ruleEClass, Rule.class, "Rule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRule_Action(), this.getAction(), null, "action", null, 1, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRule_Packetspec(), this.getPacketSpec(), null, "packetspec", null, 1, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRule_To(), this.getIpAddSpec(), null, "to", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRule_Next(), this.getRule(), null, "next", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRule_From(), this.getIpAddSpec(), null, "from", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRule_Extensionheader(), this.getExtensionHeader(), null, "extensionheader", null, 1, -1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRule_Interface(), this.getInterface(), null, "interface", null, 0, 1, Rule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(protocolEClass, Protocol.class, "Protocol", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -2356,8 +2337,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 
 		initEClass(policyEClass, Policy.class, "Policy", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPolicy_Filter(), this.getFilter(), null, "filter", null, 0, 1, Policy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPolicy_CurrentTime(), ecorePackage.getEInt(), "currentTime", "0", 1, 1, Policy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPolicy_CurrentPacket(), this.getPacket(), null, "currentPacket", null, 0, 1, Policy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPolicy_Packets(), this.getPacket(), null, "packets", null, 0, -1, Policy.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPolicy_InPorts(), this.getPort(), null, "inPorts", null, 0, -1, Policy.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPolicy_Interfaces(), this.getInterface(), null, "interfaces", null, 0, -1, Policy.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2373,6 +2352,8 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		addEParameter(op, ecorePackage.getEInt(), "length", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(filterEClass, Filter.class, "Filter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFilter_CurrentPacket(), this.getPacket(), null, "currentPacket", null, 0, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFilter_CurrentTime(), ecorePackage.getEInt(), "currentTime", "0", 1, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFilter_FirstRule(), this.getRule(), null, "firstRule", null, 0, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFilter_CurrentRule(), this.getRule(), null, "currentRule", null, 0, 1, Filter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2383,14 +2364,13 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		initEAttribute(getPacket_Time(), ecorePackage.getEInt(), "time", null, 1, 1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPacket_InPort(), this.getPort(), null, "inPort", null, 0, 1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPacket_Content(), ecorePackage.getEString(), "content", null, 1, 1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPacket_SourceAddress(), ecorePackage.getEBigInteger(), "sourceAddress", null, 0, 1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPacket_DestinationAddress(), ecorePackage.getEBigInteger(), "destinationAddress", null, 0, 1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPacket_Extensionheaders(), this.getExtensionHeader(), null, "extensionheaders", null, 0, -1, Packet.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(portEClass, Port.class, "Port", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPort_Number(), ecorePackage.getEInt(), "number", null, 1, 1, Port.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPort_Interface(), this.getInterface(), null, "interface", null, 0, 1, Port.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(interfaceEClass, Interface.class, "Interface", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInterface_Name(), ecorePackage.getEString(), "name", null, 1, 1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInterface_Ports(), this.getPort(), null, "ports", null, 0, -1, Interface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize data types
 		initEDataType(objectEDataType, Object.class, "Object", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
@@ -2403,6 +2383,8 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		createImportAnnotations();
 		// aspect
 		createAspectAnnotations();
+		// containment
+		createContainmentAnnotations();
 	}
 
 	/**
@@ -2650,16 +2632,6 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		   new String[] {
 		   });
 		addAnnotation
-		  (getPolicy_CurrentTime(),
-		   source,
-		   new String[] {
-		   });
-		addAnnotation
-		  (getPolicy_CurrentPacket(),
-		   source,
-		   new String[] {
-		   });
-		addAnnotation
 		  (getPolicy_Packets(),
 		   source,
 		   new String[] {
@@ -2675,6 +2647,16 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		   new String[] {
 		   });
 		addAnnotation
+		  (getFilter_CurrentPacket(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getFilter_CurrentTime(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
 		  (getFilter_FirstRule(),
 		   source,
 		   new String[] {
@@ -2685,7 +2667,42 @@ public class LehoPackageImpl extends EPackageImpl implements LehoPackage {
 		   new String[] {
 		   });
 		addAnnotation
+		  (getPacket_SourceAddress(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getPacket_DestinationAddress(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getPacket_Extensionheaders(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
 		  (objectEDataType,
+		   source,
+		   new String[] {
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>containment</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createContainmentAnnotations() {
+		String source = "containment";
+		addAnnotation
+		  (getPacket_SourceAddress(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getPacket_DestinationAddress(),
 		   source,
 		   new String[] {
 		   });

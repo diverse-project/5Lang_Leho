@@ -138,10 +138,11 @@ language Leho inherits Eho{
 	
 	with fr.inria.diverse.eho.melanger.PolicyGlue
 	with fr.inria.diverse.eho.melanger.FilterGlue
+	with fr.inria.diverse.eho.melanger.PacketGlue
 	with fr.inria.diverse.eho.melanger.RuleGlue
 	with fr.inria.diverse.eho.melanger.IpAddSpecGlue
 	with fr.inria.diverse.eho.melanger.PacketSpecGlue
-	with fr.inria.diverse.eho.melanger.TypeInterfaceGlue
+	with fr.inria.diverse.eho.melanger.InterfaceGlue
 	with fr.inria.diverse.eho.melanger.InboundGlue
 	with fr.inria.diverse.eho.melanger.OutboundGlue
 	with fr.inria.diverse.eho.melanger.ExtensionHeaderGlue

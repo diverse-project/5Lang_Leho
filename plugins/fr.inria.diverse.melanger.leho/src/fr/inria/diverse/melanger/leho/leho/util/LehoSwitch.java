@@ -45,7 +45,6 @@ import fr.inria.diverse.melanger.leho.leho.OptionHopByHop;
 import fr.inria.diverse.melanger.leho.leho.Options;
 import fr.inria.diverse.melanger.leho.leho.Outbound;
 import fr.inria.diverse.melanger.leho.leho.Packet;
-import fr.inria.diverse.melanger.leho.leho.PacketSpec;
 import fr.inria.diverse.melanger.leho.leho.PacketUnit;
 import fr.inria.diverse.melanger.leho.leho.Pad1;
 import fr.inria.diverse.melanger.leho.leho.PadN;
@@ -72,7 +71,6 @@ import fr.inria.diverse.melanger.leho.leho.SourceRoute;
 import fr.inria.diverse.melanger.leho.leho.Time;
 import fr.inria.diverse.melanger.leho.leho.TunnelEncapsulationLimit;
 import fr.inria.diverse.melanger.leho.leho.Type2;
-import fr.inria.diverse.melanger.leho.leho.TypeInterface;
 import fr.inria.diverse.melanger.leho.leho.TypeRouting;
 import fr.inria.diverse.melanger.leho.leho.Unassigned;
 import fr.inria.diverse.melanger.leho.leho.Unit;
@@ -180,23 +178,17 @@ public class LehoSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case LehoPackage.PACKET_SPEC: {
-				PacketSpec packetSpec = (PacketSpec)theEObject;
-				T result = casePacketSpec(packetSpec);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case LehoPackage.INBOUND: {
 				Inbound inbound = (Inbound)theEObject;
 				T result = caseInbound(inbound);
-				if (result == null) result = caseTypeInterface(inbound);
+				if (result == null) result = caseInterface(inbound);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case LehoPackage.OUTBOUND: {
 				Outbound outbound = (Outbound)theEObject;
 				T result = caseOutbound(outbound);
-				if (result == null) result = caseTypeInterface(outbound);
+				if (result == null) result = caseInterface(outbound);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -485,9 +477,9 @@ public class LehoSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case LehoPackage.TYPE_INTERFACE: {
-				TypeInterface typeInterface = (TypeInterface)theEObject;
-				T result = caseTypeInterface(typeInterface);
+			case LehoPackage.INTERFACE: {
+				Interface interface_ = (Interface)theEObject;
+				T result = caseInterface(interface_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -652,12 +644,6 @@ public class LehoSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case LehoPackage.INTERFACE: {
-				Interface interface_ = (Interface)theEObject;
-				T result = caseInterface(interface_);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -749,21 +735,6 @@ public class LehoSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDiscard(Discard object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Packet Spec</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Packet Spec</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePacketSpec(PacketSpec object) {
 		return null;
 	}
 
@@ -1398,17 +1369,17 @@ public class LehoSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type Interface</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Interface</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type Interface</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Interface</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTypeInterface(TypeInterface object) {
+	public T caseInterface(Interface object) {
 		return null;
 	}
 
@@ -1769,21 +1740,6 @@ public class LehoSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePort(Port object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Interface</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Interface</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInterface(Interface object) {
 		return null;
 	}
 
