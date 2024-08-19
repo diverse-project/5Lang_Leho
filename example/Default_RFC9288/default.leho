@@ -1,6 +1,6 @@
-Discrard = reject
+discard = reject
 
-allow hop-by-hop
+accept hop-by-hop
     where option = pad1
     and option = padn
     and option = router-alert
@@ -14,30 +14,30 @@ discard hop-by-hop
     and option = deprecated
     and option = RPL63
     and option = endpoint-id
-    and option = RFC3692-experiment
+    and option = RFC3692-experiment 
 
-allow routing-header
+accept routing-header
     where type = type-2-routing-header
     and type = SRH
     and type = unassigned
     and type = reserved
-discard routing header
+discard routing-header
     where type = source-route
     and type = nimrod
     and type = RPL
     and type = RFC3692-experiment1
     and type = RFC3692-experiment2
 
-allow fragment-header
+accept fragment-header
 
-allow encapsuling-security-payload
+accept encapsuling-security-payload
 
-allow authentification-header
+accept authentification-header
 
-allow destination-option
+accept destination-option
     where option = pad1
     and option = padn
-    and option = tunnel-encapsulatio-limit
+    and option = tunnel-encapsulation-limit
     and option = home-adress
     and option = ILNP-nonce
 discard destination-option
@@ -46,13 +46,13 @@ discard destination-option
     and option = line-id-option
     and option = RFC3692-experiment
 
-allow mobility-header
+accept mobility-header
 
-allow host-identity-protocol
+accept host-identity-protocol
 
-allow shim6-protocol
+accept shim6-protocol
 
 discard experimentation-testing
 
-allow unkown
+accept unkown
 

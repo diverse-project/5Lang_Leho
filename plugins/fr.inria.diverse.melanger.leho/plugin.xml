@@ -7,8 +7,9 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated Leho -->
       <package
-            uri="http://fr.inria.diverse.melanger.leho/leho/"
-            class="fr.inria.diverse.melanger.leho.leho.LehoPackage"
+            uri="http://www.inria.fr/diverse/Leho"
+            class="fr.inria.diverse.melanger.leho.Leho.LehoPackage"
             genModel="model/Leho.genmodel"/>
    </extension>
+
 </plugin>

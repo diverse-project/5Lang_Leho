@@ -18,10 +18,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.gemoc.commons.eclipse.messagingsystem.api;bundle-version="3.3.0"
 Bundle-ActivationPolicy: lazy
 Export-Package: fr.inria.diverse.melanger.leho.aspects,
- fr.inria.diverse.melanger.leho.eho,
- fr.inria.diverse.melanger.leho.eho.impl,
- fr.inria.diverse.melanger.leho.eho.util,
- fr.inria.diverse.melanger.leho.leho,
- fr.inria.diverse.melanger.leho.leho.impl,
- fr.inria.diverse.melanger.leho.leho.util
+ fr.inria.diverse.melanger.leho.Leho.impl,
+ fr.inria.diverse.melanger.leho.Leho.util,
+ fr.inria.diverse.melanger.leho.Leho
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
