@@ -1,0 +1,10 @@
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardDrop){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect.run((fr.inria.diverse.leho.model.leho.DiscardDrop)_self);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardReject){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect.run((fr.inria.diverse.leho.model.leho.DiscardReject)_self);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect

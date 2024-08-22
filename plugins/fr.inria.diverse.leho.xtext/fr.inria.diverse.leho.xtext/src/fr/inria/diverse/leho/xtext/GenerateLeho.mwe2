@@ -33,7 +33,7 @@ Workflow {
 		language = StandardLanguage {
 			name = "fr.inria.diverse.leho.xtext.Leho"
 			fileExtensions = "leho"
-			referencedResource = "platform:/resource/fr.inria.diverse.melanger.leho/model/Leho.genmodel"
+			referencedResource = "platform:/resource/fr.inria.diverse.leho.model/model/leho.genmodel"
 			
 			fragment = ecore2xtext.Ecore2XtextValueConverterServiceFragment2 auto-inject {}
 

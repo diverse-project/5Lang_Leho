@@ -4,7 +4,7 @@
 package fr.inria.diverse.leho.xtext.tests
 
 import com.google.inject.Inject
-import fr.inria.diverse.melanger.leho.Leho.Policy
+import fr.inria.diverse.leho.model.leho.Policy
 import org.eclipse.xtext.testing.InjectWith
 import org.eclipse.xtext.testing.extensions.InjectionExtension
 import org.eclipse.xtext.testing.util.ParseHelper

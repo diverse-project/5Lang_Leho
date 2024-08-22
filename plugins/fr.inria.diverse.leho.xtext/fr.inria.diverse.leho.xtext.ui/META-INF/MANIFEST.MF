@@ -8,7 +8,7 @@ Bundle-SymbolicName: fr.inria.diverse.leho.xtext.ui; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: fr.inria.diverse.leho.xtext,
  fr.inria.diverse.leho.xtext.ide,
- fr.inria.diverse.melanger.leho,
+ fr.inria.diverse.leho.model,
  org.eclipse.xtext.ui,
  org.eclipse.xtext.ui.shared,
  org.eclipse.xtext.ui.codetemplates.ui,

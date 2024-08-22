@@ -4,9 +4,9 @@
 package fr.inria.diverse.leho.xtext.formatting2
 
 import com.google.inject.Inject
+import fr.inria.diverse.leho.model.leho.Filter
+import fr.inria.diverse.leho.model.leho.Policy
 import fr.inria.diverse.leho.xtext.services.LehoGrammarAccess
-import fr.inria.diverse.melanger.leho.Leho.Filter
-import fr.inria.diverse.melanger.leho.Leho.Policy
 import org.eclipse.xtext.formatting2.AbstractFormatter2
 import org.eclipse.xtext.formatting2.IFormattableDocument
 
