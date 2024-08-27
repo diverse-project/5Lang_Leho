@@ -26,7 +26,7 @@ class IOModule {
 			// time
 			currentPacket.time = Integer.valueOf(packet_data.get(0))
 			// port
-			var port = root.inPorts.findFirst[p | p.number.equals(Integer.parseInt(packet_data.get(2)))]
+			var port = root.inPorts.findFirst[p | p.number.equals(Integer.parseInt(packet_data.get(1)))]
 			if (port === null) {
 				port = LehoFactory.eINSTANCE.createPort
 				port.number = Integer.parseInt(packet_data.get(1))
@@ -43,38 +43,43 @@ class IOModule {
 					case 0: { // hop by hop
 						var eh = LehoFactory.eINSTANCE.createHopByHopOpts
 						val hdrExtLen = read(nextEhStart+8, 8)
-						var nextOptStart = nextEhStart
+						var nextOptStart = nextEhStart+16
 						nextEhStart += hdrExtLen*8
 						
-						nextOptStart +=16
-						var optionType = read(nextOptStart, 8)
-						var optDataLen = optionType == 0 ? 8 : read(nextOptStart+8, 8)
+						var optDataLen = 0
+						var optionType = 0
 						while (nextOptStart < nextEhStart) {
+							optionType = read(nextOptStart, 8)
+							optDataLen = optionType == 0 ? 8 : read(nextOptStart+8, 8)
 							switch (optionType) {
 								case 0: eh.options.add(LehoFactory.eINSTANCE.createPad1)
 								case 1: eh.options.add(LehoFactory.eINSTANCE.createPadN)
-								case 77: eh.options.add(LehoFactory.eINSTANCE.createDeprecated)
+								case 77: {
+									eh.options.add(LehoFactory.eINSTANCE.createDeprecated)
+									nextOptStart = nextEhStart
+								}
 								case 138: eh.options.add(LehoFactory.eINSTANCE.createEndPointIdentification)
 								case optionType == 30 || optionType == 62 || optionType == 94 || optionType == 126  || optionType == 158 || optionType == 190 || optionType == 222 || optionType == 254: 
 									eh.options.add(LehoFactory.eINSTANCE.createRFC3692Experiment)
-								case 5: {
-									val router = LehoFactory.eINSTANCE.createRouterAlert
-									val protocol = read(nextEhStart+optDataLen+16, 16)
-									if (protocol == 0) router.protocol = LehoFactory.eINSTANCE.createRSVP
-									else if (protocol == 1) router.protocol = LehoFactory.eINSTANCE.createMLD
-									eh.options.add(router)
+								case 5: {  eh.options.add(LehoFactory.eINSTANCE.createRouterAlert)
+//									val router = LehoFactory.eINSTANCE.createRouterAlert
+//									val protocol = read(nextOptStart+16, 16)
+//									if (protocol == 0) router.protocol = LehoFactory.eINSTANCE.createRSVP
+//									else if (protocol == 1) router.protocol = LehoFactory.eINSTANCE.createMLD
+//									eh.options.add(router)
 								}
 								case 7: eh.options.add(LehoFactory.eINSTANCE.createCalipso)
 								case 8: eh.options.add(LehoFactory.eINSTANCE.createSmfDpd)
 								case optionType == 35 || optionType == 99: eh.options.add(LehoFactory.eINSTANCE.createRPLOption)
 								case 38: eh.options.add(LehoFactory.eINSTANCE.createQuickStart)
 								case 109: eh.options.add(LehoFactory.eINSTANCE.createMPLOption)
-								case 194: eh.options.add(LehoFactory.eINSTANCE.createJumboPayload)
+								case 194: {
+									eh.options.add(LehoFactory.eINSTANCE.createJumboPayload)
+									optDataLen = 6
+								}
 								case 238: eh.options.add(LehoFactory.eINSTANCE.createDFF)
 							}
 							nextOptStart += optDataLen*8
-							optionType = read(nextOptStart, 8)
-							optDataLen = optionType == 0 ? 8 : read(nextOptStart+8, 8)
 						}
 						
 						currentPacket.extensionheader.add(eh)
@@ -83,7 +88,7 @@ class IOModule {
 						var eh = LehoFactory.eINSTANCE.createRouting
 						val hdrExtLen = read(nextEhStart+8, 8)
 						var routingType = read(nextEhStart+8+8, 8)
-						nextEhStart += 64+hdrExtLen*64
+						nextEhStart += hdrExtLen*8
 						switch (routingType) {
 							case 0: eh.type = LehoFactory.eINSTANCE.createSourceRoute
 							case 1: eh.type = LehoFactory.eINSTANCE.createNimrod
@@ -101,10 +106,10 @@ class IOModule {
 						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createFragment)
 						nextEhStart += 64
 					}
-					case 50: { // encapsuling security payload
-						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createEncapsulingSecurityPayload)
-						// TODO: understand this one
-					}
+//					case 50: { // encapsuling security payload
+//						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createEncapsulingSecurityPayload)
+//						// TODO: understand this one
+//					}
 					case 51: { // authetification header
 						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createAuthentificationHeader)
 						nextEhStart += 64+(read(nextEhStart+8, 8) *32)
@@ -112,11 +117,14 @@ class IOModule {
 					case 60: { // destination options
 						var eh = LehoFactory.eINSTANCE.createDestinationOpts
 						val hdrExtLen = read(nextEhStart+8, 8)
+						var nextOptStart = nextEhStart+16
+						nextEhStart += hdrExtLen*8
 						
-						nextEhStart +=16
-						var optionType = read(nextEhStart, 8)
-						var optDataLen = optionType == 0 ? 8 : read(nextEhStart+8, 8)
-						while (nextEhStart < hdrExtLen) {
+						var optDataLen = 0
+						var optionType = 0
+						while (nextOptStart < nextEhStart) {
+							optionType = read(nextOptStart, 8)
+							optDataLen = optionType == 0 ? 1 : read(nextOptStart+8, 8)
 							switch (optionType) {
 								case 0: eh.options.add(LehoFactory.eINSTANCE.createPad1)
 								case 1: eh.options.add(LehoFactory.eINSTANCE.createPadN)
@@ -124,16 +132,18 @@ class IOModule {
 								case 138: eh.options.add(LehoFactory.eINSTANCE.createEndPointIdentification)
 								case optionType == 30 || optionType == 62 || optionType == 94 || optionType == 126  || optionType == 158 || optionType == 190 || optionType == 222 || optionType == 254: 
 									eh.options.add(LehoFactory.eINSTANCE.createRFC3692Experiment)
-								case 4: eh.options.add(LehoFactory.eINSTANCE.createTunnelEncapsulationLimit)
+								case 4: {
+									eh.options.add(LehoFactory.eINSTANCE.createTunnelEncapsulationLimit)
+									optDataLen = 3
+								}
 								case 15: eh.options.add(LehoFactory.eINSTANCE.createIPv6PerformanceDiagnostic)
 								case 139: eh.options.add(LehoFactory.eINSTANCE.createILNPNonce)
 								case 140: eh.options.add(LehoFactory.eINSTANCE.createLineIdOption)
 								case 201: eh.options.add(LehoFactory.eINSTANCE.createHomeAdress)
 							}
-							nextEhStart += optDataLen*8
-							optionType = read(nextEhStart, 8)
-							optDataLen = optionType == 0 ? 8 : read(nextEhStart+8, 8)
+							nextOptStart += optDataLen*8
 						}
+						currentPacket.extensionheader.add(eh)
 					}
 					case 135: { // mobility header
 						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createMobilityHeader)
@@ -145,7 +155,7 @@ class IOModule {
 					}
 					case 140: { // shim6 protocol
 						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createShim6Protocol)
-						// TODO: understand this one
+						nextEhStart += 64
 					}
 					case nextHeader == 253 || nextHeader == 254: { // Experimentation and testing
 						currentPacket.extensionheader.add(LehoFactory.eINSTANCE.createExperimentationAndTesting)
