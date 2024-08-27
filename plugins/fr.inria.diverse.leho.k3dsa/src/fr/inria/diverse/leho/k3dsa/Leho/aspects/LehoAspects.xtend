@@ -156,6 +156,7 @@ class PolicyAspect {
 	}
     
     @Main
+    @Step
     def void run() {
     	_self.configuration.run()
     	for (packet : _self.packets) {
