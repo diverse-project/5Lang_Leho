@@ -1,10 +1,35 @@
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.RejectAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Reject){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.RejectAspect.run((fr.inria.diverse.leho.model.leho.Reject)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.RejectAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.AcceptAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Accept){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.AcceptAspect.run((fr.inria.diverse.leho.model.leho.Accept)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.AcceptAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.DropAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Drop){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.DropAspect.run((fr.inria.diverse.leho.model.leho.Drop)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.DropAspect
 	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect
 		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardDrop){
 			fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect.run((fr.inria.diverse.leho.model.leho.DiscardDrop)_self);
 		} else
 		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardDropAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Discard){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardAspect.run((fr.inria.diverse.leho.model.leho.Discard)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardAspect
 	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect
 		if (_self instanceof fr.inria.diverse.leho.model.leho.DiscardReject){
 			fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect.run((fr.inria.diverse.leho.model.leho.DiscardReject)_self);
 		} else
 		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect#void run() from fr.inria.diverse.leho.k3dsa.Leho.aspects.DiscardRejectAspect
+	// BeginInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.BandwidthAspect
+		if (_self instanceof fr.inria.diverse.leho.model.leho.Bandwidth){
+			fr.inria.diverse.leho.k3dsa.Leho.aspects.BandwidthAspect.run((fr.inria.diverse.leho.model.leho.Bandwidth)_self,root);
+		} else
+		// EndInjectInto fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect#void run(Policy) from fr.inria.diverse.leho.k3dsa.Leho.aspects.BandwidthAspect

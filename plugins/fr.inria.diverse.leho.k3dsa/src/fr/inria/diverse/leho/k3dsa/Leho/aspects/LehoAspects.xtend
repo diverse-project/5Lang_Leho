@@ -161,6 +161,7 @@ class PolicyAspect {
     	_self.configuration.run()
     	for (packet : _self.packets) {
 			_self.filter.currentPacket = packet
+			_self.filter.currentTime = packet.time
 	 		_self.filter.run(_self)
 		}
     }
@@ -456,7 +457,7 @@ abstract class ActionAspect {
 }
 
 @Aspect(className=Accept)
-class AcceptAspect {
+class AcceptAspect extends ActionAspect {
 	def void run(Policy root) {
 	 	MessagingModule.debug("ACCEPT\n")
 		
@@ -466,7 +467,7 @@ class AcceptAspect {
 }
 
 @Aspect(className=Drop)
-class DropAspect  {
+class DropAspect extends ActionAspect {
 	def void run(Policy root) {
 		MessagingModule.debug("DROP\n")
 		endOfFilter = true
@@ -474,7 +475,7 @@ class DropAspect  {
 }
 
 @Aspect(className=Reject)
-class RejectAspect {
+class RejectAspect extends ActionAspect {
 	// TODO later: change to a real reject
 	// (would take too much time with all the particular cases)
 	def void run(Policy root) {
@@ -484,14 +485,14 @@ class RejectAspect {
 }
 
 @Aspect(className=Discard)
-class DiscardAspect {
+class DiscardAspect extends ActionAspect {
 	def void run(Policy root) {
 		discard.run(root)
 	}
 }
 
 @Aspect(className=Bandwidth)
-class BandwidthAspect {
+class BandwidthAspect extends ActionAspect {
 	public static var nextAcceptTime = 0
 	public static var nbPackets = 0
 	public static var nbOctets = 0
