@@ -44,7 +44,7 @@ class IOModule {
 						var eh = LehoFactory.eINSTANCE.createHopByHopOpts
 						val hdrExtLen = read(nextEhStart+8, 8)
 						var nextOptStart = nextEhStart+16
-						nextEhStart += hdrExtLen*8
+						nextEhStart += 64+hdrExtLen*64
 						
 						var optDataLen = 0
 						var optionType = 0
@@ -88,7 +88,7 @@ class IOModule {
 						var eh = LehoFactory.eINSTANCE.createRouting
 						val hdrExtLen = read(nextEhStart+8, 8)
 						var routingType = read(nextEhStart+8+8, 8)
-						nextEhStart += hdrExtLen*8
+						nextEhStart += 64+hdrExtLen*64
 						switch (routingType) {
 							case 0: eh.type = LehoFactory.eINSTANCE.createSourceRoute
 							case 1: eh.type = LehoFactory.eINSTANCE.createNimrod
@@ -118,7 +118,7 @@ class IOModule {
 						var eh = LehoFactory.eINSTANCE.createDestinationOpts
 						val hdrExtLen = read(nextEhStart+8, 8)
 						var nextOptStart = nextEhStart+16
-						nextEhStart += hdrExtLen*8
+						nextEhStart += 64+hdrExtLen*64
 						
 						var optDataLen = 0
 						var optionType = 0
