@@ -2,31 +2,36 @@ discard = reject
 
 accept hop-by-hop
     where option = pad1
-    and option = padn
-    and option = router-alert
-    and option = CALIPSO
-    and option = RPL23
-    and option = quick-start
-    and option = MPL-option
+    and option = padN
+    and option = router-alert 
+    	where protocol = mld
+    and option = calipso
+    and option = rpl-option
+    and option = quickstart
+    and option = mpl-option
     and option = jumbo-payload
 discard hop-by-hop
-    where option = SMF_DPD
+    where option = smf-dpd
     and option = deprecated
-    and option = RPL63
     and option = endpoint-id
-    and option = RFC3692-experiment 
+    and option = rfc3692-experiment 
 
 accept routing-header
-    where type = type-2-routing-header
-    and type = SRH
-    and type = unassigned
-    and type = reserved
+    where type = type2
+    routing-header
+    where type = unassigned
+    routing-header
+    where type = reserved
 discard routing-header
     where type = source-route
-    and type = nimrod
-    and type = RPL
-    and type = RFC3692-experiment1
-    and type = RFC3692-experiment2
+    routing-header
+    where type = nimrod
+    routing-header
+    where type = rpl-source
+    routing-header
+    where type = rfc3692-experiment-1
+    routing-header
+    where type = rfc3692-experiment-2
 
 accept fragment-header
 
@@ -36,15 +41,15 @@ accept authentification-header
 
 accept destination-option
     where option = pad1
-    and option = padn
+    and option = padN
     and option = tunnel-encapsulation-limit
-    and option = home-adress
-    and option = ILNP-nonce
+    and option = home-address
+    and option = ilnp-nonce
 discard destination-option
     where option = deprecated
     and option = endpoint-id
     and option = line-id-option
-    and option = RFC3692-experiment
+    and option = rfc3692-experiment
 
 accept mobility-header
 

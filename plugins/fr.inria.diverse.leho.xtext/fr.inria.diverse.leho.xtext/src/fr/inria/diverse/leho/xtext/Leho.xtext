@@ -21,7 +21,12 @@ Rule:
 ;
 
 RuleAtomic returns Rule:
-	action=Action interface=[Interface|INTERFACE]? extensionheader+=ExtensionHeader+ ("from" from=IpAddSpec "to" to=IpAddSpec)?
+	action=Action side=Side? extensionheader+=ExtensionHeader+ ("from" from=IpAddSpec "to" to=IpAddSpec)?
+;
+
+Side:
+	{Inbound} "inbound"
+	| {Outbound} "outbound"
 ;
 
 Action:
@@ -111,4 +116,4 @@ IpAddSpec:
 terminal IPV6 returns ecore::EString:HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?":"HEXNUMBER?;
 terminal HEXNUMBER returns ecore::EString:(('0'..'9'|'a'..'f'|'A'..'F'))(('0'..'9'|'a'..'f'|'A'..'F'))(('0'..'9'|'a'..'f'|'A'..'F'))(('0'..'9'|'a'..'f'|'A'..'F'));
 terminal PORT returns ecore::EString: ":"INT;
-terminal INTERFACE returns ecore::EString: "inbound" | "outbound";
+//terminal INTERFACE returns ecore::EString: "inbound" | "outbound";

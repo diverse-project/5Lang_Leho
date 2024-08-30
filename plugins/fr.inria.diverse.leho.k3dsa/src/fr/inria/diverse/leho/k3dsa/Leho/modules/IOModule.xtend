@@ -28,9 +28,8 @@ class IOModule {
 			// port
 			var port = root.inPorts.findFirst[p | p.number.equals(Integer.parseInt(packet_data.get(1)))]
 			if (port === null) {
-				port = LehoFactory.eINSTANCE.createPort
-				port.number = Integer.parseInt(packet_data.get(1))
-				root.inPorts.add(port)
+				MessagingModule.error("Unknown entry port for packet " + currentPacket.time + ".\nPlease change port number or add it port configuration.")
+				throw new Exception("Unkown port")
 			}
 			currentPacket.inPort = port
 			//content

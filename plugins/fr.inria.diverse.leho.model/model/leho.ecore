@@ -82,7 +82,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Rule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//IpAddSpec"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="side" eType="#//Side" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="extensionheader" lowerBound="1"
         upperBound="-1" eType="#//ExtensionHeader" containment="true"/>
   </eClassifiers>
@@ -114,8 +114,10 @@
         eType="#//Packet" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="inPorts" upperBound="-1"
         eType="#//Port" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
-        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inbound" eType="#//Inbound"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outbound" eType="#//Outbound"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Filter">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentTime" lowerBound="1"
@@ -139,12 +141,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="Port">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" iD="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="side" lowerBound="1" eType="#//Side"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mappedOut" eType="#//Port"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Interface" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="Side" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1" eType="#//Port"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="#//Interface"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="#//Interface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inbound" eSuperTypes="#//Side"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Outbound" eSuperTypes="#//Side"/>
 </ecore:EPackage>

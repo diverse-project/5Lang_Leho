@@ -1,11 +1,14 @@
 package fr.inria.diverse.leho.k3dsa.Leho.aspects
 
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import fr.inria.diverse.k3.al.annotationprocessor.Aspect
 import fr.inria.diverse.k3.al.annotationprocessor.InitializeModel
 import fr.inria.diverse.k3.al.annotationprocessor.Main
 import fr.inria.diverse.k3.al.annotationprocessor.Step
 import fr.inria.diverse.leho.k3dsa.Leho.modules.IOModule
 import fr.inria.diverse.leho.k3dsa.Leho.modules.MessagingModule
+import fr.inria.diverse.leho.k3dsa.Leho.src.ConfigPort
 import fr.inria.diverse.leho.model.leho.Accept
 import fr.inria.diverse.leho.model.leho.Action
 import fr.inria.diverse.leho.model.leho.AuthentificationHeader
@@ -33,7 +36,6 @@ import fr.inria.diverse.leho.model.leho.Hour
 import fr.inria.diverse.leho.model.leho.ILNPNonce
 import fr.inria.diverse.leho.model.leho.IPv6PerformanceDiagnostic
 import fr.inria.diverse.leho.model.leho.Inbound
-import fr.inria.diverse.leho.model.leho.Interface
 import fr.inria.diverse.leho.model.leho.IpAddSpec
 import fr.inria.diverse.leho.model.leho.JumboPayload
 import fr.inria.diverse.leho.model.leho.LehoFactory
@@ -53,7 +55,6 @@ import fr.inria.diverse.leho.model.leho.PacketUnit
 import fr.inria.diverse.leho.model.leho.Pad1
 import fr.inria.diverse.leho.model.leho.PadN
 import fr.inria.diverse.leho.model.leho.Policy
-import fr.inria.diverse.leho.model.leho.Port
 import fr.inria.diverse.leho.model.leho.Protocol
 import fr.inria.diverse.leho.model.leho.QuickStart
 import fr.inria.diverse.leho.model.leho.RFC3692Experiment
@@ -70,6 +71,7 @@ import fr.inria.diverse.leho.model.leho.Rule
 import fr.inria.diverse.leho.model.leho.Second
 import fr.inria.diverse.leho.model.leho.Segment
 import fr.inria.diverse.leho.model.leho.Shim6Protocol
+import fr.inria.diverse.leho.model.leho.Side
 import fr.inria.diverse.leho.model.leho.SmfDpd
 import fr.inria.diverse.leho.model.leho.SourceRoute
 import fr.inria.diverse.leho.model.leho.TunnelEncapsulationLimit
@@ -81,38 +83,67 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.math.BigInteger
 import java.net.InetAddress
-import java.util.HashMap
+import java.util.ArrayList
 import java.util.Scanner
-import java.util.stream.IntStream
 import org.eclipse.core.resources.IWorkspace
 import org.eclipse.core.resources.ResourcesPlugin
 import org.eclipse.emf.common.util.EList
 
+import static fr.inria.diverse.leho.k3dsa.Leho.aspects.PolicyAspect.*
+
 import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.ActionAspect.*
 import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.ConfigurationAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.ExtensionHeaderAspect.*
 import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.FilterAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.InterfaceAspect.*
 import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.IpAddSpecAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.OptionDestinationAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.OptionHopByHopAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.PolicyAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.ProtocolAspect.*
 import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.RuleAspect.*
-import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.TypeRoutingAspect.*
 
 @Aspect(className=Policy)
 class PolicyAspect {
 	public static var endOfFilter = false
-	public static var correspondingPort = new HashMap<Port, Port>()
 	
 	@Step
 	@InitializeModel
-	def void initializeModel(EList<String> args) { 
-		endOfFilter = false
+	def void initializeModel(EList<String> args) {
+		val IWorkspace workspace = ResourcesPlugin.getWorkspace()
+		try {
+			_self.inbound = LehoFactory.eINSTANCE.createInbound
+			_self.outbound = LehoFactory.eINSTANCE.createOutbound
+			
+			var mapper = new ObjectMapper(new YAMLFactory())
+			
+			val portOracle = new File(workspace.root.findMember(args.get(2)).locationURI.path)
+			val input = new Scanner(portOracle)
+			val configs = new ArrayList<ConfigPort>
+			while (input.hasNextLine) {
+				var line = input.nextLine
+				for (var i=0; i<3; i++) {
+					line += "\n" + input.nextLine
+				}
+				var configPort = mapper.readValue(line, typeof(ConfigPort))
+				configs.add(configPort)
+				var port = LehoFactory.eINSTANCE.createPort
+				port.number = configPort.number
+				if (configPort.side.toLowerCase.equals("inside") || configPort.side.toLowerCase.equals("inbound"))
+					port.side = _self.inbound
+				else if (configPort.side.toLowerCase.equals("outside") || configPort.side.toLowerCase.equals("outbound"))
+					port.side = _self.outbound
+				else {
+					MessagingModule.error("Configuration of ports: Wrong side, a side must be desiganted by terms \"inside\" \"inbound\" \"outside\" or \"outbound\". Go check port_config.yaml.")
+					throw new Exception("Wrong side name") 
+				}
+				_self.inPorts.add(port)
+			}
+			for (port: _self.inPorts) {
+				port.mappedOut = _self.inPorts.findFirst[p | p.number == configs.findFirst[c | c.number == port.number].out]
+			}
+			input.close
+		} catch(NullPointerException e) {
+			MessagingModule.error("Port file " + args.get(2) + " not found. Go check run configurations")
+			e.printStackTrace
+		}
 		// ------------ Read input file and create the packets ------------ //
 		_self.packets.clear
-		val IWorkspace workspace = ResourcesPlugin.getWorkspace()
+		
 		try {			
 			IOModule.createPacketsFromFile(_self, new File(workspace.root.findMember(args.get(0)).locationURI.path))
 		} catch(FileNotFoundException e) {
@@ -125,34 +156,7 @@ class PolicyAspect {
 			MessagingModule.error("Output file " + args.get(1) + "not found. Go check run configurations")
 			e.printStackTrace
 		}
-		try {
-			val portOracle = new File(workspace.root.findMember(args.get(2)).locationURI.path)
-			val input = new Scanner(portOracle)
-			while (input.hasNextLine) {
-				val line = input.nextLine
-				val sourcePort = Integer.parseInt(line.split("->").get(0).trim())
-				var portIn = _self.inPorts.findFirst[p | p.number == sourcePort]
-				if(portIn === null) {
-					val port = LehoFactory.eINSTANCE.createPort
-					port.number = sourcePort
-					_self.inPorts.add(port)
-					portIn = port
-				}
-				val destPort = Integer.parseInt(line.split("->").get(1).trim())
-				var portOut = _self.inPorts.findFirst[p | p.number == destPort]
-				if(portOut === null) {
-					val port = LehoFactory.eINSTANCE.createPort
-					port.number = destPort
-					_self.inPorts.add(port)
-					portOut = port
-				}
-				correspondingPort.put(portIn, portOut)
-			}
-			input.close
-		} catch(NullPointerException e) {
-			MessagingModule.error("Port file " + args.get(2) + " not found. Go check run configurations")
-			e.printStackTrace
-		}
+		
 	}
     
     @Main
@@ -160,6 +164,7 @@ class PolicyAspect {
     def void run() {
     	_self.configuration.run()
     	for (packet : _self.packets) {
+	 		endOfFilter = false
 			_self.filter.currentPacket = packet
 			_self.filter.currentTime = packet.time
 	 		_self.filter.run(_self)
@@ -214,9 +219,6 @@ class DiscardRejectAspect extends ConfigurationAspect {
 
 @Aspect(className=Rule)
 class RuleAspect {
-	public static var int nextHeader
-	public static var nextEhStart = 320
-	
 	def void run(Policy root) {
 		// evaluate address range 
 		var from = _self.from === null ? true : _self.from.eval(root, true)
@@ -225,35 +227,11 @@ class RuleAspect {
 		// evaluate extension header content
 		var packetSpec = true
 		for (eh: _self.extensionheader) {
-			var currentEh = root.filter.currentPacket.extensionheader.findFirst[currentEh | currentEh.class.name.equals(eh.class.name)]
-			if (currentEh !== null) {
-				if (eh instanceof HopByHopOpts) {
-					var hop = eh as HopByHopOpts
-					var currentHop = currentEh as HopByHopOpts
-					for (opt: hop.options) {
-						var currentOpt = currentHop.options.findFirst[currentOpt | currentOpt.class.name.equals(opt.class.name)]
-						if(currentOpt !== null) {
-							if (hop instanceof RouterAlert) {
-								if(!(opt as RouterAlert).protocol.class.name.equals((currentOpt as RouterAlert).protocol.class.name)) 
-									packetSpec = false
-							}
-						} else packetSpec = false
-					}
-				} 
-				if (eh instanceof DestinationOpts) {
-					var dest = eh as DestinationOpts
-					var currentDest = currentEh as DestinationOpts
-					for (opt: dest.options) {
-						if(!currentDest.options.exists[o | o.class.name.equals(opt.class.name)])packetSpec = false
-					}
-				}
-				if (eh instanceof Routing) {
-					if((eh as Routing).type.class.name.equals((currentEh as Routing).type.class.name))
-						packetSpec = false
-				}
-			} else packetSpec = false
+			if (!root.filter.currentPacket.extensionheader.exists[ext | ext.class === eh.class])
+				packetSpec = false
 		}
 		
+		// evaluate rule
 		if (from && to && packetSpec) {
 			_self.action.run(root)
 		}
@@ -273,8 +251,8 @@ class IpAddSpecAspect {
 
 // ------------------------ Port ------------------------ //
 
-@Aspect(className=Interface)
-class InterfaceAspect {
+@Aspect(className=Side)
+class SideAspect {
 	def Boolean eval(Policy root) {
 		MessagingModule.error("Port: run of " +_self +" should never occur, please tell the developer to write a method run for this class") 
 		return false 
@@ -284,18 +262,14 @@ class InterfaceAspect {
 @Aspect(className=Inbound)
 class InboundAspect {
 	def Boolean eval(Policy root) {
-		if(root.filter.currentPacket.inPort.interface.name.equals("inbound"))
-			return true
-		return false
+		return root.filter.currentPacket.inPort.side instanceof Inbound
 	}
 }
 
 @Aspect(className=Outbound)
 class OutboundAspect {
 	def Boolean eval(Policy root) {
-		if(root.filter.currentPacket.inPort.interface.name.equals("outbound"))
-			return true
-		return false
+		return root.filter.currentPacket.inPort.side instanceof Outbound
 	}
 }
 
@@ -461,7 +435,7 @@ class AcceptAspect extends ActionAspect {
 	def void run(Policy root) {
 	 	MessagingModule.debug("ACCEPT\n")
 		
-		IOModule.writePacket(root.filter.currentPacket, correspondingPort.get(root.filter.currentPacket.inPort))
+		IOModule.writePacket(root.filter.currentPacket, root.filter.currentPacket.inPort.mappedOut)
 		endOfFilter = true
 	 }
 }

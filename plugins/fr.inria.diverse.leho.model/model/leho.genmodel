@@ -81,7 +81,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/to"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/next"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/from"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/interface"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/side"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Rule/extensionheader"/>
     </genClasses>
     <genClasses image="false" ecoreClass="leho.ecore#//Protocol"/>
@@ -108,7 +108,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/filter"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/packets"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/inPorts"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/interfaces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/inbound"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference leho.ecore#//Policy/outbound"/>
     </genClasses>
     <genClasses ecoreClass="leho.ecore#//Filter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute leho.ecore#//Filter/currentTime"/>
@@ -126,11 +127,11 @@
     </genClasses>
     <genClasses ecoreClass="leho.ecore#//Port">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute leho.ecore#//Port/number"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Port/interface"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Port/side"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Port/mappedOut"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="leho.ecore#//Interface">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Interface/port"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute leho.ecore#//Interface/name"/>
+    <genClasses image="false" ecoreClass="leho.ecore#//Side">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference leho.ecore#//Side/port"/>
     </genClasses>
     <genClasses ecoreClass="leho.ecore#//Inbound"/>
     <genClasses ecoreClass="leho.ecore#//Outbound"/>
