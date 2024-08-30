@@ -1,5 +1,7 @@
 package fr.inria.diverse.leho.k3dsa.Leho.modules
 
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import fr.inria.diverse.leho.model.leho.LehoFactory
 import fr.inria.diverse.leho.model.leho.Packet
 import fr.inria.diverse.leho.model.leho.Policy
@@ -8,6 +10,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.math.BigInteger
 import java.util.Scanner
+import fr.inria.diverse.leho.k3dsa.Leho.src.RawPacket
 
 class IOModule {
 	static Packet currentPacket
@@ -18,22 +21,26 @@ class IOModule {
 	
 	def static createPacketsFromFile(Policy root, File inputData) {
 		val input = new Scanner(inputData)
+		var mapper = new ObjectMapper(new YAMLFactory())
 		
 		while (input.hasNextLine) { // for each packet
-			val line = input.nextLine
+			var line = input.nextLine
+			for (var i=0; i<3; i++) {
+				line += "\n" + input.nextLine
+			}
+			val rawPacket = mapper.readValue(line, typeof(RawPacket))
 			currentPacket = LehoFactory.eINSTANCE.createPacket
-			val String[] packet_data = line.substring(1, line.length-1).split(";")
 			// time
-			currentPacket.time = Integer.valueOf(packet_data.get(0))
+			currentPacket.time = rawPacket.time
 			// port
-			var port = root.inPorts.findFirst[p | p.number.equals(Integer.parseInt(packet_data.get(1)))]
+			var port = root.inPorts.findFirst[p | p.number.equals(rawPacket.port)]
 			if (port === null) {
 				MessagingModule.error("Unknown entry port for packet " + currentPacket.time + ".\nPlease change port number or add it port configuration.")
 				throw new Exception("Unkown port")
 			}
 			currentPacket.inPort = port
 			//content
-			currentPacket.rawContent = packet_data.get(2)
+			currentPacket.rawContent = rawPacket.content
 			var nextEhStart = 320
 			var nextHeader = read(48, 8);
 			while (nextHeader != 59) {
@@ -176,16 +183,9 @@ class IOModule {
 		}
 		input.close
 	}
-	
-	static var FileOutputStream output = null
-	
-	def static createOutputFile(File outputData) {
-		output = new FileOutputStream(outputData)
-		output.write(''.getBytes)
-	}
-	
-	def static writePacket(Packet packet, Port port) {
-		var outPacket = "("+packet.time+";"+ port.number+";"+packet.rawContent+")\n"
-		output.write(outPacket.getBytes)
+
+	def static writePacket(Packet packet, Port port, FileOutputStream outputFile) {
+		var mapper = new ObjectMapper(new YAMLFactory())
+		outputFile.write(mapper.writeValueAsString(new RawPacket(packet.time, port.number, packet.rawContent)).getBytes)
 	}
 }

@@ -81,6 +81,7 @@ import fr.inria.diverse.leho.model.leho.Unassigned
 import fr.inria.diverse.leho.model.leho.UnknownEH
 import java.io.File
 import java.io.FileNotFoundException
+import java.io.FileOutputStream
 import java.math.BigInteger
 import java.net.InetAddress
 import java.util.ArrayList
@@ -99,7 +100,8 @@ import static extension fr.inria.diverse.leho.k3dsa.Leho.aspects.RuleAspect.*
 
 @Aspect(className=Policy)
 class PolicyAspect {
-	public static var endOfFilter = false
+	public static boolean endOfFilter
+	public static FileOutputStream outputFile
 	
 	@Step
 	@InitializeModel
@@ -151,7 +153,7 @@ class PolicyAspect {
 			e.printStackTrace
 		}
 		try {
-			IOModule.createOutputFile(new File(workspace.root.findMember(args.get(1)).locationURI.path))
+			outputFile = new FileOutputStream(new File(workspace.root.findMember(args.get(1)).locationURI.path))
 		} catch(NullPointerException e) {
 			MessagingModule.error("Output file " + args.get(1) + "not found. Go check run configurations")
 			e.printStackTrace
@@ -435,7 +437,7 @@ class AcceptAspect extends ActionAspect {
 	def void run(Policy root) {
 	 	MessagingModule.debug("ACCEPT\n")
 		
-		IOModule.writePacket(root.filter.currentPacket, root.filter.currentPacket.inPort.mappedOut)
+		IOModule.writePacket(root.filter.currentPacket, root.filter.currentPacket.inPort.mappedOut, outputFile)
 		endOfFilter = true
 	 }
 }
