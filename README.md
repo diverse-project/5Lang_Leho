@@ -68,28 +68,41 @@ This DSL is specialised to address the specific problem of filtering IPv6 packet
 This RFC recommends to filter packets based on their extension header and associated options. $LEHO$ contains a key word for each extension headers, options and other specificities evoked in [RFC9288](https://www.rfc-editor.org/rfc/rfc9288).
 
 ## Simulator
+The simulator use three configurations file to emulate the incoming packets, outgoing packets and the configuration of the port on the transit router.
+It also simulate the clock of a transit router.
+
 ### Packets
-Packets are read from a text input file and the accepted one are written in a text output file.
-Each line of the file corresponds to a packet and has this form:
+The flow of packet is simulated thanks to a yaml file named `input-dataset.yaml` that described the properties of each packets arriving on the transit router. Each packet is described by three fields:
+- `time` the time it arrived in the transit router
+- `port` the port by which it arrived
+- `content` it's content as a string of bits
+It takes this format:
 ```
-(time;port;packet_binary)
+---
+time: 2
+port: 80
+content: 00001010
 ```
-The input file while be first argument of run configurations.  
-The output file while be second argument of run configurations.
 
 ### Ports
-Ports are read from a text input file that play the role of the port oracle. It must be written this way:
+Ports are created from a yaml configuration file named `ports_config.yaml`. A transit router is composed of two sides, the inside of the local network and the outside. Each side is composed of ports that transmit packets to another specific port if the packet is accepted. In the configuration file a port is designated by:
+- `number` its number 
+- `port` the port where it will redirect packet if accepted
+- `side` the side on which the port is physically on the transit router
+It takes this format:
 ```
-inside_port -> output_file
+---
+number: 80
+out: 40
+side: inside
 ```
-one rule per line.  
-The port oracle file will be the third argument of run configurations.
 
 ### Clock management 
-The clock is set at 0 while the filtering policy hasn't begun. Then it is updated with the time of each arriving packet.
+To simulate the clock, packets are defined with their arrival time. Before the start of the simulation the is set to 0, it is then updated with the arrival of each packets.
 
 ### Interruptions
 At every arriving packet the time is updated. Before handling the packet the interruptions are executed if needed.
+
 
 ## Tooling
 
