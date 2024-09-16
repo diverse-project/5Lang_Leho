@@ -8,17 +8,17 @@ class MessagingModule {
 	def private static MessagingSystem logger(){
 		if (internalLogger === null) { 
 			val MessagingSystemManager msManager = new MessagingSystemManager
-			internalLogger = msManager.createBestPlatformMessagingSystem("Eho","Simple Eho interpreter")
+			internalLogger = msManager.createBestPlatformMessagingSystem("Leho","Simple Leho interpreter")
 			
 		} 
 		return internalLogger
 	}
 	
 	def static error(String message) {
-		MessagingModule.logger.error(message, "Eho");
+		MessagingModule.logger.error(message, "Leho");
 	}
 	
 	def static debug(String message) {
-		MessagingModule.logger.debug(message, "Eho");
+		MessagingModule.logger.debug(message, "Leho");
 	}
 }

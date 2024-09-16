@@ -23,7 +23,7 @@ class IOModule {
 		val input = new Scanner(inputData)
 		var mapper = new ObjectMapper(new YAMLFactory())
 		
-		while (input.hasNextLine) { // for each packet
+		while (input.hasNextLine) {
 			var line = input.nextLine
 			for (var i=0; i<3; i++) {
 				line += "\n" + input.nextLine

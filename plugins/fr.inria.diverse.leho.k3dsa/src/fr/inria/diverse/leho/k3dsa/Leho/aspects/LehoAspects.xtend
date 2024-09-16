@@ -141,7 +141,7 @@ class PolicyAspect {
 			input.close
 		} catch(NullPointerException e) {
 			MessagingModule.error("Port file " + args.get(2) + " not found. Go check run configurations")
-			e.printStackTrace
+			e.printStackTrace 
 		}
 		// ------------ Read input file and create the packets ------------ //
 		_self.packets.clear
